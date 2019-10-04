@@ -1,0 +1,6 @@
+framework module Pods_TFT_AsistantTests {
+  umbrella header "Pods-TFT AsistantTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
