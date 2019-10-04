@@ -1,6 +1,0 @@
-framework module Pods_LocalPlatform {
-  umbrella header "Pods-LocalPlatform-umbrella.h"
-
-  export *
-  module * { export * }
-}
