@@ -21,9 +21,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v7i-ua-FCZ" userLabel="ContentView">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CKL-0F-tNi">
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CKL-0F-tNi">
                                         <rect key="frame" x="15" y="15" width="384" height="788"/>
-                                        <color key="backgroundColor" red="0.15686274510000001" green="0.19215686269999999" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.0039215686274509803" green="0.039215686274509803" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="frx-2o-r0S">
                                             <size key="itemSize" width="50" height="50"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -41,13 +41,23 @@
                                             </collectionViewCell>
                                         </cells>
                                     </collectionView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ASZ-SI-H02" customClass="ItemCombinationDetailView" customModule="TFT_Asistant" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="618" width="414" height="200"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="Ipj-xD-enT"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.15686274509803921" green="0.19215686274509802" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.0039215686274509803" green="0.039215686274509803" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="CKL-0F-tNi" firstAttribute="top" secondItem="v7i-ua-FCZ" secondAttribute="top" constant="15" id="79Z-qZ-U2w"/>
+                                    <constraint firstItem="ASZ-SI-H02" firstAttribute="leading" secondItem="v7i-ua-FCZ" secondAttribute="leading" id="C7F-2j-XRM"/>
                                     <constraint firstAttribute="bottom" secondItem="CKL-0F-tNi" secondAttribute="bottom" constant="15" id="OGc-ew-3QJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="ASZ-SI-H02" secondAttribute="trailing" id="Zvg-IU-eUZ"/>
                                     <constraint firstAttribute="trailing" secondItem="CKL-0F-tNi" secondAttribute="trailing" constant="15" id="ffU-fi-7a5"/>
                                     <constraint firstItem="CKL-0F-tNi" firstAttribute="leading" secondItem="v7i-ua-FCZ" secondAttribute="leading" constant="15" id="gyd-MF-sgn"/>
+                                    <constraint firstAttribute="bottom" secondItem="ASZ-SI-H02" secondAttribute="bottom" id="zpP-DU-8jG"/>
                                 </constraints>
                             </view>
                         </subviews>
