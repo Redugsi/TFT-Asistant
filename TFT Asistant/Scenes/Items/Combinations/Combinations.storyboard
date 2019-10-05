@@ -41,7 +41,7 @@
                                             </collectionViewCell>
                                         </cells>
                                     </collectionView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ASZ-SI-H02" customClass="ItemCombinationDetailView" customModule="TFT_Asistant" customModuleProvider="target">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ASZ-SI-H02" customClass="ItemCombinationDetailView" customModule="TFT_Asistant" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="618" width="414" height="200"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -71,7 +71,9 @@
                         <viewLayoutGuide key="safeArea" id="LCL-LW-hJk"/>
                     </view>
                     <connections>
+                        <outlet property="collectionBottomConstraint" destination="OGc-ew-3QJ" id="WdP-X4-fdi"/>
                         <outlet property="collectionView" destination="CKL-0F-tNi" id="Jy5-ii-tSV"/>
+                        <outlet property="detailView" destination="ASZ-SI-H02" id="fA9-KE-j1z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0uW-mz-0yG" userLabel="First Responder" sceneMemberID="firstResponder"/>

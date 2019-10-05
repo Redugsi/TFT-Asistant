@@ -20,6 +20,14 @@ class ItemCombinationDetailView: UIView {
     @IBOutlet weak var secondImageView: UIImageView!
     @IBOutlet weak var bonusLabel: UILabel!
     
+    var viewModel: ItemCombinationDetailViewModel?{
+        didSet{
+            if let viewModel = viewModel{
+                initView(viewModel: viewModel)
+            }
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -35,5 +43,29 @@ class ItemCombinationDetailView: UIView {
         addSubview(contentView)
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+    }
+    
+    private func initView(viewModel: ItemCombinationDetailViewModel){
+        self.isHidden = false
+        nameLabel.text = viewModel.name.stringValue
+        combinedImageView.image = UIImage(named: viewModel.combinedImageName.stringValue)
+        firstImageView.image = UIImage(named: viewModel.firstImageName.stringValue)
+        secondImageView.image = UIImage(named: viewModel.secondImageName.stringValue)
+        bonusLabel.text = viewModel.bonus.stringValue
+        statsStackView.removeChildren()
+
+        if let itemStatViewModels = viewModel.statViewModels{
+            initStackView(statViewModels: itemStatViewModels)
+        }
+    }
+    
+    private func initStackView(statViewModels: [ItemStatViewModel?]){
+        statViewModels.forEach{ vm in
+            if let viewModel = vm{
+                let statView = ItemStatView()
+                statsStackView.addArrangedSubview(statView)
+                statView.viewModel = viewModel
+            }
+        }
     }
 }

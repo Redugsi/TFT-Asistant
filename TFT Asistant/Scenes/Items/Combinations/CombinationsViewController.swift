@@ -15,7 +15,7 @@ import UIKit
 protocol CombinationsDisplayLogic: class
 {
     func displayItems(viewModel: Combinations.ItemsViewModel)
-    func displayItem(viewModel: Combinations.ItemViewModel)
+    func displaySelectedItemDetail(viewModel: ItemCombinationDetailViewModel)
 }
 
 class CombinationsViewController: UIViewController, CombinationsDisplayLogic
@@ -25,8 +25,9 @@ class CombinationsViewController: UIViewController, CombinationsDisplayLogic
     
     var viewModel: Combinations.ItemsViewModel?
     
+    @IBOutlet weak var collectionBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var collectionView: UICollectionView!
-    var collectionFlowLayout: UICollectionViewFlowLayout?
+    @IBOutlet weak var detailView: ItemCombinationDetailView!
     // MARK: Object lifecycle
   
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
@@ -105,15 +106,16 @@ class CombinationsViewController: UIViewController, CombinationsDisplayLogic
         collectionFlowLayout.minimumInteritemSpacing = itemSpacing
     }
     
-    // MARK:
+    // MARK: Display
     
     func displayItems(viewModel: Combinations.ItemsViewModel) {
         self.viewModel = viewModel
         self.collectionView.reloadData()
     }
     
-    func displayItem(viewModel: Combinations.ItemViewModel) {
-        
+    func displaySelectedItemDetail(viewModel: ItemCombinationDetailViewModel) {
+        detailView.viewModel = viewModel
+        collectionBottomConstraint.constant = detailView.frame.height
     }
 }
 
@@ -127,10 +129,15 @@ extension CombinationsViewController: UICollectionViewDataSource, UICollectionVi
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: SquareCollectionViewCell.self), for: indexPath) as! SquareCollectionViewCell
         
         if let item = viewModel?.itemsViewModel?[indexPath.row], let key = item.key{
-            print("Item Key \(key)")
             cell.imageView.image = UIImage(named: key)
         }
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let itemKey = viewModel?.itemsViewModel?[indexPath.row].key{
+            interactor?.getSelectedItemDetail(request: Combinations.GetItemByKey.Request(key: itemKey))
+        }
     }
 }

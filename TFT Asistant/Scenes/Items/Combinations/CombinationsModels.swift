@@ -64,11 +64,12 @@ enum Combinations
     public struct ItemViewModel{
         var name: String?
         var key: String?
-        var stats: [ItemStat]?
+        var stats: [ItemStatViewModel]?
         var kind: String?
         var buildsInto: [String]?
         var buildsFrom: [String]?
         var champs: [String]?
+        var bonus: String?
     }
     
     public struct ItemsViewModel{

@@ -17,8 +17,7 @@ import Domain
 protocol CombinationsBusinessLogic
 {
     func getItems(request: Combinations.GetItems.Request)
-    func getItemBy(name request: Combinations.GetItemByName.Request)
-    func getItemBy(key request: Combinations.GetItemByKey.Request)
+    func getSelectedItemDetail(request: Combinations.GetItemByKey.Request)
 }
 
 protocol CombinationsDataStore
@@ -34,17 +33,50 @@ class CombinationsInteractor: CombinationsBusinessLogic, CombinationsDataStore
     var items: [Item]?
     
     func getItems(request: Combinations.GetItems.Request) {
-        let response = Combinations.GetItems.Response(items: worker.itemsUseCase.getItems())
-        self.items = response.items
+        let allItems = worker.itemsUseCase.getItems()
+        self.items = allItems
+        let combinedItems = allItems?.filter({ $0.buildsFrom != nil})
+        let response = Combinations.GetItems.Response(items: combinedItems)
         presenter?.presentAllItems(response: response)
     }
     
-    func getItemBy(name request: Combinations.GetItemByName.Request) {
+    func getSelectedItemDetail(request: Combinations.GetItemByKey.Request) {
+        guard let itemList = items else{
+            return
+        }
         
+        let choosed = itemList.first{
+            $0.key == request.key
+        }
+        
+        guard var choosedItem = choosed else{
+            return
+        }
+        
+        let itemStats = getStats(keys: choosedItem.buildsFrom)
+        
+        choosedItem.stats = itemStats
+        
+        presenter?.presentSelectedItemDetail(response: Combinations.GetItemByKey.Response(item: choosedItem))
     }
     
-    func getItemBy(key request: Combinations.GetItemByKey.Request) {
-
+    private func getStats(keys: [String]?) -> [ItemStat]?{
+        guard let itemKeys = keys else{
+            return nil
+        }
+        
+        var itemStats = [ItemStat]()
+        
+        items?.forEach({ item in
+            itemKeys.forEach({ x in
+                if item.key == x {
+                    if let stats = item.stats{
+                        itemStats += stats
+                    }
+                }
+            })
+        })
+        
+        return itemStats
     }
-  
 }

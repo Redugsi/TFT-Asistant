@@ -15,7 +15,7 @@ public struct Item: Searchable {
     public let type: String
     public let bonus: String
     public let tier, depth: Int
-    public let stats: [ItemStat]?
+    public var stats: [ItemStat]?
     public let kind: String
     public let buildsInto: [String]?
     public let champs: [String]

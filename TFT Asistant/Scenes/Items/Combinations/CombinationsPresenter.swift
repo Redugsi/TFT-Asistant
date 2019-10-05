@@ -15,8 +15,7 @@ import UIKit
 protocol CombinationsPresentationLogic
 {
     func presentAllItems(response: Combinations.GetItems.Response)
-    func presentItem(response: Combinations.GetItemByKey.Response)
-    func presentItem(response: Combinations.GetItemByName.Response)
+    func presentSelectedItemDetail(response: Combinations.GetItemByKey.Response)
 }
 
 class CombinationsPresenter: CombinationsPresentationLogic
@@ -26,22 +25,19 @@ class CombinationsPresenter: CombinationsPresentationLogic
     func presentAllItems(response: Combinations.GetItems.Response) {
         if let items = response.items{
             let itemViewModels = items.map({Combinations.ItemViewModel(name: $0.name, key: $0.key
-                , stats: $0.stats, kind: $0.kind, buildsInto: $0.buildsInto, buildsFrom: $0.buildsFrom, champs: $0.champs)})
+                , stats: nil, kind: $0.kind, buildsInto: $0.buildsInto, buildsFrom: $0.buildsFrom, champs: $0.champs, bonus: $0.bonus)})
             
             viewController?.displayItems(viewModel: Combinations.ItemsViewModel(itemsViewModel: itemViewModels))
         }
     }
     
-    func presentItem(response: Combinations.GetItemByKey.Response) {
+    func presentSelectedItemDetail(response: Combinations.GetItemByKey.Response) {
         if let item = response.item{
+            let statViewModels = item.stats?.map({ItemStatType(type: $0.name, amount: $0.amount)?.builder()})
             
+            let detailViewModel = ItemCombinationDetailViewModel(name: item.name, combinedImageName: item.key, firstImageName: item.buildsFrom?[0], secondImageName: item.buildsFrom?[1], bonus: item.bonus, statViewModels: statViewModels)
+            
+            viewController?.displaySelectedItemDetail(viewModel: detailViewModel)
         }
     }
-    
-    func presentItem(response: Combinations.GetItemByName.Response) {
-        if let item = response.item{
-            
-        }
-    }
-    
 }

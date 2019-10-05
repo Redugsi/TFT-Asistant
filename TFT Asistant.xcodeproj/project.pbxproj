@@ -27,6 +27,10 @@
 		D15AA2E72347D21200B5DCE9 /* ItemCombinationDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D15AA2E62347D21200B5DCE9 /* ItemCombinationDetailView.xib */; };
 		D15AA2F02347DBF700B5DCE9 /* ItemStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AA2EF2347DBF700B5DCE9 /* ItemStatView.swift */; };
 		D15AA2F22347DC0100B5DCE9 /* ItemStatView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D15AA2F12347DC0100B5DCE9 /* ItemStatView.xib */; };
+		D19C74CF2348E348003CFF4B /* ItemStatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19C74CE2348E348003CFF4B /* ItemStatViewModel.swift */; };
+		D19C74D12348F5D8003CFF4B /* ItemCombinationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19C74D02348F5D8003CFF4B /* ItemCombinationDetailViewModel.swift */; };
+		D19C74D62348F881003CFF4B /* Optional+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19C74D52348F881003CFF4B /* Optional+Ext.swift */; };
+		D19C74D82348FEF7003CFF4B /* StackView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19C74D72348FEF7003CFF4B /* StackView+Ext.swift */; };
 		D446F6947BE837F2D725016B /* Pods_TFT_AsistantTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B319E8010B203C694907607B /* Pods_TFT_AsistantTests.framework */; };
 		E4C56D06F1583DA27EF8F4B1 /* Pods_LocalPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB9B3B58979323F3E1052C8 /* Pods_LocalPlatform.framework */; };
 		E887AFE5234504CF00B8E661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E887AFE4234504CF00B8E661 /* AppDelegate.swift */; };
@@ -183,6 +187,10 @@
 		D15AA2E62347D21200B5DCE9 /* ItemCombinationDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCombinationDetailView.xib; sourceTree = "<group>"; };
 		D15AA2EF2347DBF700B5DCE9 /* ItemStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStatView.swift; sourceTree = "<group>"; };
 		D15AA2F12347DC0100B5DCE9 /* ItemStatView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemStatView.xib; sourceTree = "<group>"; };
+		D19C74CE2348E348003CFF4B /* ItemStatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStatViewModel.swift; sourceTree = "<group>"; };
+		D19C74D02348F5D8003CFF4B /* ItemCombinationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCombinationDetailViewModel.swift; sourceTree = "<group>"; };
+		D19C74D52348F881003CFF4B /* Optional+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Ext.swift"; sourceTree = "<group>"; };
+		D19C74D72348FEF7003CFF4B /* StackView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView+Ext.swift"; sourceTree = "<group>"; };
 		D580D8ACE2B279CEBCD1C209 /* Pods-TFT AsistantUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFT AsistantUITests.release.xcconfig"; path = "Target Support Files/Pods-TFT AsistantUITests/Pods-TFT AsistantUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D7ABDF9E86A4CBA1394340B2 /* Pods-TFT AsistantTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFT AsistantTests.debug.xcconfig"; path = "Target Support Files/Pods-TFT AsistantTests/Pods-TFT AsistantTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE3559F998DA6D5CC65BCD24 /* Pods-TFT AsistantUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFT AsistantUITests.debug.xcconfig"; path = "Target Support Files/Pods-TFT AsistantUITests/Pods-TFT AsistantUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -386,6 +394,7 @@
 			children = (
 				D15AA2E42347D1E700B5DCE9 /* ItemCombinationDetailView.swift */,
 				D15AA2E62347D21200B5DCE9 /* ItemCombinationDetailView.xib */,
+				D19C74D02348F5D8003CFF4B /* ItemCombinationDetailViewModel.swift */,
 			);
 			path = ItemCombinationDetailView;
 			sourceTree = "<group>";
@@ -395,8 +404,18 @@
 			children = (
 				D15AA2EF2347DBF700B5DCE9 /* ItemStatView.swift */,
 				D15AA2F12347DC0100B5DCE9 /* ItemStatView.xib */,
+				D19C74CE2348E348003CFF4B /* ItemStatViewModel.swift */,
 			);
 			path = ItemStatView;
+			sourceTree = "<group>";
+		};
+		D19C74D22348F79C003CFF4B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D19C74D52348F881003CFF4B /* Optional+Ext.swift */,
+				D19C74D72348FEF7003CFF4B /* StackView+Ext.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		E887AFD8234504CF00B8E661 = {
@@ -433,6 +452,7 @@
 			isa = PBXGroup;
 			children = (
 				E887B09A2347746C00B8E661 /* View */,
+				D19C74D22348F79C003CFF4B /* Utility */,
 				E887B08C23460FAA00B8E661 /* Data */,
 				E887B012234504EB00B8E661 /* Scenes */,
 				E887AFE4234504CF00B8E661 /* AppDelegate.swift */,
@@ -1053,14 +1073,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D106E5A423467870005E8E3F /* CombinationsInteractor.swift in Sources */,
+				D19C74CF2348E348003CFF4B /* ItemStatViewModel.swift in Sources */,
 				D106E59A23467870005E8E3F /* CombinationsPresenter.swift in Sources */,
 				D15AA2F02347DBF700B5DCE9 /* ItemStatView.swift in Sources */,
+				D19C74D12348F5D8003CFF4B /* ItemCombinationDetailViewModel.swift in Sources */,
 				D106E5A023467870005E8E3F /* CombinationsModels.swift in Sources */,
+				D19C74D82348FEF7003CFF4B /* StackView+Ext.swift in Sources */,
 				E887B09E234774CD00B8E661 /* SquareCollectionViewCell.swift in Sources */,
 				D106E5A223467870005E8E3F /* CombinationsViewController.swift in Sources */,
 				E887AFE7234504CF00B8E661 /* ViewController.swift in Sources */,
 				D15AA2E52347D1E700B5DCE9 /* ItemCombinationDetailView.swift in Sources */,
 				E887AFE5234504CF00B8E661 /* AppDelegate.swift in Sources */,
+				D19C74D62348F881003CFF4B /* Optional+Ext.swift in Sources */,
 				D106E59C23467870005E8E3F /* CombinationsWorker.swift in Sources */,
 				D106E59E23467870005E8E3F /* CombinationsRouter.swift in Sources */,
 			);
