@@ -13,7 +13,7 @@ public struct Item: Searchable {
     public var key: String
     public var name: String
     public let type: String
-    public let bonus: String
+    public var bonus: String
     public let tier, depth: Int
     public var stats: [ItemStat]?
     public let kind: String

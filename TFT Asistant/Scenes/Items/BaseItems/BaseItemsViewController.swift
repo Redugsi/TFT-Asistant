@@ -123,10 +123,16 @@ class BaseItemsViewController: UIViewController, BaseItemsDisplayLogic
         baseItemDidSelect(indexPath: indexPath)
     }
     
-    func baseItemDidSelect(indexPath: IndexPath){
-        if let selectedItem = baseItemsViewModel?.viewModels?[indexPath.row]{
-            itemNameLabel.text = selectedItem.name
-            itemBonusLabel.text = selectedItem.bonus
+    private func baseItemDidSelect(indexPath: IndexPath){
+        guard let selectedItem = baseItemsViewModel?.viewModels?[indexPath.row] else{
+            return
+        }
+        
+        itemNameLabel.text = selectedItem.name
+        itemBonusLabel.text = selectedItem.bonus
+        
+        if let key = selectedItem.key{
+            interactor?.getBuildableItems(request: BaseItems.GetCombinedItems.Request(key: key))
         }
     }
 }

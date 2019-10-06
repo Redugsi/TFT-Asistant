@@ -34,4 +34,34 @@ class BaseItemsWorker
         
         return response
     }
+    
+    private func getCombinedItems() -> [Item]?{
+        return itemsUseCase.getItems()?.filter({$0.buildsFrom != nil})
+    }
+    
+    func getBuildableItems(request: BaseItems.GetCombinedItems.Request) -> BaseItems.GetCombinedItems.Response{
+        let baseItems = getBaseItems().items
+        guard let combinedItemsFromRequestItem = getCombinedItems()?.filter({ $0.buildsFrom?.contains(request.key) ?? false}) else{
+            return BaseItems.GetCombinedItems.Response(items: nil)
+        }
+        for index in combinedItemsFromRequestItem.indices{
+            combinedItemsFromRequestItem[index].stats = [ItemStat]()
+            var item = combinedItemsFromRequestItem[index]
+            item.buildsFrom?.forEach({ base in
+                if let baseItem = baseItems?.first(where: {
+                    $0.key == base
+                }){
+                    if item.stats == nil{
+                        item.stats = [ItemStat]()
+                    }
+                        
+                    if item.stats != nil && baseItem.stats != nil {
+                        item.stats! += baseItem.stats!
+                    }
+                }
+            })
+        }
+    
+        return BaseItems.GetCombinedItems.Response(items: combinedItemsFromRequestItem)
+    }
 }

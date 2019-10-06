@@ -9,9 +9,9 @@
 import Foundation
 
 public struct ItemStat: Codable {
-    public let name: String?
-    public let title: String
-    public let amount: String?
+    public var name: String?
+    public var title: String
+    public var amount: String?
     
     public init(name: String?, title: String, amount: String?) {
         self.name = name

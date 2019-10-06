@@ -17,6 +17,7 @@ import Domain
 protocol BaseItemsBusinessLogic
 {
     func getBaseItems(request: BaseItems.GetBaseItems.Request)
+    func getBuildableItems(request: BaseItems.GetCombinedItems.Request)
 }
 
 protocol BaseItemsDataStore
@@ -40,5 +41,9 @@ class BaseItemsInteractor: BaseItemsBusinessLogic, BaseItemsDataStore
         if response.items != nil {
             presenter?.presentBaseItems(response: response)
         }
+    }
+    
+    func getBuildableItems(request: BaseItems.GetCombinedItems.Request) {
+        let response = worker.getBuildableItems(request: request)
     }
 }
