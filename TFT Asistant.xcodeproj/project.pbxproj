@@ -27,6 +27,13 @@
 		D15AA2E72347D21200B5DCE9 /* ItemCombinationDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D15AA2E62347D21200B5DCE9 /* ItemCombinationDetailView.xib */; };
 		D15AA2F02347DBF700B5DCE9 /* ItemStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AA2EF2347DBF700B5DCE9 /* ItemStatView.swift */; };
 		D15AA2F22347DC0100B5DCE9 /* ItemStatView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D15AA2F12347DC0100B5DCE9 /* ItemStatView.xib */; };
+		D1876FC42349D24800BA3F3B /* BaseItemsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1876FBE2349D24800BA3F3B /* BaseItemsPresenter.swift */; };
+		D1876FC52349D24800BA3F3B /* BaseItemsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1876FBF2349D24800BA3F3B /* BaseItemsWorker.swift */; };
+		D1876FC62349D24800BA3F3B /* BaseItemsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1876FC02349D24800BA3F3B /* BaseItemsRouter.swift */; };
+		D1876FC72349D24800BA3F3B /* BaseItemsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1876FC12349D24800BA3F3B /* BaseItemsModels.swift */; };
+		D1876FC82349D24800BA3F3B /* BaseItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1876FC22349D24800BA3F3B /* BaseItemsViewController.swift */; };
+		D1876FC92349D24800BA3F3B /* BaseItemsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1876FC32349D24800BA3F3B /* BaseItemsInteractor.swift */; };
+		D1876FCB2349D2CC00BA3F3B /* BaseItems.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1876FCA2349D2CC00BA3F3B /* BaseItems.storyboard */; };
 		D19C74CF2348E348003CFF4B /* ItemStatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19C74CE2348E348003CFF4B /* ItemStatViewModel.swift */; };
 		D19C74D12348F5D8003CFF4B /* ItemCombinationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19C74D02348F5D8003CFF4B /* ItemCombinationDetailViewModel.swift */; };
 		D19C74D62348F881003CFF4B /* Optional+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19C74D52348F881003CFF4B /* Optional+Ext.swift */; };
@@ -187,6 +194,13 @@
 		D15AA2E62347D21200B5DCE9 /* ItemCombinationDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCombinationDetailView.xib; sourceTree = "<group>"; };
 		D15AA2EF2347DBF700B5DCE9 /* ItemStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStatView.swift; sourceTree = "<group>"; };
 		D15AA2F12347DC0100B5DCE9 /* ItemStatView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemStatView.xib; sourceTree = "<group>"; };
+		D1876FBE2349D24800BA3F3B /* BaseItemsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseItemsPresenter.swift; sourceTree = "<group>"; };
+		D1876FBF2349D24800BA3F3B /* BaseItemsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseItemsWorker.swift; sourceTree = "<group>"; };
+		D1876FC02349D24800BA3F3B /* BaseItemsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseItemsRouter.swift; sourceTree = "<group>"; };
+		D1876FC12349D24800BA3F3B /* BaseItemsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseItemsModels.swift; sourceTree = "<group>"; };
+		D1876FC22349D24800BA3F3B /* BaseItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseItemsViewController.swift; sourceTree = "<group>"; };
+		D1876FC32349D24800BA3F3B /* BaseItemsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseItemsInteractor.swift; sourceTree = "<group>"; };
+		D1876FCA2349D2CC00BA3F3B /* BaseItems.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaseItems.storyboard; sourceTree = "<group>"; };
 		D19C74CE2348E348003CFF4B /* ItemStatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStatViewModel.swift; sourceTree = "<group>"; };
 		D19C74D02348F5D8003CFF4B /* ItemCombinationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCombinationDetailViewModel.swift; sourceTree = "<group>"; };
 		D19C74D52348F881003CFF4B /* Optional+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Ext.swift"; sourceTree = "<group>"; };
@@ -413,6 +427,13 @@
 		D1876FBD2349D1C200BA3F3B /* BaseItems */ = {
 			isa = PBXGroup;
 			children = (
+				D1876FBE2349D24800BA3F3B /* BaseItemsPresenter.swift */,
+				D1876FBF2349D24800BA3F3B /* BaseItemsWorker.swift */,
+				D1876FC02349D24800BA3F3B /* BaseItemsRouter.swift */,
+				D1876FC12349D24800BA3F3B /* BaseItemsModels.swift */,
+				D1876FC22349D24800BA3F3B /* BaseItemsViewController.swift */,
+				D1876FC32349D24800BA3F3B /* BaseItemsInteractor.swift */,
+				D1876FCA2349D2CC00BA3F3B /* BaseItems.storyboard */,
 			);
 			path = BaseItems;
 			sourceTree = "<group>";
@@ -862,6 +883,7 @@
 				E887B09323460FC200B8E661 /* classes.json in Resources */,
 				E887B09623460FC200B8E661 /* champions_rm.json in Resources */,
 				E887B09423460FC200B8E661 /* origins.json in Resources */,
+				D1876FCB2349D2CC00BA3F3B /* BaseItems.storyboard in Resources */,
 				D15AA2F22347DC0100B5DCE9 /* ItemStatView.xib in Resources */,
 				E887B09523460FC200B8E661 /* items.json in Resources */,
 				E887B09223460FC200B8E661 /* champions.json in Resources */,
@@ -1088,12 +1110,18 @@
 				D106E5A023467870005E8E3F /* CombinationsModels.swift in Sources */,
 				D19C74D82348FEF7003CFF4B /* StackView+Ext.swift in Sources */,
 				E887B09E234774CD00B8E661 /* SquareCollectionViewCell.swift in Sources */,
+				D1876FC42349D24800BA3F3B /* BaseItemsPresenter.swift in Sources */,
 				D106E5A223467870005E8E3F /* CombinationsViewController.swift in Sources */,
 				E887AFE7234504CF00B8E661 /* ViewController.swift in Sources */,
 				D15AA2E52347D1E700B5DCE9 /* ItemCombinationDetailView.swift in Sources */,
+				D1876FC82349D24800BA3F3B /* BaseItemsViewController.swift in Sources */,
+				D1876FC92349D24800BA3F3B /* BaseItemsInteractor.swift in Sources */,
+				D1876FC52349D24800BA3F3B /* BaseItemsWorker.swift in Sources */,
 				E887AFE5234504CF00B8E661 /* AppDelegate.swift in Sources */,
 				D19C74D62348F881003CFF4B /* Optional+Ext.swift in Sources */,
 				D106E59C23467870005E8E3F /* CombinationsWorker.swift in Sources */,
+				D1876FC72349D24800BA3F3B /* BaseItemsModels.swift in Sources */,
+				D1876FC62349D24800BA3F3B /* BaseItemsRouter.swift in Sources */,
 				D106E59E23467870005E8E3F /* CombinationsRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
