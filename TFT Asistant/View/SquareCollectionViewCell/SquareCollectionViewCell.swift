@@ -30,7 +30,7 @@ class SquareCollectionViewCell: UICollectionViewCell {
     }
     
     private func initView(){
-        borderView.layer.borderColor = UIColor(named: "color_pink")?.cgColor
+        borderView.layer.borderColor = UIColor(named: "color_highlight")?.cgColor
         borderView.layer.borderWidth = 2.0
     }
 

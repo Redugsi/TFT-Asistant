@@ -363,6 +363,7 @@
 		D106E59123467514005E8E3F /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				D1876FBD2349D1C200BA3F3B /* BaseItems */,
 				D106E59323467813005E8E3F /* Combinations */,
 			);
 			path = Items;
@@ -407,6 +408,13 @@
 				D19C74CE2348E348003CFF4B /* ItemStatViewModel.swift */,
 			);
 			path = ItemStatView;
+			sourceTree = "<group>";
+		};
+		D1876FBD2349D1C200BA3F3B /* BaseItems */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseItems;
 			sourceTree = "<group>";
 		};
 		D19C74D22348F79C003CFF4B /* Utility */ = {
