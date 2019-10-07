@@ -14,13 +14,13 @@ import UIKit
 
 protocol BaseItemsDisplayLogic: class
 {
-    func displayBaseItems(baseItems: BaseItems.GetBaseItems.BaseItemsViewModel)
+    func displayBaseItems(baseItems: ItemModels.BaseItemsViewModel)
     func displayBuildableItems(buildableItems: [ItemCombinationDetailViewModel]?)
 }
 
 class BaseItemsViewController: UIViewController, BaseItemsDisplayLogic
 {
-    var baseItemsViewModel: BaseItems.GetBaseItems.BaseItemsViewModel?
+    var baseItemsViewModel: ItemModels.BaseItemsViewModel?
     var combinedItemsViewModel: [ItemCombinationDetailViewModel]?
 
     var interactor: BaseItemsBusinessLogic?
@@ -127,7 +127,7 @@ class BaseItemsViewController: UIViewController, BaseItemsDisplayLogic
   
   //@IBOutlet weak var nameTextField: UITextField!
   
-    func displayBaseItems(baseItems: BaseItems.GetBaseItems.BaseItemsViewModel) {
+    func displayBaseItems(baseItems: ItemModels.BaseItemsViewModel) {
         self.baseItemsViewModel = baseItems
         itemsCollectionView.reloadData()
         let indexPath = IndexPath(item: 0, section: 0)
@@ -160,7 +160,7 @@ class BaseItemsViewController: UIViewController, BaseItemsDisplayLogic
         updateItemLabels(baseItemViewModel: selectedItem)
     }
     
-    private func updateItemLabels(baseItemViewModel: BaseItems.GetBaseItems.BaseItemViewModel){
+    private func updateItemLabels(baseItemViewModel: ItemModels.BaseItemViewModel){
         UIView.transition(with: self.itemNameLabel,
                           duration: 0.35,
                           options: .transitionCrossDissolve,

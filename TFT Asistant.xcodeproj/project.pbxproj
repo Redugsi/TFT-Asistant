@@ -40,6 +40,14 @@
 		D19C74D12348F5D8003CFF4B /* ItemCombinationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19C74D02348F5D8003CFF4B /* ItemCombinationDetailViewModel.swift */; };
 		D19C74D62348F881003CFF4B /* Optional+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19C74D52348F881003CFF4B /* Optional+Ext.swift */; };
 		D19C74D82348FEF7003CFF4B /* StackView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19C74D72348FEF7003CFF4B /* StackView+Ext.swift */; };
+		D1D1DA2B234BBC3100EBBD37 /* ItemModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1DA2A234BBC3100EBBD37 /* ItemModels.swift */; };
+		D1D1DA33234BBCA100EBBD37 /* ItemBuilderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1DA2D234BBCA100EBBD37 /* ItemBuilderPresenter.swift */; };
+		D1D1DA34234BBCA100EBBD37 /* ItemBuilderWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1DA2E234BBCA100EBBD37 /* ItemBuilderWorker.swift */; };
+		D1D1DA35234BBCA100EBBD37 /* ItemBuilderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1DA2F234BBCA100EBBD37 /* ItemBuilderRouter.swift */; };
+		D1D1DA36234BBCA100EBBD37 /* ItemBuilderModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1DA30234BBCA100EBBD37 /* ItemBuilderModels.swift */; };
+		D1D1DA37234BBCA100EBBD37 /* ItemBuilderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1DA31234BBCA100EBBD37 /* ItemBuilderViewController.swift */; };
+		D1D1DA38234BBCA100EBBD37 /* ItemBuilderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1DA32234BBCA100EBBD37 /* ItemBuilderInteractor.swift */; };
+		D1D1DA3A234BBCDB00EBBD37 /* ItemBuilder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D1DA39234BBCDB00EBBD37 /* ItemBuilder.storyboard */; };
 		D446F6947BE837F2D725016B /* Pods_TFT_AsistantTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B319E8010B203C694907607B /* Pods_TFT_AsistantTests.framework */; };
 		E4C56D06F1583DA27EF8F4B1 /* Pods_LocalPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB9B3B58979323F3E1052C8 /* Pods_LocalPlatform.framework */; };
 		E887AFE5234504CF00B8E661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E887AFE4234504CF00B8E661 /* AppDelegate.swift */; };
@@ -209,6 +217,14 @@
 		D19C74D02348F5D8003CFF4B /* ItemCombinationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCombinationDetailViewModel.swift; sourceTree = "<group>"; };
 		D19C74D52348F881003CFF4B /* Optional+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Ext.swift"; sourceTree = "<group>"; };
 		D19C74D72348FEF7003CFF4B /* StackView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView+Ext.swift"; sourceTree = "<group>"; };
+		D1D1DA2A234BBC3100EBBD37 /* ItemModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemModels.swift; sourceTree = "<group>"; };
+		D1D1DA2D234BBCA100EBBD37 /* ItemBuilderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBuilderPresenter.swift; sourceTree = "<group>"; };
+		D1D1DA2E234BBCA100EBBD37 /* ItemBuilderWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBuilderWorker.swift; sourceTree = "<group>"; };
+		D1D1DA2F234BBCA100EBBD37 /* ItemBuilderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBuilderRouter.swift; sourceTree = "<group>"; };
+		D1D1DA30234BBCA100EBBD37 /* ItemBuilderModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBuilderModels.swift; sourceTree = "<group>"; };
+		D1D1DA31234BBCA100EBBD37 /* ItemBuilderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBuilderViewController.swift; sourceTree = "<group>"; };
+		D1D1DA32234BBCA100EBBD37 /* ItemBuilderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBuilderInteractor.swift; sourceTree = "<group>"; };
+		D1D1DA39234BBCDB00EBBD37 /* ItemBuilder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ItemBuilder.storyboard; sourceTree = "<group>"; };
 		D580D8ACE2B279CEBCD1C209 /* Pods-TFT AsistantUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFT AsistantUITests.release.xcconfig"; path = "Target Support Files/Pods-TFT AsistantUITests/Pods-TFT AsistantUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D7ABDF9E86A4CBA1394340B2 /* Pods-TFT AsistantTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFT AsistantTests.debug.xcconfig"; path = "Target Support Files/Pods-TFT AsistantTests/Pods-TFT AsistantTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE3559F998DA6D5CC65BCD24 /* Pods-TFT AsistantUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFT AsistantUITests.debug.xcconfig"; path = "Target Support Files/Pods-TFT AsistantUITests/Pods-TFT AsistantUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -381,6 +397,8 @@
 		D106E59123467514005E8E3F /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				D1D1DA2C234BBC5400EBBD37 /* ItemBuilder */,
+				D1D1DA29234BBC3100EBBD37 /* Common */,
 				D1876FBD2349D1C200BA3F3B /* BaseItems */,
 				D106E59323467813005E8E3F /* Combinations */,
 			);
@@ -458,6 +476,28 @@
 				D19C74D72348FEF7003CFF4B /* StackView+Ext.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		D1D1DA29234BBC3100EBBD37 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D1D1DA2A234BBC3100EBBD37 /* ItemModels.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D1D1DA2C234BBC5400EBBD37 /* ItemBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				D1D1DA2D234BBCA100EBBD37 /* ItemBuilderPresenter.swift */,
+				D1D1DA2E234BBCA100EBBD37 /* ItemBuilderWorker.swift */,
+				D1D1DA2F234BBCA100EBBD37 /* ItemBuilderRouter.swift */,
+				D1D1DA30234BBCA100EBBD37 /* ItemBuilderModels.swift */,
+				D1D1DA31234BBCA100EBBD37 /* ItemBuilderViewController.swift */,
+				D1D1DA32234BBCA100EBBD37 /* ItemBuilderInteractor.swift */,
+				D1D1DA39234BBCDB00EBBD37 /* ItemBuilder.storyboard */,
+			);
+			path = ItemBuilder;
 			sourceTree = "<group>";
 		};
 		E887AFD8234504CF00B8E661 = {
@@ -901,6 +941,7 @@
 				D1876FD0234A59DE00BA3F3B /* CombinedItemDetailTableViewCell.xib in Resources */,
 				D15AA2F22347DC0100B5DCE9 /* ItemStatView.xib in Resources */,
 				E887B09523460FC200B8E661 /* items.json in Resources */,
+				D1D1DA3A234BBCDB00EBBD37 /* ItemBuilder.storyboard in Resources */,
 				E887B09223460FC200B8E661 /* champions.json in Resources */,
 				E887B09F234774CE00B8E661 /* SquareCollectionViewCell.xib in Resources */,
 				E887AFEF234504D100B8E661 /* LaunchScreen.storyboard in Resources */,
@@ -1120,21 +1161,28 @@
 				D1876FCF234A59DE00BA3F3B /* CombinedItemDetailTableViewCell.swift in Sources */,
 				D106E5A423467870005E8E3F /* CombinationsInteractor.swift in Sources */,
 				D19C74CF2348E348003CFF4B /* ItemStatViewModel.swift in Sources */,
+				D1D1DA38234BBCA100EBBD37 /* ItemBuilderInteractor.swift in Sources */,
+				D1D1DA37234BBCA100EBBD37 /* ItemBuilderViewController.swift in Sources */,
 				D106E59A23467870005E8E3F /* CombinationsPresenter.swift in Sources */,
 				D15AA2F02347DBF700B5DCE9 /* ItemStatView.swift in Sources */,
+				D1D1DA2B234BBC3100EBBD37 /* ItemModels.swift in Sources */,
 				D19C74D12348F5D8003CFF4B /* ItemCombinationDetailViewModel.swift in Sources */,
 				D106E5A023467870005E8E3F /* CombinationsModels.swift in Sources */,
 				D19C74D82348FEF7003CFF4B /* StackView+Ext.swift in Sources */,
 				E887B09E234774CD00B8E661 /* SquareCollectionViewCell.swift in Sources */,
 				D1876FC42349D24800BA3F3B /* BaseItemsPresenter.swift in Sources */,
+				D1D1DA35234BBCA100EBBD37 /* ItemBuilderRouter.swift in Sources */,
 				D106E5A223467870005E8E3F /* CombinationsViewController.swift in Sources */,
 				E887AFE7234504CF00B8E661 /* ViewController.swift in Sources */,
 				D15AA2E52347D1E700B5DCE9 /* ItemCombinationDetailView.swift in Sources */,
 				D1876FC82349D24800BA3F3B /* BaseItemsViewController.swift in Sources */,
+				D1D1DA36234BBCA100EBBD37 /* ItemBuilderModels.swift in Sources */,
 				D1876FC92349D24800BA3F3B /* BaseItemsInteractor.swift in Sources */,
 				D1876FC52349D24800BA3F3B /* BaseItemsWorker.swift in Sources */,
 				E887AFE5234504CF00B8E661 /* AppDelegate.swift in Sources */,
+				D1D1DA34234BBCA100EBBD37 /* ItemBuilderWorker.swift in Sources */,
 				D19C74D62348F881003CFF4B /* Optional+Ext.swift in Sources */,
+				D1D1DA33234BBCA100EBBD37 /* ItemBuilderPresenter.swift in Sources */,
 				D106E59C23467870005E8E3F /* CombinationsWorker.swift in Sources */,
 				D1876FC72349D24800BA3F3B /* BaseItemsModels.swift in Sources */,
 				D1876FC62349D24800BA3F3B /* BaseItemsRouter.swift in Sources */,

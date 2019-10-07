@@ -24,4 +24,14 @@ enum ItemModels{
     public struct ItemsViewModel{
         var itemsViewModel: [ItemViewModel]?
     }
+    
+    struct BaseItemViewModel {
+        var key: String?
+        var name: String?
+        var bonus: String?
+    }
+    
+    struct BaseItemsViewModel {
+        var viewModels: [BaseItemViewModel]?
+    }
 }

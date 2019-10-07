@@ -30,10 +30,10 @@ class BaseItemsPresenter: BaseItemsPresentationLogic
         }
         
         let baseItemViewModels = baseItems.map({
-            BaseItems.GetBaseItems.BaseItemViewModel(key: $0.key, name: $0.name, bonus: $0.bonus)
+            ItemModels.BaseItemViewModel(key: $0.key, name: $0.name, bonus: $0.bonus)
         })
         
-        let baseItemsViewModel = BaseItems.GetBaseItems.BaseItemsViewModel(viewModels: baseItemViewModels)
+        let baseItemsViewModel = ItemModels.BaseItemsViewModel(viewModels: baseItemViewModels)
         
         viewController?.displayBaseItems(baseItems: baseItemsViewModel)
     }
@@ -42,7 +42,6 @@ class BaseItemsPresenter: BaseItemsPresentationLogic
     func presentCombinedItems(response: BaseItems.GetCombinedItems.Response) {
         if let combinedItems = response.items?.map({ item -> ItemCombinationDetailViewModel in
             let statViewModels = item.stats?.map({ ItemStatType(type: $0.name, amount: $0.amount)?.builder()})
-            print("Stats \(item.stats)")
             return ItemCombinationDetailViewModel(name: item.name,
                                            combinedImageName: item.key,
                                            firstImageName: item.buildsFrom?[0],
