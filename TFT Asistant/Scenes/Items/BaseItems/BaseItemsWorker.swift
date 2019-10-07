@@ -41,11 +41,10 @@ class BaseItemsWorker
     
     func getBuildableItems(request: BaseItems.GetCombinedItems.Request) -> BaseItems.GetCombinedItems.Response{
         let baseItems = getBaseItems().items
-        guard let combinedItemsFromRequestItem = getCombinedItems()?.filter({ $0.buildsFrom?.contains(request.key) ?? false}) else{
+        guard var combinedItemsFromRequestItem = getCombinedItems()?.filter({ $0.buildsFrom?.contains(request.key) ?? false}) else{
             return BaseItems.GetCombinedItems.Response(items: nil)
         }
         for index in combinedItemsFromRequestItem.indices{
-            combinedItemsFromRequestItem[index].stats = [ItemStat]()
             var item = combinedItemsFromRequestItem[index]
             item.buildsFrom?.forEach({ base in
                 if let baseItem = baseItems?.first(where: {
@@ -58,6 +57,8 @@ class BaseItemsWorker
                     if item.stats != nil && baseItem.stats != nil {
                         item.stats! += baseItem.stats!
                     }
+                    
+                    combinedItemsFromRequestItem[index] = item
                 }
             })
         }

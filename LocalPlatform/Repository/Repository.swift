@@ -28,7 +28,6 @@ final class Repository<T: Domain.Searchable>: AbstractRepository{
             if let path = self.jsonUrl{
                 let data = try Data(contentsOf: path)
                 let result = try! JSONDecoder().decode([T].self, from: data)
-                print("Parse result = \(result)")
                 return result
             }else{
                 print("Parse result = Path not found")

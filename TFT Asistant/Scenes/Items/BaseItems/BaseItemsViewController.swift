@@ -15,17 +15,20 @@ import UIKit
 protocol BaseItemsDisplayLogic: class
 {
     func displayBaseItems(baseItems: BaseItems.GetBaseItems.BaseItemsViewModel)
+    func displayBuildableItems(buildableItems: [ItemCombinationDetailViewModel]?)
 }
 
 class BaseItemsViewController: UIViewController, BaseItemsDisplayLogic
 {
     var baseItemsViewModel: BaseItems.GetBaseItems.BaseItemsViewModel?
+    var combinedItemsViewModel: [ItemCombinationDetailViewModel]?
 
     var interactor: BaseItemsBusinessLogic?
     var router: (NSObjectProtocol & BaseItemsRoutingLogic & BaseItemsDataPassing)?
 
     
     @IBOutlet weak var itemsCollectionView: UICollectionView!
+    @IBOutlet weak var combonedTableView: UITableView!
     @IBOutlet weak var collectionHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var itemNameLabel: UILabel!
     @IBOutlet weak var itemBonusLabel: UILabel!
@@ -78,6 +81,7 @@ class BaseItemsViewController: UIViewController, BaseItemsDisplayLogic
   {
     super.viewDidLoad()
     setupItemCollectionView()
+    setupCombinedTableView()
     interactor?.getBaseItems(request: BaseItems.GetBaseItems.Request())
   }
     
@@ -92,6 +96,14 @@ class BaseItemsViewController: UIViewController, BaseItemsDisplayLogic
         
         let nib = UINib(nibName: "SquareCollectionViewCell", bundle: nil)
         itemsCollectionView.register(nib, forCellWithReuseIdentifier: String(describing: SquareCollectionViewCell.self))
+    }
+    
+    private func setupCombinedTableView(){
+        combonedTableView.delegate = self
+        combonedTableView.dataSource = self
+        
+        let nib = UINib(nibName: "CombinedItemDetailTableViewCell", bundle: nil)
+        combonedTableView.register(nib, forCellReuseIdentifier: "CombinedItemDetailTableViewCell")
     }
     
     private func setupCellSize(){
@@ -123,17 +135,45 @@ class BaseItemsViewController: UIViewController, BaseItemsDisplayLogic
         baseItemDidSelect(indexPath: indexPath)
     }
     
+    func displayBuildableItems(buildableItems: [ItemCombinationDetailViewModel]?) {
+        self.combinedItemsViewModel = buildableItems
+        
+        UIView.transition(with: self.combonedTableView,
+                          duration: 0.35,
+                          options: .transitionCrossDissolve,
+                          animations: { [weak self] in
+                            self?.combonedTableView.reloadData()
+                            self?.combonedTableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: false)
+        })
+
+    }
+    
     private func baseItemDidSelect(indexPath: IndexPath){
         guard let selectedItem = baseItemsViewModel?.viewModels?[indexPath.row] else{
             return
         }
-        
-        itemNameLabel.text = selectedItem.name
-        itemBonusLabel.text = selectedItem.bonus
-        
+
         if let key = selectedItem.key{
             interactor?.getBuildableItems(request: BaseItems.GetCombinedItems.Request(key: key))
         }
+        
+        updateItemLabels(baseItemViewModel: selectedItem)
+    }
+    
+    private func updateItemLabels(baseItemViewModel: BaseItems.GetBaseItems.BaseItemViewModel){
+        UIView.transition(with: self.itemNameLabel,
+                          duration: 0.35,
+                          options: .transitionCrossDissolve,
+                          animations: {[weak self] in
+                            self?.itemNameLabel.text = baseItemViewModel.name
+        })
+        
+        UIView.transition(with: self.itemBonusLabel,
+                          duration: 0.35,
+                          options: .transitionCrossDissolve,
+                          animations: {[weak self] in
+                            self?.itemBonusLabel.text = baseItemViewModel.bonus
+        })
     }
 }
 
@@ -155,5 +195,19 @@ extension BaseItemsViewController: UICollectionViewDelegate, UICollectionViewDat
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.baseItemDidSelect(indexPath: indexPath)
+    }
+}
+
+extension BaseItemsViewController: UITableViewDataSource, UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return combinedItemsViewModel?.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CombinedItemDetailTableViewCell") as! CombinedItemDetailTableViewCell
+        let detailViewModel = combinedItemsViewModel?[indexPath.row]
+        cell.bind(viewModel: detailViewModel)
+        return cell
     }
 }

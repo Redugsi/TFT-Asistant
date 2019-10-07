@@ -81,20 +81,29 @@
                                     <constraint firstAttribute="height" constant="2" id="Tmc-bj-cBb"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x8D-Hb-aBe">
+                                <rect key="frame" x="7" y="97.5" width="400" height="764.5"/>
+                                <color key="backgroundColor" name="color_primary_second"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" name="color_primary_second"/>
                         <constraints>
                             <constraint firstItem="KTb-cR-UvB" firstAttribute="top" secondItem="AkJ-BR-dWg" secondAttribute="top" id="01a-sN-yZs"/>
                             <constraint firstItem="AkJ-BR-dWg" firstAttribute="trailing" secondItem="KTb-cR-UvB" secondAttribute="trailing" id="6DV-bZ-yAR"/>
+                            <constraint firstItem="x8D-Hb-aBe" firstAttribute="top" secondItem="K0e-K4-4QA" secondAttribute="bottom" id="Jss-Nu-GJn"/>
                             <constraint firstItem="K0e-K4-4QA" firstAttribute="top" secondItem="KTb-cR-UvB" secondAttribute="bottom" constant="4" id="K8f-BZ-eqX"/>
                             <constraint firstItem="KTb-cR-UvB" firstAttribute="leading" secondItem="AkJ-BR-dWg" secondAttribute="leading" id="VTK-f0-btp"/>
                             <constraint firstItem="AkJ-BR-dWg" firstAttribute="trailing" secondItem="K0e-K4-4QA" secondAttribute="trailing" id="apY-HX-A5M"/>
+                            <constraint firstItem="AkJ-BR-dWg" firstAttribute="bottom" secondItem="x8D-Hb-aBe" secondAttribute="bottom" id="gsY-NC-iY1"/>
+                            <constraint firstItem="AkJ-BR-dWg" firstAttribute="trailing" secondItem="x8D-Hb-aBe" secondAttribute="trailing" constant="7" id="kCh-Nx-3dF"/>
                             <constraint firstItem="K0e-K4-4QA" firstAttribute="leading" secondItem="AkJ-BR-dWg" secondAttribute="leading" id="mef-M7-5P7"/>
+                            <constraint firstItem="x8D-Hb-aBe" firstAttribute="leading" secondItem="AkJ-BR-dWg" secondAttribute="leading" constant="7" id="uZ8-wc-jJq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AkJ-BR-dWg"/>
                     </view>
                     <connections>
                         <outlet property="collectionHeightConstraint" destination="LUV-So-yXd" id="Jci-fh-itE"/>
+                        <outlet property="combonedTableView" destination="x8D-Hb-aBe" id="LPL-Zp-3m0"/>
                         <outlet property="itemBonusLabel" destination="WpR-ig-iua" id="VNK-Ph-Ypr"/>
                         <outlet property="itemNameLabel" destination="P6G-BW-8rB" id="Ab6-PB-OyX"/>
                         <outlet property="itemsCollectionView" destination="1VN-aH-2ef" id="0v6-Y2-dcR"/>

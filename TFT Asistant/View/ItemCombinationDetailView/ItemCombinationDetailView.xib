@@ -19,6 +19,7 @@
                 <outlet property="firstImageView" destination="cde-bd-P1U" id="lTy-mx-SU5"/>
                 <outlet property="nameLabel" destination="mro-wq-HP4" id="O3S-cL-nZx"/>
                 <outlet property="secondImageView" destination="dAa-nR-zld" id="ycV-ZT-LvG"/>
+                <outlet property="separator" destination="0Gu-cz-tCE" id="mum-qe-X5f"/>
                 <outlet property="statsStackView" destination="wv2-mS-Y7w" id="IKn-Ed-gAO"/>
             </connections>
         </placeholder>

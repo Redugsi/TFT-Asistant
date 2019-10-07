@@ -15,6 +15,7 @@ import UIKit
 protocol BaseItemsPresentationLogic
 {
     func presentBaseItems(response: BaseItems.GetBaseItems.Response)
+    func presentCombinedItems(response: BaseItems.GetCombinedItems.Response)
 }
 
 class BaseItemsPresenter: BaseItemsPresentationLogic
@@ -36,4 +37,22 @@ class BaseItemsPresenter: BaseItemsPresentationLogic
         
         viewController?.displayBaseItems(baseItems: baseItemsViewModel)
     }
+    
+    
+    func presentCombinedItems(response: BaseItems.GetCombinedItems.Response) {
+        if let combinedItems = response.items?.map({ item -> ItemCombinationDetailViewModel in
+            let statViewModels = item.stats?.map({ ItemStatType(type: $0.name, amount: $0.amount)?.builder()})
+            print("Stats \(item.stats)")
+            return ItemCombinationDetailViewModel(name: item.name,
+                                           combinedImageName: item.key,
+                                           firstImageName: item.buildsFrom?[0],
+                                           secondImageName: item.buildsFrom?[1],
+                                           bonus: item.bonus,
+                                           statViewModels: statViewModels,
+                                           showSeparator: false)}){
+            viewController?.displayBuildableItems(buildableItems: combinedItems)
+            
+        }
+    }
+    
 }

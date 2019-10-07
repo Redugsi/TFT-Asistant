@@ -10,15 +10,18 @@ import UIKit
 
 class CombinedItemDetailTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var itemDetailView: ItemCombinationDetailView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    }
+    
+    func bind(viewModel: ItemCombinationDetailViewModel?){
+        itemDetailView.viewModel = viewModel
     }
     
 }

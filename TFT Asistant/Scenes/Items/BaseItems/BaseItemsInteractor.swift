@@ -45,5 +45,6 @@ class BaseItemsInteractor: BaseItemsBusinessLogic, BaseItemsDataStore
     
     func getBuildableItems(request: BaseItems.GetCombinedItems.Request) {
         let response = worker.getBuildableItems(request: request)
+        presenter?.presentCombinedItems(response: response)
     }
 }

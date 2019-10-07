@@ -14,7 +14,7 @@ import UIKit
 
 protocol CombinationsDisplayLogic: class
 {
-    func displayItems(viewModel: Combinations.ItemsViewModel)
+    func displayItems(viewModel: ItemModels.ItemsViewModel)
     func displaySelectedItemDetail(viewModel: ItemCombinationDetailViewModel)
 }
 
@@ -23,7 +23,7 @@ class CombinationsViewController: UIViewController, CombinationsDisplayLogic
     var interactor: CombinationsBusinessLogic?
     var router: (NSObjectProtocol & CombinationsRoutingLogic & CombinationsDataPassing)?
     
-    var viewModel: Combinations.ItemsViewModel?
+    var viewModel: ItemModels.ItemsViewModel?
     
     @IBOutlet weak var collectionBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -108,7 +108,7 @@ class CombinationsViewController: UIViewController, CombinationsDisplayLogic
     
     // MARK: Display
     
-    func displayItems(viewModel: Combinations.ItemsViewModel) {
+    func displayItems(viewModel: ItemModels.ItemsViewModel) {
         self.viewModel = viewModel
         self.collectionView.reloadData()
     }

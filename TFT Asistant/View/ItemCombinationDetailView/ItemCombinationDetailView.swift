@@ -19,6 +19,7 @@ class ItemCombinationDetailView: UIView {
     @IBOutlet weak var firstImageView: UIImageView!
     @IBOutlet weak var secondImageView: UIImageView!
     @IBOutlet weak var bonusLabel: UILabel!
+    @IBOutlet weak var separator: UIView!
     
     var viewModel: ItemCombinationDetailViewModel?{
         didSet{
@@ -52,6 +53,7 @@ class ItemCombinationDetailView: UIView {
         firstImageView.image = UIImage(named: viewModel.firstImageName.stringValue)
         secondImageView.image = UIImage(named: viewModel.secondImageName.stringValue)
         bonusLabel.text = viewModel.bonus.stringValue
+        separator.isHidden = !viewModel.showSeparator
         statsStackView.removeChildren()
 
         if let itemStatViewModels = viewModel.statViewModels{

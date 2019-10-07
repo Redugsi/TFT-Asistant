@@ -60,19 +60,4 @@ enum Combinations
             var item: Item?            
         }
     }
-    
-    public struct ItemViewModel{
-        var name: String?
-        var key: String?
-        var stats: [ItemStatViewModel]?
-        var kind: String?
-        var buildsInto: [String]?
-        var buildsFrom: [String]?
-        var champs: [String]?
-        var bonus: String?
-    }
-    
-    public struct ItemsViewModel{
-        var itemsViewModel: [ItemViewModel]?
-    }
 }

@@ -24,10 +24,10 @@ class CombinationsPresenter: CombinationsPresentationLogic
   
     func presentAllItems(response: Combinations.GetItems.Response) {
         if let items = response.items{
-            let itemViewModels = items.map({Combinations.ItemViewModel(name: $0.name, key: $0.key
+            let itemViewModels = items.map({ItemModels.ItemViewModel(name: $0.name, key: $0.key
                 , stats: nil, kind: $0.kind, buildsInto: $0.buildsInto, buildsFrom: $0.buildsFrom, champs: $0.champs, bonus: $0.bonus)})
             
-            viewController?.displayItems(viewModel: Combinations.ItemsViewModel(itemsViewModel: itemViewModels))
+            viewController?.displayItems(viewModel: ItemModels.ItemsViewModel(itemsViewModel: itemViewModels))
         }
     }
     

@@ -15,4 +15,22 @@ struct ItemCombinationDetailViewModel{
     var secondImageName: String?
     var bonus: String?
     var statViewModels: [ItemStatViewModel?]?
+    var showSeparator: Bool
+    
+    init(name: String?,
+         combinedImageName: String?,
+         firstImageName: String?,
+         secondImageName: String?,
+         bonus: String?,
+         statViewModels: [ItemStatViewModel?]?,
+         showSeparator: Bool = true) {
+        
+        self.name = name
+        self.combinedImageName = combinedImageName
+        self.firstImageName = firstImageName
+        self.secondImageName = secondImageName
+        self.bonus = bonus
+        self.statViewModels = statViewModels
+        self.showSeparator = showSeparator
+    }
 }
