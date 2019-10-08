@@ -90,8 +90,8 @@ class ItemBuilderViewController: UIViewController, ItemBuilderDisplayLogic
         self.baseItemsCollectionView.delegate = self
         self.baseItemsCollectionView.dataSource = self
         
-        let nib = UINib(nibName: "SquareCollectionViewCell", bundle: nil)
-        baseItemsCollectionView.register(nib, forCellWithReuseIdentifier: String(describing: SquareCollectionViewCell.self))
+        let nib = UINib(nibName: "MultiSelectableCollectionViewCell", bundle: nil)
+        baseItemsCollectionView.register(nib, forCellWithReuseIdentifier: String(describing: MultiSelectableCollectionViewCell.self))
     }
     
     private func setupBaseItemsCellSize(){
@@ -129,12 +129,18 @@ extension ItemBuilderViewController: UICollectionViewDataSource, UICollectionVie
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SquareCollectionViewCell", for: indexPath) as! SquareCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MultiSelectableCollectionViewCell", for: indexPath) as! MultiSelectableCollectionViewCell
         
         if let item = baseItemsViewModel?.viewModels?[indexPath.row], let key = item.key{
-            cell.imageView.image = UIImage(named: key)
+            let cellViewModel = MultiSelectableCollectionViewModel(imageName: key)
+            cell.viewModel = cellViewModel
         }
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as! MultiSelectableCollectionViewCell
+        cell.didSelect()
     }
 }
