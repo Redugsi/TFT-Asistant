@@ -141,6 +141,10 @@ extension ItemBuilderViewController: UICollectionViewDataSource, UICollectionVie
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! MultiSelectableCollectionViewCell
-        cell.didSelect()
+        let isSelected = cell.didSelect()
+        if let clickedItem = baseItemsViewModel?.viewModels?[indexPath.row],
+            let itemkey = clickedItem.key{
+            interactor?.chooseItem(isSelected: isSelected, key: itemkey)
+        }
     }
 }

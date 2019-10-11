@@ -60,8 +60,9 @@ class MultiSelectableCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    func didSelect(){
+    func didSelect() -> Bool{
         selectedCount = selectedCount + 1
+        return wasSelected
     }
     
     private func animate(){

@@ -28,6 +28,19 @@ enum ItemBuilder
             let items: [Item]?
         }
     }
+    
+    enum GetCombinedItems
+    {
+        struct Request
+        {
+            let combinations: [[String]]
+        }
+        
+        struct Response
+        {
+            let items: [Item]?
+        }
+    }
   
   enum Something
   {

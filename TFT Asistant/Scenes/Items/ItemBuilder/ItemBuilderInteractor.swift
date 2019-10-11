@@ -17,19 +17,27 @@ import Domain
 protocol ItemBuilderBusinessLogic
 {
     func getBaseItems(request: ItemBuilder.GetBaseItems.Request)
+    func chooseItem(isSelected: Bool, key: String)
 }
 
 protocol ItemBuilderDataStore
 {
-    var baseItems: [Item]? {get set}
+    var baseItems: [Item]? { get set }
+    var combinedItems: [Item]? { get set }
+    var choosedKeys: [String] { get set }
+    var baseCombinations: [[String]] { get set }
 }
 
 class ItemBuilderInteractor: ItemBuilderBusinessLogic, ItemBuilderDataStore
 {
+    
   var presenter: ItemBuilderPresentationLogic?
   let worker: ItemBuilderWorker = ItemBuilderWorker(itemsUseCase: LocalPlatform.UseCaseProvider().makeItemsUseCase())
 
     var baseItems: [Item]?
+    var combinedItems: [Item]?
+    var choosedKeys: [String] = [String]()
+    var baseCombinations: [[String]] = [[String]]()
   // MARK: Do something
   
     func getBaseItems(request: ItemBuilder.GetBaseItems.Request) {
@@ -38,5 +46,46 @@ class ItemBuilderInteractor: ItemBuilderBusinessLogic, ItemBuilderDataStore
         if response.items != nil{
             presenter?.presentBaseItems(response: response)
         }
+    }
+    
+    func chooseItem(isSelected: Bool, key: String) {
+        if isSelected{ selectItem(key: key) } else { deSelectItem(key: key) }
+        createCombinations()
+    }
+    
+    private func selectItem(key: String){
+        choosedKeys.append(key)
+    }
+    
+    private func deSelectItem(key: String){
+        choosedKeys.removeAll(where: { $0 == key })
+    }
+    
+    private func createCombinations(){
+        var combinations = [[String]]()
+        for x in 0 ..< choosedKeys.count - 1{
+            for y in x + 1 ..< choosedKeys.count{
+                combinations.append([choosedKeys[x], choosedKeys[y]])
+            }
+        }
+        
+        print("Combinations : \(combinations)")
+        
+        getCombinedItems(combinations: combinations)
+    }
+    
+    private func getCombinedItems(combinations: [[String]]){
+        let request = ItemBuilder.GetCombinedItems.Request(combinations: combinations)
+        let response = worker.getCombinedItems(request: request)
+        
+        if let items = response.items{
+            print(items)
+        }
+    }
+}
+
+extension ItemBuilderInteractor{
+    func printChoosedKeys() {
+        print(choosedKeys)
     }
 }

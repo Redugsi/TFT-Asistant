@@ -403,8 +403,8 @@
 		D106E59123467514005E8E3F /* Items */ = {
 			isa = PBXGroup;
 			children = (
-				D1D1DA2C234BBC5400EBBD37 /* ItemBuilder */,
 				D1D1DA29234BBC3100EBBD37 /* Common */,
+				D1D1DA2C234BBC5400EBBD37 /* ItemBuilder */,
 				D1876FBD2349D1C200BA3F3B /* BaseItems */,
 				D106E59323467813005E8E3F /* Combinations */,
 			);
