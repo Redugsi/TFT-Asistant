@@ -62,11 +62,16 @@ class ItemBuilderInteractor: ItemBuilderBusinessLogic, ItemBuilderDataStore
     }
     
     private func createCombinations(){
-        if choosedKeys.count <= 0 {
+        if choosedKeys.count < 0 {
             return
         }
         
         var combinations = [[String]]()
+
+        if choosedKeys.count == 1{
+            combinations.append([choosedKeys[0]])
+        }
+        
         for x in 0 ..< choosedKeys.count - 1{
             for y in x + 1 ..< choosedKeys.count{
                 combinations.append([choosedKeys[x], choosedKeys[y]])
