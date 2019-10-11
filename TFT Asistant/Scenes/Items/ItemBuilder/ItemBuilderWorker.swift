@@ -31,41 +31,43 @@ class ItemBuilderWorker
     
     func getCombinedItems(request: ItemBuilder.GetCombinedItems.Request) -> ItemBuilder.GetCombinedItems.Response{
         
-        var responseItems: [Item]? = nil
-        let response: ItemBuilder.GetCombinedItems.Response =
-            ItemBuilder.GetCombinedItems.Response(items: responseItems)
-        
-        let combinations = request.combinations
+        var combinations = request.combinations
         
         guard let combinedItems = itemsUseCase.getItems()?.filter({ $0.buildsFrom != nil }) else{
-            return response
+            return ItemBuilder.GetCombinedItems.Response(items: nil)
         }
         
-        var availableItems: [Item]? = nil
+        var availableItems: [Item] = [Item]()
         
         combinedLoop: for item in combinedItems{
             guard let buildsFrom = item.buildsFrom else{
                 continue combinedLoop
             }
             
-            print("Item : \(item)")
-            
-            buildsFromLoop: for key in buildsFrom{
-                print("BuildsFrom : \(buildsFrom)")
-
-                combinationsLoop: for combination in combinations{
-                    print("combinations : \(combinations)")
-
-                    var foundCount = 0
-                    combinationKeyLoop: for combinationKey in combination{
-                        print("combination : \(combination)")
-                        if combinationKey == key{
+            combinationsLoop: for x in 0..<combinations.count{
+                
+                let combination = combinations[x]
+                var foundCount = 0
+                
+                var buildFromDic: [(String, Bool)]
+                buildFromDic = buildsFrom.map({($0, false)})
+                
+                var combinationDic: [(String, Bool)]
+                combinationDic = combination.map({($0, false)})
+                
+                buildsFromLoop: for y in 0..<buildsFrom.count{
+                    
+                    for i in 0..<combinationDic.count{
+                        if (!combinationDic[i].1 && !buildFromDic[y].1) && combinationDic[i].0 == buildFromDic[y].0{
+                            combinationDic[i].1 = true
+                            buildFromDic[y].1 = true
                             foundCount = foundCount + 1
-                        }
-                        
-                        if foundCount == buildsFrom.count{
-                            availableItems?.append(item)
-                            continue combinedLoop
+                            if foundCount == combinationDic.count{
+                                availableItems.append(item)
+                                continue combinedLoop
+                            }else{
+                                continue buildsFromLoop
+                            }
                         }
                     }
                 }

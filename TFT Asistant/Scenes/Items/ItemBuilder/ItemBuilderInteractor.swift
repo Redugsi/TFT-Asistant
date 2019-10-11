@@ -62,14 +62,16 @@ class ItemBuilderInteractor: ItemBuilderBusinessLogic, ItemBuilderDataStore
     }
     
     private func createCombinations(){
+        if choosedKeys.count <= 0 {
+            return
+        }
+        
         var combinations = [[String]]()
         for x in 0 ..< choosedKeys.count - 1{
             for y in x + 1 ..< choosedKeys.count{
                 combinations.append([choosedKeys[x], choosedKeys[y]])
             }
         }
-        
-        print("Combinations : \(combinations)")
         
         getCombinedItems(combinations: combinations)
     }
@@ -79,7 +81,7 @@ class ItemBuilderInteractor: ItemBuilderBusinessLogic, ItemBuilderDataStore
         let response = worker.getCombinedItems(request: request)
         
         if let items = response.items{
-            print(items)
+            print(items.map({"\($0.name) - "}))
         }
     }
 }
