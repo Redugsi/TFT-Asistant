@@ -15,6 +15,7 @@ import UIKit
 protocol ItemBuilderDisplayLogic: class
 {
     func displayBaseItems(baseItems: ItemModels.BaseItemsViewModel)
+    func displayCombinedItems(combinedItems: ItemModels.ItemsViewModel)
 }
 
 class ItemBuilderViewController: UIViewController, ItemBuilderDisplayLogic
@@ -23,7 +24,7 @@ class ItemBuilderViewController: UIViewController, ItemBuilderDisplayLogic
     var router: (NSObjectProtocol & ItemBuilderRoutingLogic & ItemBuilderDataPassing)?
     
     var baseItemsViewModel: ItemModels.BaseItemsViewModel?
-
+    var combinedItemsViewModel: ItemModels.ItemsViewModel?
 
     //MARK: View bindingds
     
@@ -120,6 +121,10 @@ class ItemBuilderViewController: UIViewController, ItemBuilderDisplayLogic
     func displayBaseItems(baseItems: ItemModels.BaseItemsViewModel) {
         baseItemsViewModel = baseItems
         baseItemsCollectionView.reloadData()
+    }
+    
+    func displayCombinedItems(combinedItems: ItemModels.ItemsViewModel) {
+        
     }
 }
 

@@ -87,9 +87,6 @@ class ItemBuilderInteractor: ItemBuilderBusinessLogic, ItemBuilderDataStore
         let request = ItemBuilder.GetCombinedItems.Request(combinations: combinations)
         let response = worker.getCombinedItems(request: request)
         
-        if let items = response.items{
-            print(items.map({"\($0.name) - "}))
-        }
     }
 }
 

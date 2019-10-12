@@ -15,6 +15,7 @@ import UIKit
 protocol ItemBuilderPresentationLogic
 {
     func presentBaseItems(response: ItemBuilder.GetBaseItems.Response)
+    func presentCombinedItems(response: ItemBuilder.GetCombinedItems.Response)
 }
 
 class ItemBuilderPresenter: ItemBuilderPresentationLogic
@@ -35,5 +36,11 @@ class ItemBuilderPresenter: ItemBuilderPresentationLogic
         let baseItemsViewModel = ItemModels.BaseItemsViewModel(viewModels: baseItemViewModels)
         
         viewController?.displayBaseItems(baseItems: baseItemsViewModel)
+    }
+    
+    func presentCombinedItems(response: ItemBuilder.GetCombinedItems.Response) {
+        if let combinedItems = response.items{
+            
+        }
     }
 }

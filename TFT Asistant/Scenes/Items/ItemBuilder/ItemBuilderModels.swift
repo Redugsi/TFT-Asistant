@@ -41,17 +41,4 @@ enum ItemBuilder
             let items: [Item]?
         }
     }
-  
-  enum Something
-  {
-    struct Request
-    {
-    }
-    struct Response
-    {
-    }
-    struct ViewModel
-    {
-    }
-  }
 }
