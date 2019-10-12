@@ -58,11 +58,11 @@ class ItemBuilderInteractor: ItemBuilderBusinessLogic, ItemBuilderDataStore
     }
     
     private func deSelectItem(key: String){
-        choosedKeys.removeAll(where: { $0 == key })
+        choosedKeys.removeAll(where: { $0 == key})
     }
     
     private func createCombinations(){
-        if choosedKeys.count < 0 {
+        if choosedKeys.count <= 0 {
             return
         }
         
@@ -70,6 +70,8 @@ class ItemBuilderInteractor: ItemBuilderBusinessLogic, ItemBuilderDataStore
 
         if choosedKeys.count == 1{
             combinations.append([choosedKeys[0]])
+            getCombinedItems(combinations: combinations)
+            return
         }
         
         for x in 0 ..< choosedKeys.count - 1{
