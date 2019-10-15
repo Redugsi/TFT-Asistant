@@ -18,6 +18,7 @@ protocol ItemBuilderBusinessLogic
 {
     func getBaseItems(request: ItemBuilder.GetBaseItems.Request)
     func chooseItem(isSelected: Bool, key: String)
+    func getSelectedItemDetail(request: Combinations.GetItemByKey.Request)
 }
 
 protocol ItemBuilderDataStore
@@ -53,6 +54,46 @@ class ItemBuilderInteractor: ItemBuilderBusinessLogic, ItemBuilderDataStore
         createCombinations()
     }
     
+    func getSelectedItemDetail(request: Combinations.GetItemByKey.Request) {
+        guard let itemList = worker.getAllItems() else{
+            return
+        }
+        
+        let choosed = itemList.first{
+            $0.key == request.key
+        }
+        
+        guard var choosedItem = choosed else{
+            return
+        }
+        
+        let itemStats = getStats(keys: choosedItem.buildsFrom, items: itemList)
+        
+        choosedItem.stats = itemStats
+        
+        presenter?.presentSelectedItemDetail(response: ItemBuilder.GetItemByKey.Response(item: choosedItem))
+    }
+    
+    private func getStats(keys: [String]?, items: [Item]?) -> [ItemStat]?{
+        guard let itemKeys = keys else{
+            return nil
+        }
+        
+        var itemStats = [ItemStat]()
+        
+        items?.forEach({ item in
+            itemKeys.forEach({ x in
+                if item.key == x {
+                    if let stats = item.stats{
+                        itemStats += stats
+                    }
+                }
+            })
+        })
+        
+        return itemStats
+    }
+    
     private func selectItem(key: String){
         choosedKeys.append(key)
     }
@@ -62,11 +103,13 @@ class ItemBuilderInteractor: ItemBuilderBusinessLogic, ItemBuilderDataStore
     }
     
     private func createCombinations(){
+        var combinations = [[String]]()
+
         if choosedKeys.count <= 0 {
+            getCombinedItems(combinations: combinations)
             return
         }
         
-        var combinations = [[String]]()
 
         if choosedKeys.count == 1{
             combinations.append([choosedKeys[0]])
@@ -86,7 +129,7 @@ class ItemBuilderInteractor: ItemBuilderBusinessLogic, ItemBuilderDataStore
     private func getCombinedItems(combinations: [[String]]){
         let request = ItemBuilder.GetCombinedItems.Request(combinations: combinations)
         let response = worker.getCombinedItems(request: request)
-        
+        presenter?.presentCombinedItems(response: response)
     }
 }
 

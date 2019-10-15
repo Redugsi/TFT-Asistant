@@ -41,4 +41,17 @@ enum ItemBuilder
             let items: [Item]?
         }
     }
+    
+    enum GetItemByKey
+    {
+        struct Request
+        {
+            var key: String
+        }
+        
+        struct Response
+        {
+            var item: Item?
+        }
+    }
 }

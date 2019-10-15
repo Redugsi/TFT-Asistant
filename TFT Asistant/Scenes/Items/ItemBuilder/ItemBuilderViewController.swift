@@ -16,6 +16,7 @@ protocol ItemBuilderDisplayLogic: class
 {
     func displayBaseItems(baseItems: ItemModels.BaseItemsViewModel)
     func displayCombinedItems(combinedItems: ItemModels.ItemsViewModel)
+    func displaySelectedItemDetail(viewModel: ItemCombinationDetailViewModel)
 }
 
 class ItemBuilderViewController: UIViewController, ItemBuilderDisplayLogic
@@ -31,6 +32,11 @@ class ItemBuilderViewController: UIViewController, ItemBuilderDisplayLogic
     @IBOutlet weak var baseItemsCollectionView: UICollectionView!
     @IBOutlet weak var baseItemsHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var baseItemsWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var combinedItemsCollectionView: UICollectionView!
+    @IBOutlet weak var itemDetailView: ItemCombinationDetailView!
+    
+    @IBOutlet weak var combinedBottomConstraint: NSLayoutConstraint!
+    
     // MARK: Object lifecycle
   
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
@@ -79,12 +85,14 @@ class ItemBuilderViewController: UIViewController, ItemBuilderDisplayLogic
     {
         super.viewDidLoad()
         setupBaseItemsCollectionView()
+        setupCombinedCollectionView()
         interactor?.getBaseItems(request: ItemBuilder.GetBaseItems.Request())
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         setupBaseItemsCellSize()
+        setupCombnidedItemsCellSize()
     }
     
     private func setupBaseItemsCollectionView(){
@@ -93,6 +101,14 @@ class ItemBuilderViewController: UIViewController, ItemBuilderDisplayLogic
         
         let nib = UINib(nibName: "MultiSelectableCollectionViewCell", bundle: nil)
         baseItemsCollectionView.register(nib, forCellWithReuseIdentifier: String(describing: MultiSelectableCollectionViewCell.self))
+    }
+    
+    private func setupCombinedCollectionView(){
+        self.combinedItemsCollectionView.delegate = self
+        self.combinedItemsCollectionView.dataSource = self
+        
+        let nib = UINib(nibName: "SquareCollectionViewCell", bundle: nil)
+        combinedItemsCollectionView.register(nib, forCellWithReuseIdentifier: String(describing: SquareCollectionViewCell.self))
     }
     
     private func setupBaseItemsCellSize(){
@@ -114,6 +130,20 @@ class ItemBuilderViewController: UIViewController, ItemBuilderDisplayLogic
         baseItemsWidthConstraint.constant = (width * wantedColumnItemCount) + (itemSpacing * (wantedColumnItemCount - 1))
         baseItemsHeightConstraint.constant = (width * wantedRowItemCount) + (lineSpacing * (wantedRowItemCount - 1))
     }
+    
+    private func setupCombnidedItemsCellSize(){
+        let collectionFlowLayout = combinedItemsCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        
+        let numberOfItemsInRow: CGFloat = 6
+        let lineSpacing: CGFloat = 15
+        let itemSpacing: CGFloat = 15
+        
+        let width = (combinedItemsCollectionView.frame.width - (numberOfItemsInRow - 1) * itemSpacing) / numberOfItemsInRow
+        
+        collectionFlowLayout.itemSize = CGSize(width: width, height: width)
+        collectionFlowLayout.minimumLineSpacing = lineSpacing
+        collectionFlowLayout.minimumInteritemSpacing = itemSpacing
+    }
   
   // MARK: Do something
   
@@ -124,32 +154,70 @@ class ItemBuilderViewController: UIViewController, ItemBuilderDisplayLogic
     }
     
     func displayCombinedItems(combinedItems: ItemModels.ItemsViewModel) {
-        
+        combinedItemsViewModel = combinedItems
+        combinedItemsCollectionView.reloadData()        
+    }
+    
+    func displaySelectedItemDetail(viewModel: ItemCombinationDetailViewModel) {
+        itemDetailView.viewModel = viewModel
+        combinedBottomConstraint.constant = itemDetailView.frame.height
     }
 }
 
+// TODO: Find a better way than if else
 extension ItemBuilderViewController: UICollectionViewDataSource, UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return baseItemsViewModel?.viewModels?.count ?? 0
+        if collectionView == baseItemsCollectionView{
+            return baseItemsViewModel?.viewModels?.count ?? 0
+        }
+        
+        if collectionView == combinedItemsCollectionView{
+            return combinedItemsViewModel?.itemsViewModel?.count ?? 0
+        }
+        
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MultiSelectableCollectionViewCell", for: indexPath) as! MultiSelectableCollectionViewCell
         
-        if let item = baseItemsViewModel?.viewModels?[indexPath.row], let key = item.key{
-            let cellViewModel = MultiSelectableCollectionViewModel(imageName: key)
-            cell.viewModel = cellViewModel
+        if collectionView == baseItemsCollectionView{
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MultiSelectableCollectionViewCell", for: indexPath) as! MultiSelectableCollectionViewCell
+            
+            if let item = baseItemsViewModel?.viewModels?[indexPath.row], let key = item.key{
+                let cellViewModel = MultiSelectableCollectionViewModel(imageName: key)
+                cell.viewModel = cellViewModel
+            }
+            
+            return cell
         }
         
-        return cell
+        if collectionView == combinedItemsCollectionView{
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: SquareCollectionViewCell.self), for: indexPath) as! SquareCollectionViewCell
+            
+            if let item = combinedItemsViewModel?.itemsViewModel?[indexPath.row], let key = item.key{
+                cell.imageView.image = UIImage(named: key)
+            }
+            
+            return cell
+        }
+        
+        return UICollectionViewCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath) as! MultiSelectableCollectionViewCell
-        let isSelected = cell.didSelect()
-        if let clickedItem = baseItemsViewModel?.viewModels?[indexPath.row],
-            let itemkey = clickedItem.key{
-            interactor?.chooseItem(isSelected: isSelected, key: itemkey)
+        if collectionView == baseItemsCollectionView {
+            let cell = collectionView.cellForItem(at: indexPath) as! MultiSelectableCollectionViewCell
+            let isSelected = cell.didSelect()
+            if let clickedItem = baseItemsViewModel?.viewModels?[indexPath.row],
+                let itemkey = clickedItem.key{
+                interactor?.chooseItem(isSelected: isSelected, key: itemkey)
+            }
+        }
+        
+        if collectionView == combinedItemsCollectionView{
+            if let itemKey = combinedItemsViewModel?.itemsViewModel?[indexPath.row].key{
+                interactor?.getSelectedItemDetail(request: Combinations.GetItemByKey.Request(key: itemKey))
+            }
         }
     }
 }

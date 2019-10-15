@@ -21,6 +21,10 @@ class ItemBuilderWorker
         self.itemsUseCase = itemsUseCase
     }
     
+    func getAllItems() -> [Item]?{
+        return itemsUseCase.getItems()
+    }
+    
     func getBaseItems(request: ItemBuilder.GetBaseItems.Request) -> ItemBuilder.GetBaseItems.Response{
         let baseItems = itemsUseCase.getItems()?.filter({
             $0.buildsFrom == nil

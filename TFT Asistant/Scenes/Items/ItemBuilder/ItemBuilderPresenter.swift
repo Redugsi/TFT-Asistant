@@ -16,6 +16,7 @@ protocol ItemBuilderPresentationLogic
 {
     func presentBaseItems(response: ItemBuilder.GetBaseItems.Response)
     func presentCombinedItems(response: ItemBuilder.GetCombinedItems.Response)
+    func presentSelectedItemDetail(response: ItemBuilder.GetItemByKey.Response)
 }
 
 class ItemBuilderPresenter: ItemBuilderPresentationLogic
@@ -39,8 +40,21 @@ class ItemBuilderPresenter: ItemBuilderPresentationLogic
     }
     
     func presentCombinedItems(response: ItemBuilder.GetCombinedItems.Response) {
-        if let combinedItems = response.items{
+        if let items = response.items{
+            let itemViewModels = items.map({ItemModels.ItemViewModel(name: $0.name, key: $0.key
+                , stats: nil, kind: $0.kind, buildsInto: $0.buildsInto, buildsFrom: $0.buildsFrom, champs: $0.champs, bonus: $0.bonus)})
             
+            viewController?.displayCombinedItems(combinedItems: ItemModels.ItemsViewModel(itemsViewModel: itemViewModels))
+        }
+    }
+    
+    func presentSelectedItemDetail(response: ItemBuilder.GetItemByKey.Response) {
+        if let item = response.item{
+            let statViewModels = item.stats?.map({ItemStatType(type: $0.name, amount: $0.amount)?.builder()})
+            
+            let detailViewModel = ItemCombinationDetailViewModel(name: item.name, combinedImageName: item.key, firstImageName: item.buildsFrom?[0], secondImageName: item.buildsFrom?[1], bonus: item.bonus, statViewModels: statViewModels)
+            
+            viewController?.displaySelectedItemDetail(viewModel: detailViewModel)
         }
     }
 }
