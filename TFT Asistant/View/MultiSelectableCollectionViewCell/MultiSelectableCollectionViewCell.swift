@@ -65,6 +65,10 @@ class MultiSelectableCollectionViewCell: UICollectionViewCell {
         return wasSelected
     }
     
+    func unSelect(){
+        selectedCount = 3
+    }
+    
     private func animate(){
         UIView.animate(withDuration: 0.3, animations: {[weak self] in
             if let self = self{

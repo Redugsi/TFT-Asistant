@@ -145,9 +145,12 @@ class ItemBuilderViewController: UIViewController, ItemBuilderDisplayLogic
         collectionFlowLayout.minimumInteritemSpacing = itemSpacing
     }
   
-  // MARK: Do something
-  
-  //@IBOutlet weak var nameTextField: UITextField!
+  // MARK: Actions
+    @IBAction func didClearSectionClick(_ sender: Any) {
+        
+    }
+    
+    //@IBOutlet weak var nameTextField: UITextField!
     func displayBaseItems(baseItems: ItemModels.BaseItemsViewModel) {
         baseItemsViewModel = baseItems
         baseItemsCollectionView.reloadData()
