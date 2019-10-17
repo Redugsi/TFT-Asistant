@@ -23,9 +23,11 @@ class ItemCombinationDetailView: UIView {
     
     var viewModel: ItemCombinationDetailViewModel?{
         didSet{
-            if let viewModel = viewModel{
-                initView(viewModel: viewModel)
+            guard let viewModel = viewModel else{
+                self.isHidden = true
+                return
             }
+            initView(viewModel: viewModel)
         }
     }
     

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ItemCombinationDetailViewModel{
+public struct ItemCombinationDetailViewModel{
     var name: String?
     var combinedImageName: String?
     var firstImageName: String?

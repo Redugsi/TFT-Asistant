@@ -44,7 +44,18 @@ class ItemBuilderPresenter: ItemBuilderPresentationLogic
             let itemViewModels = items.map({ItemModels.ItemViewModel(name: $0.name, key: $0.key
                 , stats: nil, kind: $0.kind, buildsInto: $0.buildsInto, buildsFrom: $0.buildsFrom, champs: $0.champs, bonus: $0.bonus)})
             
-            viewController?.displayCombinedItems(combinedItems: ItemModels.ItemsViewModel(itemsViewModel: itemViewModels))
+            
+            var detailViewModel: ItemCombinationDetailViewModel? = nil
+            
+            if items.count > 0{
+                let item = items[0]
+                let statViewModels = item.stats?.map({ItemStatType(type: $0.name, amount: $0.amount)?.builder()})
+                
+                detailViewModel = ItemCombinationDetailViewModel(name: item.name, combinedImageName: item.key, firstImageName: item.buildsFrom?[0], secondImageName: item.buildsFrom?[1], bonus: item.bonus, statViewModels: statViewModels)
+                
+            }
+            
+            viewController?.displayCombinedItems(viewModel: ItemBuilder.CollectionAndDetailViewModel(collectionViewModel: ItemModels.ItemsViewModel(itemsViewModel: itemViewModels), detailViewModel: detailViewModel))
         }
     }
     

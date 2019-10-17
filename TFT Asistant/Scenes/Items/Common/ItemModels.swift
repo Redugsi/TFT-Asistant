@@ -9,7 +9,7 @@
 import Foundation
 
 
-enum ItemModels{
+public enum ItemModels{
     public struct ItemViewModel{
         var name: String?
         var key: String?

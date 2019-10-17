@@ -54,4 +54,14 @@ enum ItemBuilder
             var item: Item?
         }
     }
+    
+    public struct CollectionAndDetailViewModel:  CollectionAndDetailDisplayable{
+        var collectionViewModel: ItemModels.ItemsViewModel?
+        var detailViewModel: ItemCombinationDetailViewModel?
+    }
+}
+
+public protocol CollectionAndDetailDisplayable {
+    var collectionViewModel: ItemModels.ItemsViewModel? { get set }
+    var detailViewModel: ItemCombinationDetailViewModel? { get set }
 }

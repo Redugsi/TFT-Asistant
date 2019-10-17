@@ -15,8 +15,8 @@ import UIKit
 protocol ItemBuilderDisplayLogic: class
 {
     func displayBaseItems(baseItems: ItemModels.BaseItemsViewModel)
-    func displayCombinedItems(combinedItems: ItemModels.ItemsViewModel)
-    func displaySelectedItemDetail(viewModel: ItemCombinationDetailViewModel)
+    func displayCombinedItems(viewModel: ItemBuilder.CollectionAndDetailViewModel)
+    func displaySelectedItemDetail(viewModel: ItemCombinationDetailViewModel?)
 }
 
 class ItemBuilderViewController: UIViewController, ItemBuilderDisplayLogic
@@ -145,23 +145,20 @@ class ItemBuilderViewController: UIViewController, ItemBuilderDisplayLogic
         collectionFlowLayout.minimumInteritemSpacing = itemSpacing
     }
   
-  // MARK: Actions
-    @IBAction func didClearSectionClick(_ sender: Any) {
-        
-    }
+    // MARK: Display
     
-    //@IBOutlet weak var nameTextField: UITextField!
     func displayBaseItems(baseItems: ItemModels.BaseItemsViewModel) {
         baseItemsViewModel = baseItems
         baseItemsCollectionView.reloadData()
     }
     
-    func displayCombinedItems(combinedItems: ItemModels.ItemsViewModel) {
-        combinedItemsViewModel = combinedItems
-        combinedItemsCollectionView.reloadData()        
+    func displayCombinedItems(viewModel: ItemBuilder.CollectionAndDetailViewModel) {
+        combinedItemsViewModel = viewModel.collectionViewModel
+        combinedItemsCollectionView.reloadData()
+        displaySelectedItemDetail(viewModel: viewModel.detailViewModel)
     }
     
-    func displaySelectedItemDetail(viewModel: ItemCombinationDetailViewModel) {
+    func displaySelectedItemDetail(viewModel: ItemCombinationDetailViewModel?) {
         itemDetailView.viewModel = viewModel
         combinedBottomConstraint.constant = itemDetailView.frame.height
     }
