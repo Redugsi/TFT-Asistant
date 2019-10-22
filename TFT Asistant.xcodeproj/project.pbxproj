@@ -53,6 +53,16 @@
 		D1D1DA37234BBCA100EBBD37 /* ItemBuilderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1DA31234BBCA100EBBD37 /* ItemBuilderViewController.swift */; };
 		D1D1DA38234BBCA100EBBD37 /* ItemBuilderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1DA32234BBCA100EBBD37 /* ItemBuilderInteractor.swift */; };
 		D1D1DA3A234BBCDB00EBBD37 /* ItemBuilder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D1DA39234BBCDB00EBBD37 /* ItemBuilder.storyboard */; };
+		E831A145235F61AA0085EF61 /* ChampionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E831A13F235F61AA0085EF61 /* ChampionsPresenter.swift */; };
+		E831A146235F61AA0085EF61 /* ChampionsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E831A140235F61AA0085EF61 /* ChampionsWorker.swift */; };
+		E831A147235F61AA0085EF61 /* ChampionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E831A141235F61AA0085EF61 /* ChampionsRouter.swift */; };
+		E831A148235F61AA0085EF61 /* ChampionsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E831A142235F61AA0085EF61 /* ChampionsModels.swift */; };
+		E831A149235F61AA0085EF61 /* ChampionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E831A143235F61AA0085EF61 /* ChampionsViewController.swift */; };
+		E831A14A235F61AA0085EF61 /* ChampionsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E831A144235F61AA0085EF61 /* ChampionsInteractor.swift */; };
+		E831A14C235F61CF0085EF61 /* Champions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E831A14B235F61CF0085EF61 /* Champions.storyboard */; };
+		E831A154235F63610085EF61 /* ChampionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E831A152235F63610085EF61 /* ChampionCollectionViewCell.swift */; };
+		E831A155235F63610085EF61 /* ChampionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E831A153235F63610085EF61 /* ChampionCollectionViewCell.xib */; };
+		E831A157235F6C640085EF61 /* ChampionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E831A156235F6C640085EF61 /* ChampionCellViewModel.swift */; };
 		E887AFE5234504CF00B8E661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E887AFE4234504CF00B8E661 /* AppDelegate.swift */; };
 		E887AFE7234504CF00B8E661 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E887AFE6234504CF00B8E661 /* ViewController.swift */; };
 		E887AFEA234504CF00B8E661 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E887AFE8234504CF00B8E661 /* Main.storyboard */; };
@@ -234,6 +244,16 @@
 		D6995FC8FBF49A838D8F9282 /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
 		DC2C4B98453F474968977CF6 /* Pods_DomainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DomainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E650BAE69E023C259C615743 /* Pods-LocalPlatformTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalPlatformTests.debug.xcconfig"; path = "Target Support Files/Pods-LocalPlatformTests/Pods-LocalPlatformTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E831A13F235F61AA0085EF61 /* ChampionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsPresenter.swift; sourceTree = "<group>"; };
+		E831A140235F61AA0085EF61 /* ChampionsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsWorker.swift; sourceTree = "<group>"; };
+		E831A141235F61AA0085EF61 /* ChampionsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsRouter.swift; sourceTree = "<group>"; };
+		E831A142235F61AA0085EF61 /* ChampionsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsModels.swift; sourceTree = "<group>"; };
+		E831A143235F61AA0085EF61 /* ChampionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsViewController.swift; sourceTree = "<group>"; };
+		E831A144235F61AA0085EF61 /* ChampionsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsInteractor.swift; sourceTree = "<group>"; };
+		E831A14B235F61CF0085EF61 /* Champions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Champions.storyboard; sourceTree = "<group>"; };
+		E831A152235F63610085EF61 /* ChampionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionCollectionViewCell.swift; sourceTree = "<group>"; };
+		E831A153235F63610085EF61 /* ChampionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChampionCollectionViewCell.xib; sourceTree = "<group>"; };
+		E831A156235F6C640085EF61 /* ChampionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionCellViewModel.swift; sourceTree = "<group>"; };
 		E887AFE1234504CF00B8E661 /* TFT Asistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TFT Asistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E887AFE4234504CF00B8E661 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E887AFE6234504CF00B8E661 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -400,6 +420,8 @@
 		D106E5922346751A005E8E3F /* Champions */ = {
 			isa = PBXGroup;
 			children = (
+				E831A13D235F60CE0085EF61 /* Champions */,
+				E831A13E235F61580085EF61 /* Traits */,
 			);
 			path = Champions;
 			sourceTree = "<group>";
@@ -514,6 +536,37 @@
 				57D5489C068EC9F253D9CCCD /* Pods_TFT_AsistantUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E831A13D235F60CE0085EF61 /* Champions */ = {
+			isa = PBXGroup;
+			children = (
+				E831A13F235F61AA0085EF61 /* ChampionsPresenter.swift */,
+				E831A140235F61AA0085EF61 /* ChampionsWorker.swift */,
+				E831A141235F61AA0085EF61 /* ChampionsRouter.swift */,
+				E831A142235F61AA0085EF61 /* ChampionsModels.swift */,
+				E831A143235F61AA0085EF61 /* ChampionsViewController.swift */,
+				E831A144235F61AA0085EF61 /* ChampionsInteractor.swift */,
+				E831A14B235F61CF0085EF61 /* Champions.storyboard */,
+			);
+			path = Champions;
+			sourceTree = "<group>";
+		};
+		E831A13E235F61580085EF61 /* Traits */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Traits;
+			sourceTree = "<group>";
+		};
+		E831A14D235F62B10085EF61 /* ChampionCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E831A152235F63610085EF61 /* ChampionCollectionViewCell.swift */,
+				E831A153235F63610085EF61 /* ChampionCollectionViewCell.xib */,
+				E831A156235F6C640085EF61 /* ChampionCellViewModel.swift */,
+			);
+			path = ChampionCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		E887AFD8234504CF00B8E661 = {
@@ -706,6 +759,7 @@
 		E887B09A2347746C00B8E661 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E831A14D235F62B10085EF61 /* ChampionCollectionViewCell */,
 				D1AACC8D234D033A00CB1D5E /* MultiSelectableCollectionViewCell */,
 				D1876FCC234A59AD00BA3F3B /* CombinedItemDetailTableViewCell */,
 				D15AA2E82347D4A700B5DCE9 /* ItemStatView */,
@@ -961,8 +1015,10 @@
 				D1D1DA3A234BBCDB00EBBD37 /* ItemBuilder.storyboard in Resources */,
 				E887B09223460FC200B8E661 /* champions.json in Resources */,
 				E887B09F234774CE00B8E661 /* SquareCollectionViewCell.xib in Resources */,
+				E831A14C235F61CF0085EF61 /* Champions.storyboard in Resources */,
 				E887AFEF234504D100B8E661 /* LaunchScreen.storyboard in Resources */,
 				E887B099234736B900B8E661 /* Combinations.storyboard in Resources */,
+				E831A155235F63610085EF61 /* ChampionCollectionViewCell.xib in Resources */,
 				D1AACC91234D037C00CB1D5E /* MultiSelectableCollectionViewCell.xib in Resources */,
 				D15AA2E72347D21200B5DCE9 /* ItemCombinationDetailView.xib in Resources */,
 				E887AFEC234504D100B8E661 /* Assets.xcassets in Resources */,
@@ -1176,7 +1232,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E831A148235F61AA0085EF61 /* ChampionsModels.swift in Sources */,
 				D1AACC90234D037C00CB1D5E /* MultiSelectableCollectionViewCell.swift in Sources */,
+				E831A147235F61AA0085EF61 /* ChampionsRouter.swift in Sources */,
 				D1876FCF234A59DE00BA3F3B /* CombinedItemDetailTableViewCell.swift in Sources */,
 				D106E5A423467870005E8E3F /* CombinationsInteractor.swift in Sources */,
 				D19C74CF2348E348003CFF4B /* ItemStatViewModel.swift in Sources */,
@@ -1188,7 +1246,10 @@
 				D1D1DA2B234BBC3100EBBD37 /* ItemModels.swift in Sources */,
 				D19C74D12348F5D8003CFF4B /* ItemCombinationDetailViewModel.swift in Sources */,
 				D106E5A023467870005E8E3F /* CombinationsModels.swift in Sources */,
+				E831A154235F63610085EF61 /* ChampionCollectionViewCell.swift in Sources */,
 				D19C74D82348FEF7003CFF4B /* StackView+Ext.swift in Sources */,
+				E831A157235F6C640085EF61 /* ChampionCellViewModel.swift in Sources */,
+				E831A145235F61AA0085EF61 /* ChampionsPresenter.swift in Sources */,
 				E887B09E234774CD00B8E661 /* SquareCollectionViewCell.swift in Sources */,
 				D1876FC42349D24800BA3F3B /* BaseItemsPresenter.swift in Sources */,
 				D1D1DA35234BBCA100EBBD37 /* ItemBuilderRouter.swift in Sources */,
@@ -1197,12 +1258,15 @@
 				D15AA2E52347D1E700B5DCE9 /* ItemCombinationDetailView.swift in Sources */,
 				D1876FC82349D24800BA3F3B /* BaseItemsViewController.swift in Sources */,
 				D1D1DA36234BBCA100EBBD37 /* ItemBuilderModels.swift in Sources */,
+				E831A14A235F61AA0085EF61 /* ChampionsInteractor.swift in Sources */,
 				D1876FC92349D24800BA3F3B /* BaseItemsInteractor.swift in Sources */,
+				E831A149235F61AA0085EF61 /* ChampionsViewController.swift in Sources */,
 				D1876FC52349D24800BA3F3B /* BaseItemsWorker.swift in Sources */,
 				E887AFE5234504CF00B8E661 /* AppDelegate.swift in Sources */,
 				D1D1DA34234BBCA100EBBD37 /* ItemBuilderWorker.swift in Sources */,
 				D19C74D62348F881003CFF4B /* Optional+Ext.swift in Sources */,
 				D1D1DA33234BBCA100EBBD37 /* ItemBuilderPresenter.swift in Sources */,
+				E831A146235F61AA0085EF61 /* ChampionsWorker.swift in Sources */,
 				D106E59C23467870005E8E3F /* CombinationsWorker.swift in Sources */,
 				D1876FC72349D24800BA3F3B /* BaseItemsModels.swift in Sources */,
 				D1876FC62349D24800BA3F3B /* BaseItemsRouter.swift in Sources */,

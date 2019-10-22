@@ -19,25 +19,17 @@
                 <rect key="frame" x="0.0" y="0.0" width="196" height="151"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CUM-Fq-Qer">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CUM-Fq-Qer">
                         <rect key="frame" x="0.0" y="0.0" width="196" height="151"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
-                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5b-DH-QKO" userLabel="Border">
+                    <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i5b-DH-QKO" userLabel="Border">
                         <rect key="frame" x="0.0" y="0.0" width="196" height="151"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </subviews>
             </view>
-            <constraints>
-                <constraint firstAttribute="bottom" secondItem="i5b-DH-QKO" secondAttribute="bottom" id="9dH-oK-dsx"/>
-                <constraint firstAttribute="trailing" secondItem="CUM-Fq-Qer" secondAttribute="trailing" id="Ezk-SM-IsS"/>
-                <constraint firstItem="i5b-DH-QKO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="LOd-SS-F0v"/>
-                <constraint firstAttribute="trailing" secondItem="i5b-DH-QKO" secondAttribute="trailing" id="MZb-Kr-u8O"/>
-                <constraint firstItem="CUM-Fq-Qer" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eOq-0Q-VGf"/>
-                <constraint firstItem="CUM-Fq-Qer" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="g5t-s2-T7X"/>
-                <constraint firstItem="i5b-DH-QKO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wze-w4-94F"/>
-                <constraint firstAttribute="bottom" secondItem="CUM-Fq-Qer" secondAttribute="bottom" id="zfD-Rb-QM6"/>
-            </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="196" height="151"/>
             <connections>
