@@ -14,18 +14,10 @@ import UIKit
 
 protocol ChampionsPresentationLogic
 {
-  func presentSomething(response: Champions.Something.Response)
 }
 
 class ChampionsPresenter: ChampionsPresentationLogic
 {
   weak var viewController: ChampionsDisplayLogic?
   
-  // MARK: Do something
-  
-  func presentSomething(response: Champions.Something.Response)
-  {
-    let viewModel = Champions.Something.ViewModel()
-    viewController?.displaySomething(viewModel: viewModel)
-  }
 }

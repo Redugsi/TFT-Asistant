@@ -11,10 +11,25 @@
 //
 
 import UIKit
+import Domain
 
 class ChampionsWorker
 {
-  func doSomeWork()
-  {
-  }
+    let useCase: ChampionsUseCase
+    
+    init(useCase: ChampionsUseCase) {
+        self.useCase = useCase
+    }
+    
+    func getChampionsOrderedByTier() -> [Champion]?{
+        let champions = useCase.getChampions()?.sorted { (champ1, champ2) -> Bool in
+            if champ1.cost < champ2.cost{
+                return true
+            }
+            
+            return champ1.name.compare(champ2.name) == ComparisonResult.orderedAscending
+        }
+        
+        return champions
+    }
 }

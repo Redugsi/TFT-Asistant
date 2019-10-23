@@ -11,10 +11,12 @@
 //
 
 import UIKit
+import LocalPlatform
 
 protocol ChampionsBusinessLogic
 {
-  func doSomething(request: Champions.Something.Request)
+    func getChampionsOrderedByTier(request: Champions.GetChampionsOrderedByTier.Request) ->
+        Champions.GetChampionsOrderedByTier.Response
 }
 
 protocol ChampionsDataStore
@@ -24,18 +26,13 @@ protocol ChampionsDataStore
 
 class ChampionsInteractor: ChampionsBusinessLogic, ChampionsDataStore
 {
-  var presenter: ChampionsPresentationLogic?
-  var worker: ChampionsWorker?
-  //var name: String = ""
+
+    var presenter: ChampionsPresentationLogic?
+    var worker: ChampionsWorker = ChampionsWorker(useCase: LocalPlatform.UseCaseProvider().makeChampionsUseCase())
   
-  // MARK: Do something
-  
-  func doSomething(request: Champions.Something.Request)
-  {
-    worker = ChampionsWorker()
-    worker?.doSomeWork()
-    
-    let response = Champions.Something.Response()
-    presenter?.presentSomething(response: response)
-  }
+    func getChampionsOrderedByTier(request: Champions.GetChampionsOrderedByTier.Request) -> Champions.GetChampionsOrderedByTier.Response {
+        
+        let response = Champions.GetChampionsOrderedByTier.Response(champions: worker.getChampionsOrderedByTier())
+        return response
+    }
 }

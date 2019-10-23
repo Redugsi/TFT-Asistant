@@ -14,7 +14,6 @@ import UIKit
 
 protocol ChampionsDisplayLogic: class
 {
-  func displaySomething(viewModel: Champions.Something.ViewModel)
 }
 
 class ChampionsViewController: UIViewController, ChampionsDisplayLogic
@@ -69,21 +68,5 @@ class ChampionsViewController: UIViewController, ChampionsDisplayLogic
   override func viewDidLoad()
   {
     super.viewDidLoad()
-    doSomething()
-  }
-  
-  // MARK: Do something
-  
-  //@IBOutlet weak var nameTextField: UITextField!
-  
-  func doSomething()
-  {
-    let request = Champions.Something.Request()
-    interactor?.doSomething(request: request)
-  }
-  
-  func displaySomething(viewModel: Champions.Something.ViewModel)
-  {
-    //nameTextField.text = viewModel.name
   }
 }

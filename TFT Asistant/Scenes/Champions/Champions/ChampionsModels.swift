@@ -11,21 +11,30 @@
 //
 
 import UIKit
+import Domain
 
 enum Champions
 {
   // MARK: Use cases
   
-  enum Something
+  enum GetChampionsOrderedByTier
   {
     struct Request
     {
     }
     struct Response
     {
+        var champions: [Champion]?
     }
     struct ViewModel
     {
+        var name: String
+        var origin: [String]
+        var championClass: [String]
+        var cost: Int
+        var ability: Ability
+        var items: [String]
+        var stats: Stats
     }
   }
 }
