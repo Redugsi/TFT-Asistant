@@ -45,6 +45,13 @@
 		D1AACC90234D037C00CB1D5E /* MultiSelectableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AACC8E234D037C00CB1D5E /* MultiSelectableCollectionViewCell.swift */; };
 		D1AACC91234D037C00CB1D5E /* MultiSelectableCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1AACC8F234D037C00CB1D5E /* MultiSelectableCollectionViewCell.xib */; };
 		D1AACC93234D06F300CB1D5E /* MultiSelectableCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AACC92234D06F300CB1D5E /* MultiSelectableCollectionViewModel.swift */; };
+		D1B4EF622364BCFA00331FA3 /* ModalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B4EF5C2364BCFA00331FA3 /* ModalPresenter.swift */; };
+		D1B4EF632364BCFA00331FA3 /* ModalWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B4EF5D2364BCFA00331FA3 /* ModalWorker.swift */; };
+		D1B4EF642364BCFA00331FA3 /* ModalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B4EF5E2364BCFA00331FA3 /* ModalRouter.swift */; };
+		D1B4EF652364BCFA00331FA3 /* ModalModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B4EF5F2364BCFA00331FA3 /* ModalModels.swift */; };
+		D1B4EF662364BCFA00331FA3 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B4EF602364BCFA00331FA3 /* ModalViewController.swift */; };
+		D1B4EF672364BCFA00331FA3 /* ModalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B4EF612364BCFA00331FA3 /* ModalInteractor.swift */; };
+		D1B4EF692364BDF900331FA3 /* Modal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1B4EF682364BDF900331FA3 /* Modal.storyboard */; };
 		D1D1DA2B234BBC3100EBBD37 /* ItemModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1DA2A234BBC3100EBBD37 /* ItemModels.swift */; };
 		D1D1DA33234BBCA100EBBD37 /* ItemBuilderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1DA2D234BBCA100EBBD37 /* ItemBuilderPresenter.swift */; };
 		D1D1DA34234BBCA100EBBD37 /* ItemBuilderWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1DA2E234BBCA100EBBD37 /* ItemBuilderWorker.swift */; };
@@ -236,6 +243,13 @@
 		D1AACC8E234D037C00CB1D5E /* MultiSelectableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectableCollectionViewCell.swift; sourceTree = "<group>"; };
 		D1AACC8F234D037C00CB1D5E /* MultiSelectableCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MultiSelectableCollectionViewCell.xib; sourceTree = "<group>"; };
 		D1AACC92234D06F300CB1D5E /* MultiSelectableCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectableCollectionViewModel.swift; sourceTree = "<group>"; };
+		D1B4EF5C2364BCFA00331FA3 /* ModalPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresenter.swift; sourceTree = "<group>"; };
+		D1B4EF5D2364BCFA00331FA3 /* ModalWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalWorker.swift; sourceTree = "<group>"; };
+		D1B4EF5E2364BCFA00331FA3 /* ModalRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalRouter.swift; sourceTree = "<group>"; };
+		D1B4EF5F2364BCFA00331FA3 /* ModalModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalModels.swift; sourceTree = "<group>"; };
+		D1B4EF602364BCFA00331FA3 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		D1B4EF612364BCFA00331FA3 /* ModalInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalInteractor.swift; sourceTree = "<group>"; };
+		D1B4EF682364BDF900331FA3 /* Modal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Modal.storyboard; sourceTree = "<group>"; };
 		D1D1DA2A234BBC3100EBBD37 /* ItemModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemModels.swift; sourceTree = "<group>"; };
 		D1D1DA2D234BBCA100EBBD37 /* ItemBuilderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBuilderPresenter.swift; sourceTree = "<group>"; };
 		D1D1DA2E234BBCA100EBBD37 /* ItemBuilderWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBuilderWorker.swift; sourceTree = "<group>"; };
@@ -516,6 +530,28 @@
 			path = MultiSelectableCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		D1B4EF5A23648EF100331FA3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D1B4EF5B23648EFE00331FA3 /* Modal */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D1B4EF5B23648EFE00331FA3 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				D1B4EF5C2364BCFA00331FA3 /* ModalPresenter.swift */,
+				D1B4EF5D2364BCFA00331FA3 /* ModalWorker.swift */,
+				D1B4EF5E2364BCFA00331FA3 /* ModalRouter.swift */,
+				D1B4EF5F2364BCFA00331FA3 /* ModalModels.swift */,
+				D1B4EF602364BCFA00331FA3 /* ModalViewController.swift */,
+				D1B4EF612364BCFA00331FA3 /* ModalInteractor.swift */,
+				D1B4EF682364BDF900331FA3 /* Modal.storyboard */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
 		D1D1DA29234BBC3100EBBD37 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -637,6 +673,7 @@
 		E887B012234504EB00B8E661 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				D1B4EF5A23648EF100331FA3 /* Common */,
 				D106E5922346751A005E8E3F /* Champions */,
 				D106E59123467514005E8E3F /* Items */,
 				D106E59023467506005E8E3F /* Traits */,
@@ -1015,6 +1052,7 @@
 				D1D1DA3A234BBCDB00EBBD37 /* ItemBuilder.storyboard in Resources */,
 				E887B09223460FC200B8E661 /* champions.json in Resources */,
 				E887B09F234774CE00B8E661 /* SquareCollectionViewCell.xib in Resources */,
+				D1B4EF692364BDF900331FA3 /* Modal.storyboard in Resources */,
 				E831A14C235F61CF0085EF61 /* Champions.storyboard in Resources */,
 				E887AFEF234504D100B8E661 /* LaunchScreen.storyboard in Resources */,
 				E887B099234736B900B8E661 /* Combinations.storyboard in Resources */,
@@ -1234,6 +1272,7 @@
 			files = (
 				E831A148235F61AA0085EF61 /* ChampionsModels.swift in Sources */,
 				D1AACC90234D037C00CB1D5E /* MultiSelectableCollectionViewCell.swift in Sources */,
+				D1B4EF652364BCFA00331FA3 /* ModalModels.swift in Sources */,
 				E831A147235F61AA0085EF61 /* ChampionsRouter.swift in Sources */,
 				D1876FCF234A59DE00BA3F3B /* CombinedItemDetailTableViewCell.swift in Sources */,
 				D106E5A423467870005E8E3F /* CombinationsInteractor.swift in Sources */,
@@ -1257,19 +1296,24 @@
 				E887AFE7234504CF00B8E661 /* ViewController.swift in Sources */,
 				D15AA2E52347D1E700B5DCE9 /* ItemCombinationDetailView.swift in Sources */,
 				D1876FC82349D24800BA3F3B /* BaseItemsViewController.swift in Sources */,
+				D1B4EF672364BCFA00331FA3 /* ModalInteractor.swift in Sources */,
 				D1D1DA36234BBCA100EBBD37 /* ItemBuilderModels.swift in Sources */,
 				E831A14A235F61AA0085EF61 /* ChampionsInteractor.swift in Sources */,
 				D1876FC92349D24800BA3F3B /* BaseItemsInteractor.swift in Sources */,
+				D1B4EF622364BCFA00331FA3 /* ModalPresenter.swift in Sources */,
 				E831A149235F61AA0085EF61 /* ChampionsViewController.swift in Sources */,
 				D1876FC52349D24800BA3F3B /* BaseItemsWorker.swift in Sources */,
 				E887AFE5234504CF00B8E661 /* AppDelegate.swift in Sources */,
 				D1D1DA34234BBCA100EBBD37 /* ItemBuilderWorker.swift in Sources */,
 				D19C74D62348F881003CFF4B /* Optional+Ext.swift in Sources */,
 				D1D1DA33234BBCA100EBBD37 /* ItemBuilderPresenter.swift in Sources */,
+				D1B4EF662364BCFA00331FA3 /* ModalViewController.swift in Sources */,
 				E831A146235F61AA0085EF61 /* ChampionsWorker.swift in Sources */,
+				D1B4EF642364BCFA00331FA3 /* ModalRouter.swift in Sources */,
 				D106E59C23467870005E8E3F /* CombinationsWorker.swift in Sources */,
 				D1876FC72349D24800BA3F3B /* BaseItemsModels.swift in Sources */,
 				D1876FC62349D24800BA3F3B /* BaseItemsRouter.swift in Sources */,
+				D1B4EF632364BCFA00331FA3 /* ModalWorker.swift in Sources */,
 				D106E59E23467870005E8E3F /* CombinationsRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
