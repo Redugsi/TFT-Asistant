@@ -14,59 +14,125 @@ import UIKit
 
 protocol ChampionsDisplayLogic: class
 {
+    func displayChampions(viewModel: Champions.GetChampionsOrderedByTier.ViewModel?)
 }
 
 class ChampionsViewController: UIViewController, ChampionsDisplayLogic
 {
-  var interactor: ChampionsBusinessLogic?
-  var router: (NSObjectProtocol & ChampionsRoutingLogic & ChampionsDataPassing)?
-
-  // MARK: Object lifecycle
-  
-  override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
-  {
-    super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    setup()
-  }
-  
-  required init?(coder aDecoder: NSCoder)
-  {
-    super.init(coder: aDecoder)
-    setup()
-  }
-  
-  // MARK: Setup
-  
-  private func setup()
-  {
-    let viewController = self
-    let interactor = ChampionsInteractor()
-    let presenter = ChampionsPresenter()
-    let router = ChampionsRouter()
-    viewController.interactor = interactor
-    viewController.router = router
-    interactor.presenter = presenter
-    presenter.viewController = viewController
-    router.viewController = viewController
-    router.dataStore = interactor
-  }
-  
-  // MARK: Routing
-  
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-  {
-    if let scene = segue.identifier {
-      let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
-      if let router = router, router.responds(to: selector) {
-        router.perform(selector, with: segue)
-      }
+    var interactor: ChampionsBusinessLogic?
+    var router: (NSObjectProtocol & ChampionsRoutingLogic & ChampionsDataPassing)?
+    
+    var viewModel: Champions.GetChampionsOrderedByTier.ViewModel?
+    {
+        didSet{
+            self.championsCollectionView.reloadData()
+        }
     }
-  }
-  
-  // MARK: View lifecycle
-  
-  override func viewDidLoad()
-  {
-    super.viewDidLoad()
-  }
+    
+    @IBOutlet weak var championsCollectionView: UICollectionView!
+    
+    
+    // MARK: Object lifecycle
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
+    {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        setup()
+    }
+    
+    required init?(coder aDecoder: NSCoder)
+    {
+        super.init(coder: aDecoder)
+        setup()
+    }
+    
+    // MARK: Setup
+    
+    private func setup()
+    {
+        let viewController = self
+        let interactor = ChampionsInteractor()
+        let presenter = ChampionsPresenter()
+        let router = ChampionsRouter()
+        viewController.interactor = interactor
+        viewController.router = router
+        interactor.presenter = presenter
+        presenter.viewController = viewController
+        router.viewController = viewController
+        router.dataStore = interactor
+    }
+    
+    // MARK: Routing
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if let scene = segue.identifier {
+            let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
+            if let router = router, router.responds(to: selector) {
+                router.perform(selector, with: segue)
+            }
+        }
+    }
+    
+    // MARK: View lifecycle
+    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        self.setupCollectionView()
+        interactor?.getChampionsOrderedByTier(request: Champions.GetChampionsOrderedByTier.Request())
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        setupCellSize()
+    }
+    
+    private func setupCollectionView(){
+        championsCollectionView.delegate = self
+        championsCollectionView.dataSource = self
+        
+        let nibName = String(describing: ChampionCollectionViewCell.self)
+        let nib = UINib(nibName: nibName, bundle: nil)
+        championsCollectionView.register(nib, forCellWithReuseIdentifier: nibName)
+    }
+    
+    private func setupCellSize(){
+        let collectionFlowLayout = championsCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        
+        let numberOfItemsInRow: CGFloat = 6
+        let lineSpacing: CGFloat = 15
+        let itemSpacing: CGFloat = 15
+        
+        let width = (championsCollectionView.frame.width -
+            (numberOfItemsInRow - 1) * itemSpacing)
+            / numberOfItemsInRow
+        
+        collectionFlowLayout.itemSize = CGSize(width: width, height: width)
+        collectionFlowLayout.minimumLineSpacing = lineSpacing
+        collectionFlowLayout.minimumInteritemSpacing = itemSpacing
+    }
+    
+    // Mark display
+    func displayChampions(viewModel: Champions.GetChampionsOrderedByTier.ViewModel?) {
+        self.viewModel = viewModel
+    }
+}
+
+extension ChampionsViewController: UICollectionViewDelegate, UICollectionViewDataSource{
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return viewModel?.championViewModels?.count ?? 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: ChampionCollectionViewCell.self), for: indexPath) as! ChampionCollectionViewCell
+        
+        if let championViewModel = viewModel?.championViewModels?[indexPath.row]{
+            cell.viewModel = ChampionCellViewModel(championName: championViewModel.name, championPrice: String(championViewModel.cost), borderColorName: "tier_\(championViewModel.cost)")
+        }
+        
+        return cell
+    }
 }

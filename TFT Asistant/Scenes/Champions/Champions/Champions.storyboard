@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gWt-Ap-qFg">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gWt-Ap-qFg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,9 +16,31 @@
                     <view key="view" contentMode="scaleToFill" id="q7f-kF-Ed7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TcR-oZ-Mv7">
+                                <rect key="frame" x="15" y="59" width="384" height="788"/>
+                                <color key="backgroundColor" name="color_primary_second"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Stm-Se-ahk">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" name="color_primary_second"/>
+                        <constraints>
+                            <constraint firstItem="TcR-oZ-Mv7" firstAttribute="leading" secondItem="9h1-oW-PqF" secondAttribute="leading" constant="15" id="6Fx-bF-By2"/>
+                            <constraint firstItem="9h1-oW-PqF" firstAttribute="trailing" secondItem="TcR-oZ-Mv7" secondAttribute="trailing" constant="15" id="HMC-SQ-UoY"/>
+                            <constraint firstItem="TcR-oZ-Mv7" firstAttribute="top" secondItem="9h1-oW-PqF" secondAttribute="top" constant="15" id="QwE-p3-uxd"/>
+                            <constraint firstItem="9h1-oW-PqF" firstAttribute="bottom" secondItem="TcR-oZ-Mv7" secondAttribute="bottom" constant="15" id="ahM-F5-1eQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9h1-oW-PqF"/>
                     </view>
+                    <connections>
+                        <outlet property="championsCollectionView" destination="TcR-oZ-Mv7" id="tZE-Hb-WWt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MQO-Wo-QYK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

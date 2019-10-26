@@ -28,6 +28,9 @@ enum Champions
     }
     struct ViewModel
     {
+        var championViewModels: [ChampionViewModel]?
+    }
+    struct ChampionViewModel{
         var name: String
         var origin: [String]
         var championClass: [String]

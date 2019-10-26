@@ -95,7 +95,7 @@ class CombinationsViewController: UIViewController, CombinationsDisplayLogic
     private func setupCellSize(){
         let collectionFlowLayout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         
-        let numberOfItemsInRow: CGFloat = 6
+        let numberOfItemsInRow: CGFloat = 1
         let lineSpacing: CGFloat = 15
         let itemSpacing: CGFloat = 15
         
@@ -104,6 +104,9 @@ class CombinationsViewController: UIViewController, CombinationsDisplayLogic
         collectionFlowLayout.itemSize = CGSize(width: width, height: width)
         collectionFlowLayout.minimumLineSpacing = lineSpacing
         collectionFlowLayout.minimumInteritemSpacing = itemSpacing
+        
+        collectionFlowLayout.prepare()
+        collectionFlowLayout.invalidateLayout()
     }
     
     // MARK: Display

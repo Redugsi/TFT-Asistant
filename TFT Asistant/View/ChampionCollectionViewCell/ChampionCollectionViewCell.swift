@@ -32,7 +32,6 @@ class ChampionCollectionViewCell: UICollectionViewCell {
     
     private func initView(with viewModel: ChampionCellViewModel){
         self.isHidden = false
-        
         if let championName = viewModel.championName{
             imageView.image = UIImage(named: championName)
         }

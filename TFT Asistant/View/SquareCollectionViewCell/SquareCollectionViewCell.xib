@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,23 +11,31 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" reuseIdentifier="SquareCollectionViewCell" id="gTV-IL-0wX" customClass="SquareCollectionViewCell" customModule="TFT_Asistant" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="196" height="151"/>
+            <rect key="frame" x="0.0" y="0.0" width="196" height="196"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="196" height="151"/>
+                <rect key="frame" x="0.0" y="0.0" width="196" height="196"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CUM-Fq-Qer">
-                        <rect key="frame" x="0.0" y="0.0" width="196" height="151"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CUM-Fq-Qer">
+                        <rect key="frame" x="0.0" y="0.0" width="196" height="196"/>
                     </imageView>
-                    <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i5b-DH-QKO" userLabel="Border">
-                        <rect key="frame" x="0.0" y="0.0" width="196" height="151"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5b-DH-QKO" userLabel="Border">
+                        <rect key="frame" x="0.0" y="0.0" width="196" height="196"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </subviews>
             </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="CUM-Fq-Qer" secondAttribute="bottom" id="Fh0-AH-j6b"/>
+                <constraint firstAttribute="trailing" secondItem="CUM-Fq-Qer" secondAttribute="trailing" id="KlI-6e-Wol"/>
+                <constraint firstAttribute="bottom" secondItem="i5b-DH-QKO" secondAttribute="bottom" id="QaZ-hp-BiF"/>
+                <constraint firstItem="i5b-DH-QKO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Vrz-zr-ND5"/>
+                <constraint firstItem="CUM-Fq-Qer" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lZE-qt-uj0"/>
+                <constraint firstItem="i5b-DH-QKO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="m3Q-Ss-bxp"/>
+                <constraint firstItem="CUM-Fq-Qer" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rcw-62-9PX"/>
+                <constraint firstAttribute="trailing" secondItem="i5b-DH-QKO" secondAttribute="trailing" id="scV-lH-i3t"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="196" height="151"/>
             <connections>

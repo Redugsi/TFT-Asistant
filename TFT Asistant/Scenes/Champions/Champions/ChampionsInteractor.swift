@@ -15,8 +15,7 @@ import LocalPlatform
 
 protocol ChampionsBusinessLogic
 {
-    func getChampionsOrderedByTier(request: Champions.GetChampionsOrderedByTier.Request) ->
-        Champions.GetChampionsOrderedByTier.Response
+    func getChampionsOrderedByTier(request: Champions.GetChampionsOrderedByTier.Request)
 }
 
 protocol ChampionsDataStore
@@ -30,9 +29,9 @@ class ChampionsInteractor: ChampionsBusinessLogic, ChampionsDataStore
     var presenter: ChampionsPresentationLogic?
     var worker: ChampionsWorker = ChampionsWorker(useCase: LocalPlatform.UseCaseProvider().makeChampionsUseCase())
   
-    func getChampionsOrderedByTier(request: Champions.GetChampionsOrderedByTier.Request) -> Champions.GetChampionsOrderedByTier.Response {
+    func getChampionsOrderedByTier(request: Champions.GetChampionsOrderedByTier.Request) {
         
         let response = Champions.GetChampionsOrderedByTier.Response(champions: worker.getChampionsOrderedByTier())
-        return response
+        presenter?.presentChampions(response: response)
     }
 }
