@@ -93,13 +93,12 @@ class ModalViewController: UIViewController, ModalDisplayLogic
         super.viewDidLayoutSubviews()
         self.modalView.frame.origin.y = self.view.frame.height - self.thumbView.frame.height
         self.animateModalOnLoad(state: self.nextState, duration: 0.9)
-        roundCorners()
     }
     
     func setupView(){
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleModalTap(recognizer:)))
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handleModalPan(recognizer:)))
-        modalView.addGestureRecognizer(tapGestureRecognizer)
+        thumbView.addGestureRecognizer(tapGestureRecognizer)
         modalView.addGestureRecognizer(panGestureRecognizer)
         
         visualEffectView = UIVisualEffectView()
@@ -107,15 +106,16 @@ class ModalViewController: UIViewController, ModalDisplayLogic
 
         self.view.insertSubview(visualEffectView, at: 0)
     }
-    
-    private func roundCorners(){
-        thumbView.roundCorners(corners: [.topLeft, .topRight], radius: 16.0)
-    }
-    
+        
     // MARK: Gestures
     @objc
     func handleModalTap(recognizer: UITapGestureRecognizer){
-        
+        switch recognizer.state {
+        case .ended:
+            animateTransitionIfNeeded(state: nextState, duration: 0.9)
+        default:
+            break
+        }
     }
     
     @objc
@@ -149,6 +149,10 @@ class ModalViewController: UIViewController, ModalDisplayLogic
             frameAnimator.addCompletion { _ in
                 self.modalVisible = !self.modalVisible
                 self.runningAnimations.removeAll()
+                
+                if !self.modalVisible{
+                    self.dismiss(animated: false, completion: nil)
+                }
             }
             
             frameAnimator.startAnimation()
@@ -165,6 +169,20 @@ class ModalViewController: UIViewController, ModalDisplayLogic
             
             blurAnimator.startAnimation()
             runningAnimations.append(blurAnimator)
+            
+            let conerRadiusAnimator = UIViewPropertyAnimator(duration: duration, dampingRatio: 1, animations: {
+                switch state{
+                case .expanded:
+                    self.modalView.layer.cornerRadius = 12
+                case .collapsed:
+                    self.modalView.layer.cornerRadius = 0
+                }
+            })
+            
+            conerRadiusAnimator.startAnimation()
+            runningAnimations.append(conerRadiusAnimator)
+            
+            
         }
     }
     
@@ -209,14 +227,5 @@ class ModalViewController: UIViewController, ModalDisplayLogic
     func displaySomething(viewModel: Modal.Something.ViewModel)
     {
         //nameTextField.text = viewModel.name
-    }
-}
-
-extension UIView {
-    func roundCorners(corners: UIRectCorner, radius: CGFloat) {
-        let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
-        let mask = CAShapeLayer()
-        mask.path = path.cgPath
-        layer.mask = mask
     }
 }
