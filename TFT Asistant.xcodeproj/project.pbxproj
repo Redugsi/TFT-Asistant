@@ -60,6 +60,7 @@
 		D1D1DA37234BBCA100EBBD37 /* ItemBuilderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1DA31234BBCA100EBBD37 /* ItemBuilderViewController.swift */; };
 		D1D1DA38234BBCA100EBBD37 /* ItemBuilderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1DA32234BBCA100EBBD37 /* ItemBuilderInteractor.swift */; };
 		D1D1DA3A234BBCDB00EBBD37 /* ItemBuilder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D1DA39234BBCDB00EBBD37 /* ItemBuilder.storyboard */; };
+		D1F8CEAA2365783B006C4F64 /* ModalViewController+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8CEA92365783B006C4F64 /* ModalViewController+Animations.swift */; };
 		E831A145235F61AA0085EF61 /* ChampionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E831A13F235F61AA0085EF61 /* ChampionsPresenter.swift */; };
 		E831A146235F61AA0085EF61 /* ChampionsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E831A140235F61AA0085EF61 /* ChampionsWorker.swift */; };
 		E831A147235F61AA0085EF61 /* ChampionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E831A141235F61AA0085EF61 /* ChampionsRouter.swift */; };
@@ -258,6 +259,7 @@
 		D1D1DA31234BBCA100EBBD37 /* ItemBuilderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBuilderViewController.swift; sourceTree = "<group>"; };
 		D1D1DA32234BBCA100EBBD37 /* ItemBuilderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBuilderInteractor.swift; sourceTree = "<group>"; };
 		D1D1DA39234BBCDB00EBBD37 /* ItemBuilder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ItemBuilder.storyboard; sourceTree = "<group>"; };
+		D1F8CEA92365783B006C4F64 /* ModalViewController+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalViewController+Animations.swift"; sourceTree = "<group>"; };
 		D46123F16A9C7D74C1363B79 /* Pods-TFT AsistantTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFT AsistantTests.release.xcconfig"; path = "Target Support Files/Pods-TFT AsistantTests/Pods-TFT AsistantTests.release.xcconfig"; sourceTree = "<group>"; };
 		E831A13F235F61AA0085EF61 /* ChampionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsPresenter.swift; sourceTree = "<group>"; };
 		E831A140235F61AA0085EF61 /* ChampionsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsWorker.swift; sourceTree = "<group>"; };
@@ -548,6 +550,7 @@
 				D1B4EF602364BCFA00331FA3 /* ModalViewController.swift */,
 				D1B4EF612364BCFA00331FA3 /* ModalInteractor.swift */,
 				D1B4EF682364BDF900331FA3 /* Modal.storyboard */,
+				D1F8CEA92365783B006C4F64 /* ModalViewController+Animations.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -1289,6 +1292,7 @@
 				D19C74D82348FEF7003CFF4B /* StackView+Ext.swift in Sources */,
 				E831A157235F6C640085EF61 /* ChampionCellViewModel.swift in Sources */,
 				E831A145235F61AA0085EF61 /* ChampionsPresenter.swift in Sources */,
+				D1F8CEAA2365783B006C4F64 /* ModalViewController+Animations.swift in Sources */,
 				E887B09E234774CD00B8E661 /* SquareCollectionViewCell.swift in Sources */,
 				D1876FC42349D24800BA3F3B /* BaseItemsPresenter.swift in Sources */,
 				D1D1DA35234BBCA100EBBD37 /* ItemBuilderRouter.swift in Sources */,
