@@ -11,6 +11,27 @@ import UIKit
 class ChampionDetailView: UIView {
     
     @IBOutlet var contentView: UIView!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var avatar: UIImageView!
+    
+    @IBOutlet weak var abilityName: UILabel!
+    @IBOutlet weak var abilityDesc: UILabel!
+    
+    
+    @IBOutlet weak var originsAndClassesStack: UIStackView!
+    @IBOutlet weak var abilityStack: UIStackView!
+    @IBOutlet weak var itemsStack: UIStackView!
+    
+    @IBOutlet weak var cost: UILabel!
+    
+    @IBOutlet weak var damage: UILabel!
+    @IBOutlet weak var attackSpeed: UILabel!
+    @IBOutlet weak var health: UILabel!
+    @IBOutlet weak var armor: UILabel!
+    @IBOutlet weak var magicResist: UILabel!
+    
+    
+    
     
     var viewModel: Champions.ChampionViewModel?{
         didSet{

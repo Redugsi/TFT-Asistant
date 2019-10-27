@@ -1,28 +1,28 @@
 //
-//  ImageDescriptionView.swift
+//  TitleDescriptionView.swift
 //  TFT Asistant
 //
 //  Created by erdem on 27.10.2019.
 //  Copyright © 2019 Erdem Isguder. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class ImageDescriptionView: UIView {
-
+class TitleDescriptionView: UIView {
+    
     @IBOutlet var contentView: UIView!
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var descrip: UILabel!
     
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var image: UIImageView!
-    
-    var viewModel: ImageDescriptionViewModel?{
+    var viewModel: TitleDescriptionViewModel?{
         didSet{
             if let viewModel = viewModel{
-                initView(with: viewModel)
+                initView(viewModel: viewModel)
             }
         }
     }
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -34,14 +34,14 @@ class ImageDescriptionView: UIView {
     }
     
     private func commonInit(){
-        Bundle.main.loadNibNamed("ImageDescriptionView", owner: self, options: nil)
+        Bundle.main.loadNibNamed("TitleDescriptionView", owner: self, options: nil)
         addSubview(contentView)
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     }
     
-    private func initView(with viewModel: ImageDescriptionViewModel){
-        label.text = viewModel.description ?? ""
-        image.image = UIImage(named: viewModel.imageName ?? "")
+    private func initView(viewModel: TitleDescriptionViewModel){
+        title.text = viewModel.type ?? ""
+        descrip.text = viewModel.desc ?? ""
     }
 }

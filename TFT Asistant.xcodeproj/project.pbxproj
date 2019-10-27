@@ -25,6 +25,10 @@
 		D106E5A323467870005E8E3F /* CombinationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D106E59823467870005E8E3F /* CombinationsViewController.swift */; };
 		D106E5A423467870005E8E3F /* CombinationsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D106E59923467870005E8E3F /* CombinationsInteractor.swift */; };
 		D106E5A523467870005E8E3F /* CombinationsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D106E59923467870005E8E3F /* CombinationsInteractor.swift */; };
+		D14C438F23661E1100F1C8C6 /* ImageDescriptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C438E23661E1100F1C8C6 /* ImageDescriptionViewModel.swift */; };
+		D14C4392236625F900F1C8C6 /* TitleDescriptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D14C4391236625F900F1C8C6 /* TitleDescriptionView.xib */; };
+		D14C43942366260400F1C8C6 /* TitleDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C43932366260400F1C8C6 /* TitleDescriptionView.swift */; };
+		D14C43962366260F00F1C8C6 /* TitleDescriptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C43952366260F00F1C8C6 /* TitleDescriptionViewModel.swift */; };
 		D15AA2E52347D1E700B5DCE9 /* ItemCombinationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AA2E42347D1E700B5DCE9 /* ItemCombinationDetailView.swift */; };
 		D15AA2E72347D21200B5DCE9 /* ItemCombinationDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D15AA2E62347D21200B5DCE9 /* ItemCombinationDetailView.xib */; };
 		D15AA2F02347DBF700B5DCE9 /* ItemStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AA2EF2347DBF700B5DCE9 /* ItemStatView.swift */; };
@@ -228,6 +232,10 @@
 		D106E59723467870005E8E3F /* CombinationsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationsModels.swift; sourceTree = "<group>"; };
 		D106E59823467870005E8E3F /* CombinationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationsViewController.swift; sourceTree = "<group>"; };
 		D106E59923467870005E8E3F /* CombinationsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationsInteractor.swift; sourceTree = "<group>"; };
+		D14C438E23661E1100F1C8C6 /* ImageDescriptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDescriptionViewModel.swift; sourceTree = "<group>"; };
+		D14C4391236625F900F1C8C6 /* TitleDescriptionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleDescriptionView.xib; sourceTree = "<group>"; };
+		D14C43932366260400F1C8C6 /* TitleDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleDescriptionView.swift; sourceTree = "<group>"; };
+		D14C43952366260F00F1C8C6 /* TitleDescriptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleDescriptionViewModel.swift; sourceTree = "<group>"; };
 		D15AA2E42347D1E700B5DCE9 /* ItemCombinationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCombinationDetailView.swift; sourceTree = "<group>"; };
 		D15AA2E62347D21200B5DCE9 /* ItemCombinationDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCombinationDetailView.xib; sourceTree = "<group>"; };
 		D15AA2EF2347DBF700B5DCE9 /* ItemStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStatView.swift; sourceTree = "<group>"; };
@@ -480,6 +488,16 @@
 			path = Combinations;
 			sourceTree = "<group>";
 		};
+		D14C4390236625D100F1C8C6 /* TitleDescriptionView */ = {
+			isa = PBXGroup;
+			children = (
+				D14C4391236625F900F1C8C6 /* TitleDescriptionView.xib */,
+				D14C43932366260400F1C8C6 /* TitleDescriptionView.swift */,
+				D14C43952366260F00F1C8C6 /* TitleDescriptionViewModel.swift */,
+			);
+			path = TitleDescriptionView;
+			sourceTree = "<group>";
+		};
 		D15AA2E32347D16200B5DCE9 /* ItemCombinationDetailView */ = {
 			isa = PBXGroup;
 			children = (
@@ -602,6 +620,7 @@
 			children = (
 				D1F8CEB3236585FB006C4F64 /* ImageDescriptionView.swift */,
 				D1F8CEB5236586AF006C4F64 /* ImageDescriptionView.xib */,
+				D14C438E23661E1100F1C8C6 /* ImageDescriptionViewModel.swift */,
 			);
 			path = ImageDescriptionView;
 			sourceTree = "<group>";
@@ -828,6 +847,7 @@
 		E887B09A2347746C00B8E661 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D14C4390236625D100F1C8C6 /* TitleDescriptionView */,
 				D1F8CEB2236585C2006C4F64 /* ImageDescriptionView */,
 				D1F8CEAB23657983006C4F64 /* ChampionDetailView */,
 				E831A14D235F62B10085EF61 /* ChampionCollectionViewCell */,
@@ -1086,6 +1106,7 @@
 				E887B09523460FC200B8E661 /* items.json in Resources */,
 				D1D1DA3A234BBCDB00EBBD37 /* ItemBuilder.storyboard in Resources */,
 				E887B09223460FC200B8E661 /* champions.json in Resources */,
+				D14C4392236625F900F1C8C6 /* TitleDescriptionView.xib in Resources */,
 				E887B09F234774CE00B8E661 /* SquareCollectionViewCell.xib in Resources */,
 				D1B4EF692364BDF900331FA3 /* Modal.storyboard in Resources */,
 				D1F8CEB6236586AF006C4F64 /* ImageDescriptionView.xib in Resources */,
@@ -1306,6 +1327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D14C43942366260400F1C8C6 /* TitleDescriptionView.swift in Sources */,
 				E831A148235F61AA0085EF61 /* ChampionsModels.swift in Sources */,
 				D1AACC90234D037C00CB1D5E /* MultiSelectableCollectionViewCell.swift in Sources */,
 				D1F8CEAD236579D7006C4F64 /* ChampionDetailView.swift in Sources */,
@@ -1317,6 +1339,7 @@
 				D1D1DA38234BBCA100EBBD37 /* ItemBuilderInteractor.swift in Sources */,
 				D1D1DA37234BBCA100EBBD37 /* ItemBuilderViewController.swift in Sources */,
 				D106E59A23467870005E8E3F /* CombinationsPresenter.swift in Sources */,
+				D14C43962366260F00F1C8C6 /* TitleDescriptionViewModel.swift in Sources */,
 				D15AA2F02347DBF700B5DCE9 /* ItemStatView.swift in Sources */,
 				D1AACC93234D06F300CB1D5E /* MultiSelectableCollectionViewModel.swift in Sources */,
 				D1D1DA2B234BBC3100EBBD37 /* ItemModels.swift in Sources */,
@@ -1347,6 +1370,7 @@
 				D19C74D62348F881003CFF4B /* Optional+Ext.swift in Sources */,
 				D1F8CEB123657BB4006C4F64 /* ChampionDetailViewModel.swift in Sources */,
 				D1D1DA33234BBCA100EBBD37 /* ItemBuilderPresenter.swift in Sources */,
+				D14C438F23661E1100F1C8C6 /* ImageDescriptionViewModel.swift in Sources */,
 				D1B4EF662364BCFA00331FA3 /* ModalViewController.swift in Sources */,
 				E831A146235F61AA0085EF61 /* ChampionsWorker.swift in Sources */,
 				D1B4EF642364BCFA00331FA3 /* ModalRouter.swift in Sources */,
