@@ -28,7 +28,7 @@ class ChampionsPresenter: ChampionsPresentationLogic
         }
         
         let championsViewModel = champions.map{
-            Champions.GetChampionsOrderedByTier.ChampionViewModel(name: $0.key, origin: $0.origin, championClass: $0.championClass, cost: $0.cost, ability: $0.ability, items: $0.items, stats: $0.stats)
+            Champions.ChampionViewModel(name: $0.key, origin: $0.origin, championClass: $0.championClass, cost: $0.cost, ability: $0.ability, items: $0.items, stats: $0.stats)
         }
         
         viewController?.displayChampions(viewModel: Champions.GetChampionsOrderedByTier.ViewModel(championViewModels: championsViewModel))

@@ -12,33 +12,33 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChampionCollectionViewCell" id="gTV-IL-0wX" customClass="ChampionCollectionViewCell" customModule="TFT_Asistant" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <rect key="frame" x="0.0" y="0.0" width="162" height="151"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <rect key="frame" x="0.0" y="0.0" width="162" height="151"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XSY-TR-YqT">
-                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="162" height="162"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="XSY-TR-YqT" secondAttribute="height" multiplier="1:1" id="jY1-30-Ynx"/>
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2qu-Lh-Vfh" userLabel="BorderView">
-                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="162" height="162"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cQT-aU-qGK" userLabel="CoinView">
-                        <rect key="frame" x="0.0" y="2" width="20" height="10"/>
+                        <rect key="frame" x="0.0" y="2" width="65" height="30.5"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FYp-v4-c5K">
-                                <rect key="frame" x="4" y="4" width="16" height="2"/>
+                                <rect key="frame" x="4" y="4" width="61" height="22.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_coin" translatesAutoresizingMaskIntoConstraints="NO" id="yfG-9a-rXu">
-                                        <rect key="frame" x="0.0" y="0.0" width="8" height="2"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="30.5" height="22.5"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="4" translatesAutoresizingMaskIntoConstraints="NO" id="vpj-Cn-V6H">
-                                        <rect key="frame" x="8" y="0.0" width="8" height="2"/>
+                                        <rect key="frame" x="30.5" y="0.0" width="30.5" height="22.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -70,7 +70,7 @@
                 <constraint firstItem="cQT-aU-qGK" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.4" id="oUu-QC-Cuk"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="128" height="150"/>
+            <size key="customSize" width="240" height="251"/>
             <connections>
                 <outlet property="borderView" destination="2qu-Lh-Vfh" id="4i8-lo-xx3"/>
                 <outlet property="coinImageView" destination="yfG-9a-rXu" id="bqu-JC-1u4"/>
@@ -78,7 +78,7 @@
                 <outlet property="coinView" destination="cQT-aU-qGK" id="kuM-Mg-xhc"/>
                 <outlet property="imageView" destination="XSY-TR-YqT" id="yzI-nH-ROg"/>
             </connections>
-            <point key="canvasLocation" x="65.94202898550725" y="51.227678571428569"/>
+            <point key="canvasLocation" x="146.37681159420291" y="84.709821428571431"/>
         </collectionViewCell>
     </objects>
     <resources>

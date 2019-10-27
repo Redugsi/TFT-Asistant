@@ -15,21 +15,23 @@ import Domain
 
 enum Champions
 {
-  // MARK: Use cases
-  
-  enum GetChampionsOrderedByTier
-  {
-    struct Request
+    // MARK: Use cases
+    
+    enum GetChampionsOrderedByTier
     {
+        struct Request
+        {
+        }
+        struct Response
+        {
+            var champions: [Champion]?
+        }
+        struct ViewModel
+        {
+            var championViewModels: [ChampionViewModel]?
+        }
     }
-    struct Response
-    {
-        var champions: [Champion]?
-    }
-    struct ViewModel
-    {
-        var championViewModels: [ChampionViewModel]?
-    }
+    
     struct ChampionViewModel{
         var name: String
         var origin: [String]
@@ -39,5 +41,4 @@ enum Champions
         var items: [String]
         var stats: Stats
     }
-  }
 }
