@@ -25,6 +25,7 @@ class ChampionDetailViewController: UIViewController, ChampionDetailDisplayLogic
     // MARK: Object lifecycle
     
     
+    @IBOutlet weak var topConstraint: NSLayoutConstraint?
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var championDetailView: ChampionDetailView!
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
@@ -73,21 +74,12 @@ class ChampionDetailViewController: UIViewController, ChampionDetailDisplayLogic
     {
         super.viewDidLoad()
         interactor?.getChampionDetail()
+        topConstraint?.isActive = championDetailView.frame.height >= self.view.frame.height
     }
     
     func displayChampionDetail(championViewModel: Champions.ChampionViewModel) {
         championDetailView.viewModel = championViewModel
-    }
-    
-    private func calculateHeight(){
-        print(scrollView.contentSize)
-        var contentRect = CGRect.zero
-        for view in scrollView.subviews {
-            contentRect = contentRect.union(view.frame)
-        }
-        
-        scrollView.contentSize = contentRect.size
-        
-        print(scrollView.contentSize)
+        self.view.setNeedsLayout()
+        self.view.layoutIfNeeded()
     }
 }
