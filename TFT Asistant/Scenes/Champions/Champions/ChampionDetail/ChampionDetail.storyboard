@@ -11,42 +11,43 @@
         <!--Champion Detail View Controller-->
         <scene sceneID="0XH-Fd-oq5">
             <objects>
-                <viewController storyboardIdentifier="ChampionDetailViewController" id="jdR-mV-YsK" customClass="ChampionDetailViewController" customModule="TFT_Asistant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChampionDetailViewController" automaticallyAdjustsScrollViewInsets="NO" id="jdR-mV-YsK" customClass="ChampionDetailViewController" customModule="TFT_Asistant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6OQ-0y-dbd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxV-aV-7uj">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBe-Ma-aSU">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" verticalHuggingPriority="1000" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ro0-wa-WzE" customClass="ChampionDetailView" customModule="TFT_Asistant" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Ro0-wa-WzE" customClass="ChampionDetailView" customModule="TFT_Asistant" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="Ro0-wa-WzE" secondAttribute="bottom" id="2dq-RJ-XUM"/>
-                                    <constraint firstAttribute="trailing" secondItem="Ro0-wa-WzE" secondAttribute="trailing" id="7Ef-pP-jKI"/>
-                                    <constraint firstItem="Ro0-wa-WzE" firstAttribute="centerX" secondItem="fxV-aV-7uj" secondAttribute="centerX" id="Dpg-Fd-dcC"/>
-                                    <constraint firstItem="Ro0-wa-WzE" firstAttribute="top" secondItem="0pP-Nl-wA2" secondAttribute="top" id="P5A-SO-DnC"/>
-                                    <constraint firstItem="Ro0-wa-WzE" firstAttribute="centerY" secondItem="fxV-aV-7uj" secondAttribute="centerY" id="YTe-tc-ZIJ"/>
-                                    <constraint firstItem="Ro0-wa-WzE" firstAttribute="leading" secondItem="fxV-aV-7uj" secondAttribute="leading" id="qUf-Md-Wjx"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ro0-wa-WzE" secondAttribute="trailing" id="5NK-lr-nxN"/>
+                                    <constraint firstItem="Ro0-wa-WzE" firstAttribute="centerX" secondItem="jBe-Ma-aSU" secondAttribute="centerX" id="I4T-vZ-Lrl"/>
+                                    <constraint firstItem="Ro0-wa-WzE" firstAttribute="leading" secondItem="jBe-Ma-aSU" secondAttribute="leading" id="QOd-dt-O2d"/>
+                                    <constraint firstItem="Ro0-wa-WzE" firstAttribute="top" secondItem="jBe-Ma-aSU" secondAttribute="top" id="SBs-Rn-uj1"/>
+                                    <constraint firstItem="Ro0-wa-WzE" firstAttribute="centerY" secondItem="jBe-Ma-aSU" secondAttribute="centerY" priority="250" id="d9f-Va-aRR"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ro0-wa-WzE" secondAttribute="bottom" priority="250" id="yrj-Ok-j1N"/>
                                 </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="pAH-Lj-Dkc"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="0pP-Nl-wA2"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Jct-qG-pxF"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="dgI-31-toG"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="fxV-aV-7uj" firstAttribute="leading" secondItem="eO1-ov-I8o" secondAttribute="leading" id="Odo-I5-hO7"/>
-                            <constraint firstItem="eO1-ov-I8o" firstAttribute="trailing" secondItem="fxV-aV-7uj" secondAttribute="trailing" id="v9B-09-Bay"/>
-                            <constraint firstItem="eO1-ov-I8o" firstAttribute="bottom" secondItem="fxV-aV-7uj" secondAttribute="bottom" id="vHF-I4-GGx"/>
+                            <constraint firstItem="jBe-Ma-aSU" firstAttribute="top" secondItem="eO1-ov-I8o" secondAttribute="top" id="Hne-aq-6cX"/>
+                            <constraint firstItem="jBe-Ma-aSU" firstAttribute="trailing" secondItem="eO1-ov-I8o" secondAttribute="trailing" id="MkY-qA-Piy"/>
+                            <constraint firstItem="jBe-Ma-aSU" firstAttribute="bottom" secondItem="eO1-ov-I8o" secondAttribute="bottom" id="RVt-sH-7rE"/>
+                            <constraint firstItem="jBe-Ma-aSU" firstAttribute="leading" secondItem="eO1-ov-I8o" secondAttribute="leading" id="gMN-Lj-wwU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eO1-ov-I8o"/>
                     </view>
                     <connections>
                         <outlet property="championDetailView" destination="Ro0-wa-WzE" id="RKT-Gc-zaw"/>
-                        <outlet property="scrollView" destination="fxV-aV-7uj" id="AH5-TB-UOg"/>
+                        <outlet property="scrollView" destination="jBe-Ma-aSU" id="pYJ-Hm-dxs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yzw-5P-VSF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
