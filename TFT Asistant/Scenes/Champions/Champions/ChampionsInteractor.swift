@@ -16,22 +16,28 @@ import LocalPlatform
 protocol ChampionsBusinessLogic
 {
     func getChampionsOrderedByTier(request: Champions.GetChampionsOrderedByTier.Request)
+    func sendChampionDetail(championViewModel: Champions.ChampionViewModel)
 }
 
 protocol ChampionsDataStore
 {
-  //var name: String { get set }
+    var championViewModel: Champions.ChampionViewModel? { get set }
 }
 
 class ChampionsInteractor: ChampionsBusinessLogic, ChampionsDataStore
 {
-
+    var championViewModel: Champions.ChampionViewModel?
+    
     var presenter: ChampionsPresentationLogic?
     var worker: ChampionsWorker = ChampionsWorker(useCase: LocalPlatform.UseCaseProvider().makeChampionsUseCase())
   
-    func getChampionsOrderedByTier(request: Champions.GetChampionsOrderedByTier.Request) {
-        
+    func getChampionsOrderedByTier(request: Champions.GetChampionsOrderedByTier.Request) {        
         let response = Champions.GetChampionsOrderedByTier.Response(champions: worker.getChampionsOrderedByTier())
         presenter?.presentChampions(response: response)
+    }
+    
+    func sendChampionDetail(championViewModel: Champions.ChampionViewModel) {
+        self.championViewModel = championViewModel
+        presenter?.presentChampionDetail()
     }
 }

@@ -14,47 +14,41 @@ import UIKit
 
 @objc protocol ChampionsRoutingLogic
 {
-  //func routeToSomewhere(segue: UIStoryboardSegue?)
+    func routeToChampionDetail()
 }
 
 protocol ChampionsDataPassing
 {
-  var dataStore: ChampionsDataStore? { get }
+    var dataStore: ChampionsDataStore? { get }
 }
 
 class ChampionsRouter: NSObject, ChampionsRoutingLogic, ChampionsDataPassing
 {
-  weak var viewController: ChampionsViewController?
-  var dataStore: ChampionsDataStore?
-  
-  // MARK: Routing
-  
-  //func routeToSomewhere(segue: UIStoryboardSegue?)
-  //{
-  //  if let segue = segue {
-  //    let destinationVC = segue.destination as! SomewhereViewController
-  //    var destinationDS = destinationVC.router!.dataStore!
-  //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-  //  } else {
-  //    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-  //    let destinationVC = storyboard.instantiateViewController(withIdentifier: "SomewhereViewController") as! SomewhereViewController
-  //    var destinationDS = destinationVC.router!.dataStore!
-  //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-  //    navigateToSomewhere(source: viewController!, destination: destinationVC)
-  //  }
-  //}
-
-  // MARK: Navigation
-  
-  //func navigateToSomewhere(source: ChampionsViewController, destination: SomewhereViewController)
-  //{
-  //  source.show(destination, sender: nil)
-  //}
-  
-  // MARK: Passing data
-  
-  //func passDataToSomewhere(source: ChampionsDataStore, destination: inout SomewhereDataStore)
-  //{
-  //  destination.name = source.name
-  //}
+    weak var viewController: ChampionsViewController?
+    var dataStore: ChampionsDataStore?
+    
+    // MARK: Routing
+    
+    func routeToChampionDetail()
+    {
+        let storyboard = UIStoryboard(name: "ChampionDetail", bundle: nil)
+        let destinationVC = storyboard.instantiateViewController(withIdentifier: "ChampionDetailViewController") as! ChampionDetailViewController
+        var destinationDS = destinationVC.router!.dataStore!
+        passDataToModal(source: dataStore!, destination: &destinationDS)
+        navigateToModal(source: viewController!, destination: destinationVC)
+    }
+    
+    // MARK: Navigation
+    
+    func navigateToModal(source: ChampionsViewController, destination: ChampionDetailViewController)
+    {
+        source.show(destination, sender: nil)
+    }
+    
+    // MARK: Passing data
+    
+    func passDataToModal(source: ChampionsDataStore, destination: inout ChampionDetailDataStore)
+    {
+        destination.championViewModel = source.championViewModel
+    }
 }

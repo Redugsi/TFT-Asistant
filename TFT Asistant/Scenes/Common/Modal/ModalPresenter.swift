@@ -14,7 +14,8 @@ import UIKit
 
 protocol ModalPresentationLogic
 {
-  func presentSomething(response: Modal.Something.Response)
+    func presentSomething(response: Modal.Something.Response)
+    func presentDetailView(detailView: UIView)
 }
 
 class ModalPresenter: ModalPresentationLogic
@@ -28,4 +29,8 @@ class ModalPresenter: ModalPresentationLogic
     let viewModel = Modal.Something.ViewModel()
     viewController?.displaySomething(viewModel: viewModel)
   }
+    
+    func presentDetailView(detailView: UIView) {
+        viewController?.displayDetailView(detailView: detailView)
+    }
 }

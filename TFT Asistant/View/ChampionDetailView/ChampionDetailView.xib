@@ -67,8 +67,8 @@
                                         <constraint firstAttribute="width" constant="20" id="eZ5-c5-Sdt"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAP-se-23J">
-                                    <rect key="frame" x="32" y="20" width="15.5" height="18"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAP-se-23J">
+                                    <rect key="frame" x="38" y="20" width="3.5" height="18"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
                                     <color key="textColor" name="color_dmg"/>
                                     <nil key="highlightedColor"/>
@@ -85,8 +85,8 @@
                                         <constraint firstAttribute="width" constant="20" id="qiA-7j-lzl"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLw-If-0Dc">
-                                    <rect key="frame" x="32" y="20" width="15.5" height="18"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLw-If-0Dc">
+                                    <rect key="frame" x="38" y="20" width="3.5" height="18"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
                                     <color key="textColor" name="color_as"/>
                                     <nil key="highlightedColor"/>
@@ -103,8 +103,8 @@
                                         <constraint firstAttribute="width" constant="20" id="pjr-ij-n4c"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="700" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAG-kp-QIR">
-                                    <rect key="frame" x="28" y="20" width="23" height="18"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAG-kp-QIR">
+                                    <rect key="frame" x="38" y="20" width="3.5" height="18"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
                                     <color key="textColor" name="color_hp"/>
                                     <nil key="highlightedColor"/>
@@ -121,8 +121,8 @@
                                         <constraint firstAttribute="width" constant="20" id="X0l-CY-iWq"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nB8-YJ-Uv3">
-                                    <rect key="frame" x="32" y="20" width="15.5" height="18"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nB8-YJ-Uv3">
+                                    <rect key="frame" x="38" y="20" width="3.5" height="18"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
                                     <color key="textColor" name="color_armor"/>
                                     <nil key="highlightedColor"/>
@@ -139,8 +139,8 @@
                                         <constraint firstAttribute="height" constant="20" id="oh8-7k-ffd"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbK-dt-c5O">
-                                    <rect key="frame" x="32" y="20" width="15.5" height="18"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbK-dt-c5O">
+                                    <rect key="frame" x="38" y="20" width="3.5" height="18"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
                                     <color key="textColor" name="color_mr"/>
                                     <nil key="highlightedColor"/>
@@ -150,7 +150,7 @@
                     </subviews>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="HJJ-cP-O3D" userLabel="Ability Stats">
-                    <rect key="frame" x="32" y="404.5" width="395" height="108.5"/>
+                    <rect key="frame" x="32" y="374.5" width="395" height="138.5"/>
                     <subviews>
                         <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oPC-Jp-Pgi" customClass="TitleDescriptionView" customModule="TFT_Asistant" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="395" height="0.0"/>
@@ -185,13 +185,13 @@
                     </subviews>
                 </stackView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Darkin Blade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PxZ-tH-eLt" userLabel="Ability Name">
-                    <rect key="frame" x="0.0" y="315.5" width="427" height="23.5"/>
+                    <rect key="frame" x="0.0" y="285.5" width="427" height="23.5"/>
                     <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aatrox cleaves the area in front of him, dealing damage to enemies inside it." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDg-Bv-1ke" userLabel="Ability Desc">
-                    <rect key="frame" x="15" y="343" width="397" height="46.5"/>
+                    <rect key="frame" x="15" y="313" width="397" height="46.5"/>
                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -238,7 +238,7 @@
                 <constraint firstAttribute="trailing" secondItem="fDg-Bv-1ke" secondAttribute="trailing" constant="15" id="r8n-fQ-3I9"/>
                 <constraint firstAttribute="trailing" secondItem="Sc1-Rk-ViD" secondAttribute="trailing" constant="15" id="tUC-Yf-Cuq"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="NJt-Nf-Naa" secondAttribute="trailing" id="uxV-pf-nil"/>
-                <constraint firstItem="PxZ-tH-eLt" firstAttribute="top" secondItem="Sc1-Rk-ViD" secondAttribute="bottom" constant="45" id="wIS-MA-riz"/>
+                <constraint firstItem="PxZ-tH-eLt" firstAttribute="top" secondItem="Sc1-Rk-ViD" secondAttribute="bottom" constant="15" id="wIS-MA-riz"/>
                 <constraint firstItem="wwI-ic-EhU" firstAttribute="top" secondItem="NJt-Nf-Naa" secondAttribute="bottom" constant="15" id="xX6-qr-QcF"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>

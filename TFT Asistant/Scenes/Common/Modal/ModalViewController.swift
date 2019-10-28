@@ -15,6 +15,7 @@ import UIKit
 protocol ModalDisplayLogic: class
 {
     func displaySomething(viewModel: Modal.Something.ViewModel)
+    func displayDetailView(detailView: UIView)
 }
 
 class ModalViewController: UIViewController, ModalDisplayLogic
@@ -27,6 +28,7 @@ class ModalViewController: UIViewController, ModalDisplayLogic
         case collapsed
     }
     
+    @IBOutlet weak var championDetailView: ChampionDetailView!
     var visualEffectView: UIVisualEffectView!
     @IBOutlet weak var modalView: UIView!
     @IBOutlet weak var stackView: UIStackView!
@@ -87,6 +89,7 @@ class ModalViewController: UIViewController, ModalDisplayLogic
     {
         super.viewDidLoad()
         setupView()
+        interactor?.sendDisplayView()
     }
     
     override func viewDidLayoutSubviews() {
@@ -105,11 +108,13 @@ class ModalViewController: UIViewController, ModalDisplayLogic
         visualEffectView.frame = self.view.frame
 
         self.view.insertSubview(visualEffectView, at: 0)
+                
     }
         
     // MARK: Do something
     
     //@IBOutlet weak var nameTextField: UITextField!
+
     
     func doSomething()
     {
@@ -120,5 +125,9 @@ class ModalViewController: UIViewController, ModalDisplayLogic
     func displaySomething(viewModel: Modal.Something.ViewModel)
     {
         //nameTextField.text = viewModel.name
+    }
+    
+    func displayDetailView(detailView: UIView) {
+        self.stackView.addSubview(detailView)
     }
 }

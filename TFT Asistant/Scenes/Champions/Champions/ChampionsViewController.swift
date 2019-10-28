@@ -15,6 +15,7 @@ import UIKit
 protocol ChampionsDisplayLogic: class
 {
     func displayChampions(viewModel: Champions.GetChampionsOrderedByTier.ViewModel?)
+    func displayChampionDetail()
 }
 
 class ChampionsViewController: UIViewController, ChampionsDisplayLogic
@@ -117,6 +118,10 @@ class ChampionsViewController: UIViewController, ChampionsDisplayLogic
     func displayChampions(viewModel: Champions.GetChampionsOrderedByTier.ViewModel?) {
         self.viewModel = viewModel
     }
+    
+    func displayChampionDetail() {
+        router?.routeToChampionDetail()
+    }
 }
 
 extension ChampionsViewController: UICollectionViewDelegate, UICollectionViewDataSource{
@@ -137,6 +142,8 @@ extension ChampionsViewController: UICollectionViewDelegate, UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        if let championViewModel = viewModel?.championViewModels?[indexPath.row]{
+            interactor?.sendChampionDetail(championViewModel: championViewModel)
+        }
     }
 }

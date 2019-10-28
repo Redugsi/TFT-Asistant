@@ -14,28 +14,37 @@ import UIKit
 
 protocol ModalBusinessLogic
 {
-  func doSomething(request: Modal.Something.Request)
+    func doSomething(request: Modal.Something.Request)
+    func sendDisplayView()
 }
 
 protocol ModalDataStore
 {
-  //var name: String { get set }
+    var detailView: UIView? { get set }
 }
 
 class ModalInteractor: ModalBusinessLogic, ModalDataStore
 {
-  var presenter: ModalPresentationLogic?
-  var worker: ModalWorker?
-  //var name: String = ""
-  
-  // MARK: Do something
-  
-  func doSomething(request: Modal.Something.Request)
-  {
-    worker = ModalWorker()
-    worker?.doSomeWork()
+    var detailView: UIView?
     
-    let response = Modal.Something.Response()
-    presenter?.presentSomething(response: response)
-  }
+    var presenter: ModalPresentationLogic?
+    var worker: ModalWorker?
+    //var name: String = ""
+    
+    // MARK: Do something
+    
+    func doSomething(request: Modal.Something.Request)
+    {
+        worker = ModalWorker()
+        worker?.doSomeWork()
+        
+        let response = Modal.Something.Response()
+        presenter?.presentSomething(response: response)
+    }
+    
+    func sendDisplayView() {
+        if let detailView = detailView{
+            presenter?.presentDetailView(detailView: detailView)
+        }
+    }
 }

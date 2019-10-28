@@ -28,19 +28,12 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rsk-Nw-UQc" customClass="ChampionDetailView" customModule="TFT_Asistant" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" name="color_primary_second"/>
                         <constraints>
-                            <constraint firstItem="rsk-Nw-UQc" firstAttribute="leading" secondItem="9h1-oW-PqF" secondAttribute="leading" id="2s2-Rd-GST"/>
                             <constraint firstItem="TcR-oZ-Mv7" firstAttribute="leading" secondItem="9h1-oW-PqF" secondAttribute="leading" constant="15" id="6Fx-bF-By2"/>
-                            <constraint firstItem="9h1-oW-PqF" firstAttribute="trailing" secondItem="rsk-Nw-UQc" secondAttribute="trailing" id="Gcp-mB-90v"/>
                             <constraint firstItem="9h1-oW-PqF" firstAttribute="trailing" secondItem="TcR-oZ-Mv7" secondAttribute="trailing" constant="15" id="HMC-SQ-UoY"/>
                             <constraint firstItem="TcR-oZ-Mv7" firstAttribute="top" secondItem="9h1-oW-PqF" secondAttribute="top" constant="15" id="QwE-p3-uxd"/>
-                            <constraint firstItem="9h1-oW-PqF" firstAttribute="bottom" secondItem="rsk-Nw-UQc" secondAttribute="bottom" id="a8N-S6-xKx"/>
                             <constraint firstItem="9h1-oW-PqF" firstAttribute="bottom" secondItem="TcR-oZ-Mv7" secondAttribute="bottom" constant="15" id="ahM-F5-1eQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9h1-oW-PqF"/>

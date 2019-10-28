@@ -15,6 +15,7 @@ import UIKit
 protocol ChampionsPresentationLogic
 {
     func presentChampions(response: Champions.GetChampionsOrderedByTier.Response)
+    func presentChampionDetail()
 }
 
 class ChampionsPresenter: ChampionsPresentationLogic
@@ -32,5 +33,9 @@ class ChampionsPresenter: ChampionsPresentationLogic
         }
         
         viewController?.displayChampions(viewModel: Champions.GetChampionsOrderedByTier.ViewModel(championViewModels: championsViewModel))
+    }
+    
+    func presentChampionDetail() {
+        viewController?.displayChampionDetail()
     }
 }

@@ -42,6 +42,13 @@
 		D1876FCB2349D2CC00BA3F3B /* BaseItems.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1876FCA2349D2CC00BA3F3B /* BaseItems.storyboard */; };
 		D1876FCF234A59DE00BA3F3B /* CombinedItemDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1876FCD234A59DE00BA3F3B /* CombinedItemDetailTableViewCell.swift */; };
 		D1876FD0234A59DE00BA3F3B /* CombinedItemDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1876FCE234A59DE00BA3F3B /* CombinedItemDetailTableViewCell.xib */; };
+		D1906DC52366F6E4009A29C4 /* ChampionDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1906DBF2366F6E4009A29C4 /* ChampionDetailPresenter.swift */; };
+		D1906DC62366F6E4009A29C4 /* ChampionDetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1906DC02366F6E4009A29C4 /* ChampionDetailWorker.swift */; };
+		D1906DC72366F6E4009A29C4 /* ChampionDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1906DC12366F6E4009A29C4 /* ChampionDetailRouter.swift */; };
+		D1906DC82366F6E4009A29C4 /* ChampionDetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1906DC22366F6E4009A29C4 /* ChampionDetailModels.swift */; };
+		D1906DC92366F6E4009A29C4 /* ChampionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1906DC32366F6E4009A29C4 /* ChampionDetailViewController.swift */; };
+		D1906DCA2366F6E4009A29C4 /* ChampionDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1906DC42366F6E4009A29C4 /* ChampionDetailInteractor.swift */; };
+		D1906DCC2366F7A6009A29C4 /* ChampionDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1906DCB2366F7A6009A29C4 /* ChampionDetail.storyboard */; };
 		D19C74CF2348E348003CFF4B /* ItemStatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19C74CE2348E348003CFF4B /* ItemStatViewModel.swift */; };
 		D19C74D12348F5D8003CFF4B /* ItemCombinationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19C74D02348F5D8003CFF4B /* ItemCombinationDetailViewModel.swift */; };
 		D19C74D62348F881003CFF4B /* Optional+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19C74D52348F881003CFF4B /* Optional+Ext.swift */; };
@@ -249,6 +256,13 @@
 		D1876FCA2349D2CC00BA3F3B /* BaseItems.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaseItems.storyboard; sourceTree = "<group>"; };
 		D1876FCD234A59DE00BA3F3B /* CombinedItemDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedItemDetailTableViewCell.swift; sourceTree = "<group>"; };
 		D1876FCE234A59DE00BA3F3B /* CombinedItemDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CombinedItemDetailTableViewCell.xib; sourceTree = "<group>"; };
+		D1906DBF2366F6E4009A29C4 /* ChampionDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDetailPresenter.swift; sourceTree = "<group>"; };
+		D1906DC02366F6E4009A29C4 /* ChampionDetailWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDetailWorker.swift; sourceTree = "<group>"; };
+		D1906DC12366F6E4009A29C4 /* ChampionDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDetailRouter.swift; sourceTree = "<group>"; };
+		D1906DC22366F6E4009A29C4 /* ChampionDetailModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDetailModels.swift; sourceTree = "<group>"; };
+		D1906DC32366F6E4009A29C4 /* ChampionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDetailViewController.swift; sourceTree = "<group>"; };
+		D1906DC42366F6E4009A29C4 /* ChampionDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDetailInteractor.swift; sourceTree = "<group>"; };
+		D1906DCB2366F7A6009A29C4 /* ChampionDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChampionDetail.storyboard; sourceTree = "<group>"; };
 		D19C74CE2348E348003CFF4B /* ItemStatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStatViewModel.swift; sourceTree = "<group>"; };
 		D19C74D02348F5D8003CFF4B /* ItemCombinationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCombinationDetailViewModel.swift; sourceTree = "<group>"; };
 		D19C74D52348F881003CFF4B /* Optional+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Ext.swift"; sourceTree = "<group>"; };
@@ -541,6 +555,20 @@
 			path = CombinedItemDetailTableViewCell;
 			sourceTree = "<group>";
 		};
+		D1906DBE2366F6CD009A29C4 /* ChampionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D1906DBF2366F6E4009A29C4 /* ChampionDetailPresenter.swift */,
+				D1906DC02366F6E4009A29C4 /* ChampionDetailWorker.swift */,
+				D1906DC12366F6E4009A29C4 /* ChampionDetailRouter.swift */,
+				D1906DC22366F6E4009A29C4 /* ChampionDetailModels.swift */,
+				D1906DC32366F6E4009A29C4 /* ChampionDetailViewController.swift */,
+				D1906DC42366F6E4009A29C4 /* ChampionDetailInteractor.swift */,
+				D1906DCB2366F7A6009A29C4 /* ChampionDetail.storyboard */,
+			);
+			path = ChampionDetail;
+			sourceTree = "<group>";
+		};
 		D19C74D22348F79C003CFF4B /* Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -628,6 +656,7 @@
 		E831A13D235F60CE0085EF61 /* Champions */ = {
 			isa = PBXGroup;
 			children = (
+				D1906DBE2366F6CD009A29C4 /* ChampionDetail */,
 				E831A13F235F61AA0085EF61 /* ChampionsPresenter.swift */,
 				E831A140235F61AA0085EF61 /* ChampionsWorker.swift */,
 				E831A141235F61AA0085EF61 /* ChampionsRouter.swift */,
@@ -1106,6 +1135,7 @@
 				E887B09523460FC200B8E661 /* items.json in Resources */,
 				D1D1DA3A234BBCDB00EBBD37 /* ItemBuilder.storyboard in Resources */,
 				E887B09223460FC200B8E661 /* champions.json in Resources */,
+				D1906DCC2366F7A6009A29C4 /* ChampionDetail.storyboard in Resources */,
 				D14C4392236625F900F1C8C6 /* TitleDescriptionView.xib in Resources */,
 				E887B09F234774CE00B8E661 /* SquareCollectionViewCell.xib in Resources */,
 				D1B4EF692364BDF900331FA3 /* Modal.storyboard in Resources */,
@@ -1343,11 +1373,13 @@
 				D15AA2F02347DBF700B5DCE9 /* ItemStatView.swift in Sources */,
 				D1AACC93234D06F300CB1D5E /* MultiSelectableCollectionViewModel.swift in Sources */,
 				D1D1DA2B234BBC3100EBBD37 /* ItemModels.swift in Sources */,
+				D1906DCA2366F6E4009A29C4 /* ChampionDetailInteractor.swift in Sources */,
 				D19C74D12348F5D8003CFF4B /* ItemCombinationDetailViewModel.swift in Sources */,
 				D106E5A023467870005E8E3F /* CombinationsModels.swift in Sources */,
 				E831A154235F63610085EF61 /* ChampionCollectionViewCell.swift in Sources */,
 				D19C74D82348FEF7003CFF4B /* StackView+Ext.swift in Sources */,
 				E831A157235F6C640085EF61 /* ChampionCellViewModel.swift in Sources */,
+				D1906DC52366F6E4009A29C4 /* ChampionDetailPresenter.swift in Sources */,
 				E831A145235F61AA0085EF61 /* ChampionsPresenter.swift in Sources */,
 				D1F8CEAA2365783B006C4F64 /* ModalViewController+Animations.swift in Sources */,
 				E887B09E234774CD00B8E661 /* SquareCollectionViewCell.swift in Sources */,
@@ -1361,12 +1393,14 @@
 				D1F8CEB4236585FB006C4F64 /* ImageDescriptionView.swift in Sources */,
 				D1D1DA36234BBCA100EBBD37 /* ItemBuilderModels.swift in Sources */,
 				E831A14A235F61AA0085EF61 /* ChampionsInteractor.swift in Sources */,
+				D1906DC82366F6E4009A29C4 /* ChampionDetailModels.swift in Sources */,
 				D1876FC92349D24800BA3F3B /* BaseItemsInteractor.swift in Sources */,
 				D1B4EF622364BCFA00331FA3 /* ModalPresenter.swift in Sources */,
 				E831A149235F61AA0085EF61 /* ChampionsViewController.swift in Sources */,
 				D1876FC52349D24800BA3F3B /* BaseItemsWorker.swift in Sources */,
 				E887AFE5234504CF00B8E661 /* AppDelegate.swift in Sources */,
 				D1D1DA34234BBCA100EBBD37 /* ItemBuilderWorker.swift in Sources */,
+				D1906DC72366F6E4009A29C4 /* ChampionDetailRouter.swift in Sources */,
 				D19C74D62348F881003CFF4B /* Optional+Ext.swift in Sources */,
 				D1F8CEB123657BB4006C4F64 /* ChampionDetailViewModel.swift in Sources */,
 				D1D1DA33234BBCA100EBBD37 /* ItemBuilderPresenter.swift in Sources */,
@@ -1377,8 +1411,10 @@
 				D106E59C23467870005E8E3F /* CombinationsWorker.swift in Sources */,
 				D1876FC72349D24800BA3F3B /* BaseItemsModels.swift in Sources */,
 				D1876FC62349D24800BA3F3B /* BaseItemsRouter.swift in Sources */,
+				D1906DC92366F6E4009A29C4 /* ChampionDetailViewController.swift in Sources */,
 				D1B4EF632364BCFA00331FA3 /* ModalWorker.swift in Sources */,
 				D106E59E23467870005E8E3F /* CombinationsRouter.swift in Sources */,
+				D1906DC62366F6E4009A29C4 /* ChampionDetailWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
