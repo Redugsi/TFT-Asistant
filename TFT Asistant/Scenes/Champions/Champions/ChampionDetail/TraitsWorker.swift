@@ -43,6 +43,17 @@ class TraitsWorker
         
         let traitViewModels = originsViewModels + classesViewModels
         
-        return Traits.GetAllTraits.Response(traitViewModels: traitViewModels)
+        let resultModel = traitViewModels.sorted { (first, second) -> Bool in
+            guard let firstName = first.name else {
+                return false
+            }
+            
+            guard let secondName = second.name else {
+                return true
+            }
+            return firstName.compare(secondName) == ComparisonResult.orderedAscending
+        }
+        
+        return Traits.GetAllTraits.Response(traitViewModels: resultModel)
     }
 }
