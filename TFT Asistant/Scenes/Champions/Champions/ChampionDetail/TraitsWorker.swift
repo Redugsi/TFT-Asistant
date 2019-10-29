@@ -29,16 +29,17 @@ class TraitsWorker
     }
     
     func getAllTraits() -> Traits.GetAllTraits.Response {
+        
         let originsViewModels = originsUseCase.getOrigins()?.map {
             Traits.TraitViewModel(key: $0.key, name: $0.name, description: $0.originDescription, accentChampionImage: $0.accentChampionImage, bonuses: $0.bonuses.map{
                 Traits.BonusViewModel(needed: $0.needed, effect: $0.effect)
-            }, champions: nil)
+            }, champions: getChampions(by: $0.name))
             } ?? [Traits.TraitViewModel]()
         
         let classesViewModels = classesUseCase.getClasses()?.map {
             Traits.TraitViewModel(key: $0.key, name: $0.name, description: $0.classDescription, accentChampionImage: $0.accentChampionImage, bonuses: $0.bonuses.map{
                 Traits.BonusViewModel(needed: $0.needed, effect: $0.effect)
-            }, champions: nil)
+            }, champions: getChampions(with: $0.name))
         } ?? [Traits.TraitViewModel]()
         
         let traitViewModels = originsViewModels + classesViewModels
@@ -55,5 +56,25 @@ class TraitsWorker
         }
         
         return Traits.GetAllTraits.Response(traitViewModels: resultModel)
+    }
+    
+    private func getChampions(by originName: String?) -> [Traits.ChampionViewModel]? {
+        guard let originName = originName else {
+            return nil
+        }
+        
+        return championUseCase.getChampions()?
+            .filter { $0.origin.contains(originName)}
+            .map { Traits.ChampionViewModel(name: $0.name, cost: $0.cost)}
+    }
+    
+    private func getChampions(with className: String?) -> [Traits.ChampionViewModel]? {
+        guard let className = className else {
+            return nil
+        }
+        
+        return championUseCase.getChampions()?
+            .filter { $0.championClass.contains(className)}
+            .map { Traits.ChampionViewModel(name: $0.name, cost: $0.cost)}
     }
 }
