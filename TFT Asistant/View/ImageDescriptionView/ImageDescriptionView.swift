@@ -19,6 +19,8 @@ class ImageDescriptionView: UIView {
         didSet{
             if let viewModel = viewModel{
                 initView(with: viewModel)
+            }else{
+                clearView()
             }
         }
     }
@@ -43,5 +45,10 @@ class ImageDescriptionView: UIView {
     private func initView(with viewModel: ImageDescriptionViewModel){
         label.text = viewModel.description ?? ""
         image.image = UIImage(named: viewModel.imageName ?? "")
+    }
+    
+    private func clearView(){
+        image.image = nil
+        label.text = ""
     }
 }

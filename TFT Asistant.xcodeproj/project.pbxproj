@@ -49,6 +49,19 @@
 		D1906DC92366F6E4009A29C4 /* ChampionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1906DC32366F6E4009A29C4 /* ChampionDetailViewController.swift */; };
 		D1906DCA2366F6E4009A29C4 /* ChampionDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1906DC42366F6E4009A29C4 /* ChampionDetailInteractor.swift */; };
 		D1906DCC2366F7A6009A29C4 /* ChampionDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1906DCB2366F7A6009A29C4 /* ChampionDetail.storyboard */; };
+		D1906DD323676DCC009A29C4 /* TraitsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1906DCD23676DCC009A29C4 /* TraitsPresenter.swift */; };
+		D1906DD423676DCC009A29C4 /* TraitsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1906DCE23676DCC009A29C4 /* TraitsWorker.swift */; };
+		D1906DD523676DCC009A29C4 /* TraitsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1906DCF23676DCC009A29C4 /* TraitsRouter.swift */; };
+		D1906DD623676DCC009A29C4 /* TraitsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1906DD023676DCC009A29C4 /* TraitsModels.swift */; };
+		D1906DD723676DCC009A29C4 /* TraitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1906DD123676DCC009A29C4 /* TraitsViewController.swift */; };
+		D1906DD823676DCC009A29C4 /* TraitsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1906DD223676DCC009A29C4 /* TraitsInteractor.swift */; };
+		D1906DDC23676E9A009A29C4 /* TraitsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1906DDA23676E9A009A29C4 /* TraitsTableViewCell.swift */; };
+		D1906DDD23676E9A009A29C4 /* TraitsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1906DDB23676E9A009A29C4 /* TraitsTableViewCell.xib */; };
+		D1906DE123677493009A29C4 /* BonusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1906DE023677493009A29C4 /* BonusView.swift */; };
+		D1906DE32367749C009A29C4 /* BonusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1906DE22367749C009A29C4 /* BonusView.xib */; };
+		D1906DE523677615009A29C4 /* BonusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1906DE423677615009A29C4 /* BonusViewModel.swift */; };
+		D1906DE723677B2C009A29C4 /* TraitsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1906DE623677B2C009A29C4 /* TraitsCellViewModel.swift */; };
+		D1906DE92367847B009A29C4 /* Traits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1906DE82367847B009A29C4 /* Traits.storyboard */; };
 		D19C74CF2348E348003CFF4B /* ItemStatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19C74CE2348E348003CFF4B /* ItemStatViewModel.swift */; };
 		D19C74D12348F5D8003CFF4B /* ItemCombinationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19C74D02348F5D8003CFF4B /* ItemCombinationDetailViewModel.swift */; };
 		D19C74D62348F881003CFF4B /* Optional+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19C74D52348F881003CFF4B /* Optional+Ext.swift */; };
@@ -263,6 +276,19 @@
 		D1906DC32366F6E4009A29C4 /* ChampionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDetailViewController.swift; sourceTree = "<group>"; };
 		D1906DC42366F6E4009A29C4 /* ChampionDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDetailInteractor.swift; sourceTree = "<group>"; };
 		D1906DCB2366F7A6009A29C4 /* ChampionDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChampionDetail.storyboard; sourceTree = "<group>"; };
+		D1906DCD23676DCC009A29C4 /* TraitsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TraitsPresenter.swift; path = "TFT Asistant/Scenes/Champions/Champions/ChampionDetail/TraitsPresenter.swift"; sourceTree = SOURCE_ROOT; };
+		D1906DCE23676DCC009A29C4 /* TraitsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TraitsWorker.swift; path = "TFT Asistant/Scenes/Champions/Champions/ChampionDetail/TraitsWorker.swift"; sourceTree = SOURCE_ROOT; };
+		D1906DCF23676DCC009A29C4 /* TraitsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TraitsRouter.swift; path = "TFT Asistant/Scenes/Champions/Champions/ChampionDetail/TraitsRouter.swift"; sourceTree = SOURCE_ROOT; };
+		D1906DD023676DCC009A29C4 /* TraitsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TraitsModels.swift; path = "TFT Asistant/Scenes/Champions/Champions/ChampionDetail/TraitsModels.swift"; sourceTree = SOURCE_ROOT; };
+		D1906DD123676DCC009A29C4 /* TraitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TraitsViewController.swift; path = "TFT Asistant/Scenes/Champions/Champions/ChampionDetail/TraitsViewController.swift"; sourceTree = SOURCE_ROOT; };
+		D1906DD223676DCC009A29C4 /* TraitsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TraitsInteractor.swift; path = "TFT Asistant/Scenes/Champions/Champions/ChampionDetail/TraitsInteractor.swift"; sourceTree = SOURCE_ROOT; };
+		D1906DDA23676E9A009A29C4 /* TraitsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitsTableViewCell.swift; sourceTree = "<group>"; };
+		D1906DDB23676E9A009A29C4 /* TraitsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TraitsTableViewCell.xib; sourceTree = "<group>"; };
+		D1906DE023677493009A29C4 /* BonusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonusView.swift; sourceTree = "<group>"; };
+		D1906DE22367749C009A29C4 /* BonusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BonusView.xib; sourceTree = "<group>"; };
+		D1906DE423677615009A29C4 /* BonusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonusViewModel.swift; sourceTree = "<group>"; };
+		D1906DE623677B2C009A29C4 /* TraitsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitsCellViewModel.swift; sourceTree = "<group>"; };
+		D1906DE82367847B009A29C4 /* Traits.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Traits.storyboard; sourceTree = "<group>"; };
 		D19C74CE2348E348003CFF4B /* ItemStatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStatViewModel.swift; sourceTree = "<group>"; };
 		D19C74D02348F5D8003CFF4B /* ItemCombinationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCombinationDetailViewModel.swift; sourceTree = "<group>"; };
 		D19C74D52348F881003CFF4B /* Optional+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Ext.swift"; sourceTree = "<group>"; };
@@ -464,6 +490,15 @@
 		D106E59023467506005E8E3F /* Traits */ = {
 			isa = PBXGroup;
 			children = (
+				D1906DDF23677443009A29C4 /* Bonuses */,
+				D1906DD923676DE9009A29C4 /* Cell */,
+				D1906DCD23676DCC009A29C4 /* TraitsPresenter.swift */,
+				D1906DCE23676DCC009A29C4 /* TraitsWorker.swift */,
+				D1906DCF23676DCC009A29C4 /* TraitsRouter.swift */,
+				D1906DD023676DCC009A29C4 /* TraitsModels.swift */,
+				D1906DD123676DCC009A29C4 /* TraitsViewController.swift */,
+				D1906DD223676DCC009A29C4 /* TraitsInteractor.swift */,
+				D1906DE82367847B009A29C4 /* Traits.storyboard */,
 			);
 			path = Traits;
 			sourceTree = "<group>";
@@ -567,6 +602,26 @@
 				D1906DCB2366F7A6009A29C4 /* ChampionDetail.storyboard */,
 			);
 			path = ChampionDetail;
+			sourceTree = "<group>";
+		};
+		D1906DD923676DE9009A29C4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D1906DDA23676E9A009A29C4 /* TraitsTableViewCell.swift */,
+				D1906DDB23676E9A009A29C4 /* TraitsTableViewCell.xib */,
+				D1906DE623677B2C009A29C4 /* TraitsCellViewModel.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D1906DDF23677443009A29C4 /* Bonuses */ = {
+			isa = PBXGroup;
+			children = (
+				D1906DE023677493009A29C4 /* BonusView.swift */,
+				D1906DE22367749C009A29C4 /* BonusView.xib */,
+				D1906DE423677615009A29C4 /* BonusViewModel.swift */,
+			);
+			path = Bonuses;
 			sourceTree = "<group>";
 		};
 		D19C74D22348F79C003CFF4B /* Utility */ = {
@@ -1135,17 +1190,20 @@
 				E887B09523460FC200B8E661 /* items.json in Resources */,
 				D1D1DA3A234BBCDB00EBBD37 /* ItemBuilder.storyboard in Resources */,
 				E887B09223460FC200B8E661 /* champions.json in Resources */,
+				D1906DDD23676E9A009A29C4 /* TraitsTableViewCell.xib in Resources */,
 				D1906DCC2366F7A6009A29C4 /* ChampionDetail.storyboard in Resources */,
 				D14C4392236625F900F1C8C6 /* TitleDescriptionView.xib in Resources */,
 				E887B09F234774CE00B8E661 /* SquareCollectionViewCell.xib in Resources */,
 				D1B4EF692364BDF900331FA3 /* Modal.storyboard in Resources */,
 				D1F8CEB6236586AF006C4F64 /* ImageDescriptionView.xib in Resources */,
 				E831A14C235F61CF0085EF61 /* Champions.storyboard in Resources */,
+				D1906DE92367847B009A29C4 /* Traits.storyboard in Resources */,
 				E887AFEF234504D100B8E661 /* LaunchScreen.storyboard in Resources */,
 				E887B099234736B900B8E661 /* Combinations.storyboard in Resources */,
 				E831A155235F63610085EF61 /* ChampionCollectionViewCell.xib in Resources */,
 				D1AACC91234D037C00CB1D5E /* MultiSelectableCollectionViewCell.xib in Resources */,
 				D15AA2E72347D21200B5DCE9 /* ItemCombinationDetailView.xib in Resources */,
+				D1906DE32367749C009A29C4 /* BonusView.xib in Resources */,
 				E887AFEC234504D100B8E661 /* Assets.xcassets in Resources */,
 				E887AFEA234504CF00B8E661 /* Main.storyboard in Resources */,
 			);
@@ -1359,16 +1417,22 @@
 			files = (
 				D14C43942366260400F1C8C6 /* TitleDescriptionView.swift in Sources */,
 				E831A148235F61AA0085EF61 /* ChampionsModels.swift in Sources */,
+				D1906DD423676DCC009A29C4 /* TraitsWorker.swift in Sources */,
+				D1906DD823676DCC009A29C4 /* TraitsInteractor.swift in Sources */,
 				D1AACC90234D037C00CB1D5E /* MultiSelectableCollectionViewCell.swift in Sources */,
 				D1F8CEAD236579D7006C4F64 /* ChampionDetailView.swift in Sources */,
 				D1B4EF652364BCFA00331FA3 /* ModalModels.swift in Sources */,
+				D1906DE723677B2C009A29C4 /* TraitsCellViewModel.swift in Sources */,
 				E831A147235F61AA0085EF61 /* ChampionsRouter.swift in Sources */,
 				D1876FCF234A59DE00BA3F3B /* CombinedItemDetailTableViewCell.swift in Sources */,
+				D1906DD723676DCC009A29C4 /* TraitsViewController.swift in Sources */,
 				D106E5A423467870005E8E3F /* CombinationsInteractor.swift in Sources */,
 				D19C74CF2348E348003CFF4B /* ItemStatViewModel.swift in Sources */,
+				D1906DE123677493009A29C4 /* BonusView.swift in Sources */,
 				D1D1DA38234BBCA100EBBD37 /* ItemBuilderInteractor.swift in Sources */,
 				D1D1DA37234BBCA100EBBD37 /* ItemBuilderViewController.swift in Sources */,
 				D106E59A23467870005E8E3F /* CombinationsPresenter.swift in Sources */,
+				D1906DD523676DCC009A29C4 /* TraitsRouter.swift in Sources */,
 				D14C43962366260F00F1C8C6 /* TitleDescriptionViewModel.swift in Sources */,
 				D15AA2F02347DBF700B5DCE9 /* ItemStatView.swift in Sources */,
 				D1AACC93234D06F300CB1D5E /* MultiSelectableCollectionViewModel.swift in Sources */,
@@ -1376,7 +1440,9 @@
 				D1906DCA2366F6E4009A29C4 /* ChampionDetailInteractor.swift in Sources */,
 				D19C74D12348F5D8003CFF4B /* ItemCombinationDetailViewModel.swift in Sources */,
 				D106E5A023467870005E8E3F /* CombinationsModels.swift in Sources */,
+				D1906DE523677615009A29C4 /* BonusViewModel.swift in Sources */,
 				E831A154235F63610085EF61 /* ChampionCollectionViewCell.swift in Sources */,
+				D1906DDC23676E9A009A29C4 /* TraitsTableViewCell.swift in Sources */,
 				D19C74D82348FEF7003CFF4B /* StackView+Ext.swift in Sources */,
 				E831A157235F6C640085EF61 /* ChampionCellViewModel.swift in Sources */,
 				D1906DC52366F6E4009A29C4 /* ChampionDetailPresenter.swift in Sources */,
@@ -1401,10 +1467,12 @@
 				E887AFE5234504CF00B8E661 /* AppDelegate.swift in Sources */,
 				D1D1DA34234BBCA100EBBD37 /* ItemBuilderWorker.swift in Sources */,
 				D1906DC72366F6E4009A29C4 /* ChampionDetailRouter.swift in Sources */,
+				D1906DD623676DCC009A29C4 /* TraitsModels.swift in Sources */,
 				D19C74D62348F881003CFF4B /* Optional+Ext.swift in Sources */,
 				D1F8CEB123657BB4006C4F64 /* ChampionDetailViewModel.swift in Sources */,
 				D1D1DA33234BBCA100EBBD37 /* ItemBuilderPresenter.swift in Sources */,
 				D14C438F23661E1100F1C8C6 /* ImageDescriptionViewModel.swift in Sources */,
+				D1906DD323676DCC009A29C4 /* TraitsPresenter.swift in Sources */,
 				D1B4EF662364BCFA00331FA3 /* ModalViewController.swift in Sources */,
 				E831A146235F61AA0085EF61 /* ChampionsWorker.swift in Sources */,
 				D1B4EF642364BCFA00331FA3 /* ModalRouter.swift in Sources */,

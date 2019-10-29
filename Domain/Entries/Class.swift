@@ -27,7 +27,6 @@ public struct Class: Searchable {
         self.bonuses = bonuses
     }
     
-    
     enum CodingKeys: String, CodingKey {
         case key
         case name
