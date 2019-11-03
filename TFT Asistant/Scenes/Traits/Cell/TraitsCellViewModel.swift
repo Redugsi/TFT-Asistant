@@ -14,14 +14,17 @@ struct TraitsCellViewModel {
     var traitName: String?
     var traitDescription: String?
     var bonuses: [Traits.BonusViewModel]?
+    var champions: [Traits.ChampionViewModel]?
     
     init(traitImageName: String? = nil,
          traitName: String? = nil,
          traitDescription: String? = nil,
-         bonuses: [Traits.BonusViewModel]? = nil) {
+         bonuses: [Traits.BonusViewModel]? = nil,
+         champions: [Traits.ChampionViewModel]? = nil) {
         self.traitImageName = traitImageName
         self.traitName = traitName
         self.traitDescription = traitDescription
         self.bonuses = bonuses
+        self.champions = champions
     }
 }

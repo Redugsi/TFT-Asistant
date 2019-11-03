@@ -65,7 +65,7 @@ class TraitsWorker
         
         return championUseCase.getChampions()?
             .filter { $0.origin.contains(originName)}
-            .map { Traits.ChampionViewModel(name: $0.name, cost: $0.cost)}
+            .map { Traits.ChampionViewModel(name: $0.key, cost: $0.cost)}
     }
     
     private func getChampions(with className: String?) -> [Traits.ChampionViewModel]? {
@@ -75,6 +75,6 @@ class TraitsWorker
         
         return championUseCase.getChampions()?
             .filter { $0.championClass.contains(className)}
-            .map { Traits.ChampionViewModel(name: $0.name, cost: $0.cost)}
+            .map { Traits.ChampionViewModel(name: $0.key, cost: $0.cost)}
     }
 }

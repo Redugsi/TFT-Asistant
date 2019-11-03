@@ -100,10 +100,10 @@ extension TraitsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TraitsTableViewCell") as! TraitsTableViewCell
         if let viewModel = traitsViewModels?[indexPath.row] {
-            cell.viewModel = TraitsCellViewModel(traitImageName: viewModel.name, traitName: viewModel.name, traitDescription: viewModel.description, bonuses: viewModel.bonuses)
+            cell.viewModel = TraitsCellViewModel(traitImageName: viewModel.name, traitName: viewModel.name, traitDescription: viewModel.description, bonuses: viewModel.bonuses, champions: viewModel.champions)
             cell.layoutIfNeeded()
         }
         
         return cell
-    }
+    }    
 }
