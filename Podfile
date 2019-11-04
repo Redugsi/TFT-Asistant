@@ -30,8 +30,8 @@ end
 target 'TFT Asistant' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
   # Pods for TFT Asistant
+  pod 'XLPagerTabStrip', '~> 9.0'
 
   target 'TFT AsistantTests' do
     inherit! :search_paths

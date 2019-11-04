@@ -11,6 +11,7 @@
 //
 
 import UIKit
+import XLPagerTabStrip
 
 protocol ItemBuilderDisplayLogic: class
 {
@@ -21,6 +22,7 @@ protocol ItemBuilderDisplayLogic: class
 
 class ItemBuilderViewController: UIViewController, ItemBuilderDisplayLogic
 {
+    
     var interactor: ItemBuilderBusinessLogic?
     var router: (NSObjectProtocol & ItemBuilderRoutingLogic & ItemBuilderDataPassing)?
     
