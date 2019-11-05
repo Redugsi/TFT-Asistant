@@ -15,14 +15,15 @@ class ChampionsMainViewController: ButtonBarPagerTabStripViewController {
     let dividerColor = UIColor(named: "color_divider")!
     let pinkColor = UIColor(named: "color_pink")!
     
+    
     override func viewDidLoad() {
         // change selected bar color
         settings.style.buttonBarBackgroundColor = primaryColor
         settings.style.buttonBarItemBackgroundColor = primaryColor
         settings.style.selectedBarBackgroundColor = pinkColor
         
-        settings.style.buttonBarItemFont = .boldSystemFont(ofSize: 14)
-        settings.style.selectedBarHeight = 2.0
+        settings.style.buttonBarItemFont = UIFont(name: "AvenirNext-Bold", size: 17)!
+        settings.style.selectedBarHeight = 4.0
         settings.style.buttonBarMinimumLineSpacing = 0
         settings.style.buttonBarItemTitleColor = .white
         settings.style.buttonBarItemsShouldFillAvailableWidth = true

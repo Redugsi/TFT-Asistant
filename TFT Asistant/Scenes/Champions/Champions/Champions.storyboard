@@ -39,7 +39,7 @@
                         <viewLayoutGuide key="safeArea" id="9h1-oW-PqF"/>
                     </view>
                     <connections>
-                        <outlet property="championsCollectionView" destination="TcR-oZ-Mv7" id="tZE-Hb-WWt"/>
+                        <outlet property="championsCollectionView" destination="TcR-oZ-Mv7" id="dLO-mD-Fjh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MQO-Wo-QYK" userLabel="First Responder" sceneMemberID="firstResponder"/>
