@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4s5-d7-EDO">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Champions-->
+        <scene sceneID="P1d-so-waS">
+            <objects>
+                <viewController id="dB8-zr-gFy" customClass="ChampionsMainViewController" customModule="TFT_Asistant" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aCi-Mk-TYT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7ch-ho-cAP"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Champions" image="icon_champion" id="INx-uI-6Gf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rOk-WR-0Xx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1181" y="413"/>
+        </scene>
+        <!--Items-->
+        <scene sceneID="iTv-SL-nl9">
+            <objects>
+                <viewController id="NwQ-FL-w4z" customClass="ItemsMainViewController" customModule="TFT_Asistant" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e1p-dd-977">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="AJI-tm-Laa"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Items" image="icon_item" id="5AU-Ud-hLH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cDP-cS-2wy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1181" y="-238"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="Jjd-GJ-few">
+            <objects>
+                <tabBarController id="4s5-d7-EDO" customClass="MainViewController" customModule="TFT_Asistant" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="5Ze-ZL-N1C">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="color_primary_second"/>
+                        <color key="tintColor" name="color_pink"/>
+                        <color key="barTintColor" name="color_primary_second"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="NwQ-FL-w4z" kind="relationship" relationship="viewControllers" id="CvA-Ll-SKi"/>
+                        <segue destination="dB8-zr-gFy" kind="relationship" relationship="viewControllers" id="bFl-Nc-ou8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yO1-EC-UGb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264" y="85"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_champion" width="26" height="26"/>
+        <image name="icon_item" width="24" height="24"/>
+        <namedColor name="color_pink">
+            <color red="0.89803921568627454" green="0.57647058823529407" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_primary_second">
+            <color red="0.086274509803921567" green="0.050980392156862744" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

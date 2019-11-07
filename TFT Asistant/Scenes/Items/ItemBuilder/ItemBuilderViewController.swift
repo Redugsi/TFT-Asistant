@@ -137,8 +137,8 @@ class ItemBuilderViewController: UIViewController, ItemBuilderDisplayLogic
         let collectionFlowLayout = combinedItemsCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
         
         let numberOfItemsInRow: CGFloat = 6
-        let lineSpacing: CGFloat = 15
-        let itemSpacing: CGFloat = 15
+        let lineSpacing: CGFloat = 4
+        let itemSpacing: CGFloat = 4
         
         let width = (combinedItemsCollectionView.frame.width - (numberOfItemsInRow - 1) * itemSpacing) / numberOfItemsInRow
         

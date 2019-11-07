@@ -21,7 +21,7 @@ class ItemsMainViewController: ButtonBarPagerTabStripViewController {
         settings.style.buttonBarItemBackgroundColor = primaryColor
         settings.style.selectedBarBackgroundColor = pinkColor
         
-        settings.style.buttonBarItemFont = .boldSystemFont(ofSize: 14)
+        settings.style.buttonBarItemFont = UIFont(name: "AvenirNext-Bold", size: 14)!
         settings.style.selectedBarHeight = 2.0
         settings.style.buttonBarMinimumLineSpacing = 0
         settings.style.buttonBarItemTitleColor = .white
@@ -34,7 +34,10 @@ class ItemsMainViewController: ButtonBarPagerTabStripViewController {
             oldCell?.label.textColor = .white
             newCell?.label.textColor = self?.pinkColor
         }
+        
         super.viewDidLoad()
+        self.view.backgroundColor = primaryColor
+        buttonBarView.frame = CGRect(x: 0, y: 4, width: buttonBarView.frame.width, height: buttonBarView.frame.height)
     }
     
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
