@@ -1706,6 +1706,41 @@
     ]
   },
   {
+    "id": "113",
+    "key": "MasterYi",
+    "name": "MasterYi",
+    "origin": ["Shadow"],
+    "class": ["Blademaster", "Mystic"],
+    "cost": 5,
+    "ability": {
+      "name": "Meditate",
+      "description": "Master Yi meditates, becoming untargetable for 1 second and healing over the duration. After Master Yi finishes meditating, he gains 100% Attack Speed and deal bonus magic damage on hit for 6 seconds.",
+      "type": "Active",
+      "manaCost": 150,
+      "manaStart": 100,
+      "stats": [
+        { "type": "Bonus Damage", "value": "50 / 75 / 500" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 0,
+        "attackSpeed": 0,
+        "dps": 64,
+        "range": 1
+      },
+      "defense": {
+        "health": 850,
+        "armor": 30,
+        "magicResist": 0
+      }
+    },
+    "items": [
+      "warmogsarmor",
+      "guardianangel"
+    ]
+  },
+  {
     "id": "21",
     "key": "MissFortune",
     "name": "Miss Fortune",
