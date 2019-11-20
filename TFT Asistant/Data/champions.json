@@ -1410,6 +1410,42 @@
     ]
   },
   {
+    "id": "109",
+    "key": "Kogmaw",
+    "name": "Kogmaw",
+    "origin": ["Poison"],
+    "class": ["Predator"],
+    "cost": 1,
+    "ability": {
+      "name": "Living Artillery",
+      "description": "Kog'Maw fires a living artillery shell at a random enemy, dealing damage.",
+      "type": "Active",
+      "manaCost": 150,
+      "manaStart": 50,
+      "stats": [
+        { "type": "Damage", "value": "125 / 275 / 425" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 25,
+        "attackSpeed": 0.65,
+        "dps": 36,
+        "range": 3
+      },
+      "defense": {
+        "health": 500,
+        "armor": 20,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "spearofshojin",
+      "dragonsclaw",
+      "guardianangel"
+    ]
+  },
+  {
     "id": "89",
     "key": "Leona",
     "name": "Leona",
