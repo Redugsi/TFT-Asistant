@@ -1924,6 +1924,42 @@
     ]
   },
   {
+    "id": "116",
+    "key": "Nasus",
+    "name": "Nasus",
+    "origin": ["Light"],
+    "class": ["Warden"],
+    "cost": 1,
+    "ability": {
+      "name": "Fury of the Dawn",
+      "description": "Nasus surrounds himself with light for 7 seconds, gaining bonus health and damaging adjacent enemies each second.",
+      "type": "Active",
+      "manaCost": 100,
+      "manaStart": 0,
+      "stats": [
+        { "type": "Damage", "value": "50 / 70 / 90" },
+        { "type": "Bonus Health", "value": "250 / 400 / 500" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 50,
+        "attackSpeed": 0.55,
+        "dps": 33,
+        "range": 3
+      },
+      "defense": {
+        "health": 650,
+        "armor": 40,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "warmogsarmor",
+      "guardianangel"
+    ]
+  },
+  {
     "id": "76",
     "key": "Nidalee",
     "name": "Nidalee",
