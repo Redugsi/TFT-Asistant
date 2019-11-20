@@ -705,6 +705,42 @@
     ]
   },
   {
+    "id": "105",
+    "key": "Ezreal",
+    "name": "Ezreal",
+    "origin": ["Glacial"],
+    "class": ["Ranger"],
+    "cost": 3,
+    "ability": {
+      "name": "Ice Shot",
+      "description": "Ezreal fires a shard of ice at the lowest HP unit, dealing magic damage and applying on-hit effects.",
+      "type": "Active",
+      "manaCost": 30,
+      "manaStart": 0,
+      "stats": [
+        { "type": "Damage", "value": "200 / 400 / 800" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 65,
+        "attackSpeed": 0.7,
+        "dps": 50,
+        "range": 3
+      },
+      "defense": {
+        "health": 600,
+        "armor": 20,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "seraphsembrace",
+      "morellonomicon",
+      "ludensecho"
+    ]
+  },
+  {
     "id": "114",
     "key": "Fiora",
     "name": "Fiora",
