@@ -3375,5 +3375,41 @@
       "rapidfirecannon",
       "guardianangel"
     ]
+  },
+  {
+    "id": "136",
+    "key": "Zyra",
+    "name": "Zyra",
+    "origin": ["Inferno"],
+    "class": ["Summoner"],
+    "cost": 1,
+    "ability": {
+      "name": "Rampant Growth",
+      "description": "Zyra summons two Flame Spitters at a random location at the edge of the arena. The Flame Spitters attack the nearest enemy for 3 seconds, dealing damage per attack a total of 4 times.",
+      "type": "Active",
+      "manaCost": 75,
+      "manaStart": 0,
+      "stats": [
+        { "type": "Damage", "value": "70 / 80 / 90" },
+        { "type": "Number of Plants", "value": "2 / 3 / 4" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 40,
+        "attackSpeed": 0.65,
+        "dps": 39,
+        "range": 3
+      },
+      "defense": {
+        "health": 500,
+        "armor": 20,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "spearofshojin",
+      "seraphsembrace"
+    ]
   }
 ]
