@@ -551,7 +551,6 @@
         "jeweledgaunlet"
     ]
   },
-  
   {
     "id": "119",
     "key": "Draven",
@@ -588,6 +587,43 @@
       "rapidfirecannon",
       "guardianangel"
     ]
+  },
+  {
+      "id": "104",
+      "key": "DrMundo",
+      "name": "DrMundo",
+      "origin": ["Poison"],
+      "class": ["Berserker"],
+      "cost": 3,
+      "ability": {
+          "name": "Adrenaline Rush",
+          "description": "Dr Mundo creates a toxic cloud around him that deals damage to nearby enemies and heals for a portion of the damage every second for 8 seconds.",
+          "type": "Passive",
+          "manaCost": 125,
+          "manaStart": 5,
+          "stats": [
+              { "type": "Damage", "value": "50 / 100 / 150" },
+              { "type": "Health Amount", "value": "100% / 125% / 150%" }
+          ]
+      },
+      "stats": {
+          "offense": {
+              "damage": 60,
+              "attackSpeed": 0.6,
+              "dps": 36,
+              "range": 3
+          },
+          "defense": {
+              "health": 750,
+              "armor": 35,
+              "magicResist": 20
+          }
+      },
+      "items": [
+          "dragonsclaw",
+          "guardianangel",
+          "warmogsarmor"
+      ]
   },
   {
     "id": "60",
