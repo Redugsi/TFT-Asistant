@@ -1887,6 +1887,43 @@
     ]
   },
   {
+    "id": "115",
+    "key": "Nami",
+    "name": "Nami",
+    "origin": ["Ocean"],
+    "class": ["Mystic"],
+    "cost": 5,
+    "ability": {
+      "name": "Tidal Wave",
+      "description": "Nami sends a massive wave toward a random enemy, damaging and knocking up enemies it passes through and granting allies it passes through bonus magic damage on hit.",
+      "type": "Active",
+      "manaCost": 125,
+      "manaStart": 50,
+      "stats": [
+        { "type": "Damage", "value": "150 / 250 / 350" },
+        { "type": "Stun Duration", "value": "1.5 / 2 / 2.5" },
+        { "type": "Bonus Damage", "value": "25 / 50 / 300" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 0,
+        "attackSpeed": 0,
+        "dps": 33,
+        "range": 1
+      },
+      "defense": {
+        "health": 750,
+        "armor": 0,
+        "magicResist": 0
+      }
+    },
+    "items": [
+      "spearofshojin",
+      "morellonomicon"
+    ]
+  },
+  {
     "id": "76",
     "key": "Nidalee",
     "name": "Nidalee",
