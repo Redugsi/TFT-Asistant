@@ -3153,6 +3153,41 @@
     ]
   },
   {
+    "id": "134",
+    "key": "Vladimir",
+    "name": "Vladimir",
+    "origin": ["Ocean"],
+    "class": ["Mage"],
+    "cost": 1,
+    "ability": {
+      "name": "Drain",
+      "description": "Vladimir damages a target enemy, healing himself for the damage dealt.",
+      "type": "Active",
+      "manaCost": 75,
+      "manaStart": 0,
+      "stats": [
+        { "type": "Damage", "value": "200 / 325 / 450" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 40,
+        "attackSpeed": 0.65,
+        "dps": 36,
+        "range": 2
+      },
+      "defense": {
+        "health": 550,
+        "armor": 30,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "spearofshojin",
+      "rabadonsdeathcap"
+    ]
+  },
+  {
     "id": "106",
     "key": "Volibear",
     "name": "Volibear",
