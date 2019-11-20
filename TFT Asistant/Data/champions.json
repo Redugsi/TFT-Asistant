@@ -2794,6 +2794,42 @@
     ]
   },
   {
+    "id": "130",
+    "key": "Taliyah",
+    "name": "Taliyah",
+    "origin": ["Mountain"],
+    "class": ["Mage"],
+    "cost": 1,
+    "ability": {
+      "name": "Seismic Shove",
+      "description": "Taliyah causes the ground to rise under the enemy with the most Mana, dealing damage and either pushing or pulling them toward her.",
+      "type": "Active",
+      "manaCost": 80,
+      "manaStart": 50,
+      "stats": [
+        { "type": "Damage", "value": "150 / 350 / 550" },
+        { "type": "Stun Duration", "value": "2s" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 40,
+        "attackSpeed": 0.65,
+        "dps": 35,
+        "range": 1
+      },
+      "defense": {
+        "health": 500,
+        "armor": 20,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "seraphsembrace",
+      "rabadonsdeathcap"
+    ]
+  },
+  {
     "id": "18",
     "key": "Tristana",
     "name": "Tristana",
