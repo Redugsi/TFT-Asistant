@@ -2104,6 +2104,42 @@
     ]
   },
   {
+    "id": "120",
+    "key": "Olaf",
+    "name": "Olaf",
+    "origin": ["Glacial"],
+    "class": ["Berserker"],
+    "cost": 4,
+    "ability": {
+      "name": "Ragnarok",
+      "description": "Olaf gains attack speed, lifesteal based on missing health, and immunity to crowd control for the rest of combat.",
+      "type": "Passive",
+      "manaCost": 90,
+      "manaStart": 0,
+      "stats": [
+        { "type": "Attack Speed Bonus", "value": "100% / 150% / 300%" },
+        { "type": "Lifesteal", "value": "50%" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 25,
+        "attackSpeed": 0.8,
+        "dps": 33,
+        "range": 1
+      },
+      "defense": {
+        "health": 750,
+        "armor": 30,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "bloodthirster",
+      "guinsoosrageblade"
+    ]
+  },
+  {
     "id": "80",
     "key": "Pantheon",
     "name": "Pantheon",
