@@ -2830,6 +2830,42 @@
     ]
   },
   {
+    "id": "131"
+    "key": "Taric",
+    "name": "Taric",
+    "origin": ["Crystal"],
+    "class": ["Warden"],
+    "cost": 5,
+    "ability": {
+      "name": "Cosmic Radiance",
+      "description": "After a delay, Taric and all nearby allies become invulnerable.",
+      "type": "Active",
+      "manaCost": 150,
+      "manaStart": 50,
+      "stats": [
+        { "type": "Duration", "value": "3 / 3 / 5" },
+        { "type": "Range", "value": "2 / 3 / 4" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 60,
+        "attackSpeed": 0.65,
+        "dps": 35,
+        "range": 1
+      },
+      "defense": {
+        "health": 900,
+        "armor": 60,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "warmogsarmor",
+      "iceborngaunlet"
+    ]
+  },
+  {
     "id": "18",
     "key": "Tristana",
     "name": "Tristana",
