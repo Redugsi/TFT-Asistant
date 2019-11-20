@@ -1960,6 +1960,42 @@
     ]
   },
   {
+    "id": "117",
+    "key": "Nautilus",
+    "name": "Nautilus",
+    "origin": ["Ocean"],
+    "class": ["Warden"],
+    "cost": 3,
+    "ability": {
+      "name": "Depth Charge",
+      "description": "Nautilus sends out a depth charge that seeks out the furthest enemy champion, knocking them up and stunning them. It also deals damage to all enemies it passes.",
+      "type": "Active",
+      "manaCost": 125,
+      "manaStart": 50,
+      "stats": [
+        { "type": "Damage", "value": "100 / 200 / 400" },
+        { "type": "Stun Duration", "value": "3 / 4 / 6" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 55,
+        "attackSpeed": 0.6,
+        "dps": 33,
+        "range": 1
+      },
+      "defense": {
+        "health": 850,
+        "armor": 40,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "warmogsarmor",
+      "thornmail"
+    ]
+  },
+  {
     "id": "76",
     "key": "Nidalee",
     "name": "Nidalee",
