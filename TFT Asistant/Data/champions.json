@@ -2140,6 +2140,41 @@
     ]
   },
   {
+    "id": "121",
+    "key": "Ornn",
+    "name": "Ornn",
+    "origin": ["Electric"],
+    "class": ["Warden"],
+    "cost": 4,
+    "ability": {
+      "name": "Lightning Breath",
+      "description": "Ornn unleashes lightning bolts in a cone in front of him, dealing damage and increasing their chance to be critical struck by 20% for 4 seconds.",
+      "type": "Active",
+      "manaCost": 75,
+      "manaStart": 0,
+      "stats": [
+        { "type": "Damage", "value": "100 / 200 / 300" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 50,
+        "attackSpeed": 0.55,
+        "dps": 33,
+        "range": 1
+      },
+      "defense": {
+        "health": 650,
+        "armor": 40,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "warmogsarmor",
+      "iceborngaunlet"
+    ]
+  },
+  {
     "id": "80",
     "key": "Pantheon",
     "name": "Pantheon",
