@@ -1633,6 +1633,42 @@
     ]
   },
   {
+    "id": "111",
+    "key": "Malphite",
+    "name": "Malphite",
+    "origin": ["Mountain"],
+    "class": ["Warden"],
+    "cost": 4,
+    "ability": {
+      "name": "Unstoppable Force",
+      "description": "Malphite charges toward a random enemy, dealing damage and knocking all nearby enemies into the air and stunning them.",
+      "type": "Active",
+      "manaCost": 150,
+      "manaStart": 50,
+      "stats": [
+        { "type": "Damage", "value": "125 / 200 / 275" },
+        { "type": "Stun Duration", "value": "2 / 2.5 / 5" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 60,
+        "attackSpeed": 0.55,
+        "dps": 64,
+        "range": 1
+      },
+      "defense": {
+        "health": 850,
+        "armor": 50,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "warmogsarmor",
+      "magescap"
+    ]
+  },
+  {
     "id": "21",
     "key": "MissFortune",
     "name": "Miss Fortune",
