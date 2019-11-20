@@ -2939,6 +2939,41 @@
     ]
   },
   {
+    "id": "133",
+    "key": "Twitch",
+    "name": "Twitch",
+    "origin": ["Poison"],
+    "class": ["Ranger"],
+    "cost": 4,
+    "ability": {
+      "name": "Spray and Pray",
+      "description": "Twitch gains increased damage and unlimited range for 8 seconds.",
+      "type": "Active",
+      "manaCost": 90,
+      "manaStart": 0,
+      "stats": [
+        { "type": "Bonus Damage", "value": "125% / 150% / 200%" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 60,
+        "attackSpeed": 0.75,
+        "dps": 35,
+        "range": 4
+      },
+      "defense": {
+        "health": 650,
+        "armor": 20,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "redbuff",
+      "swordbreaker"
+    ]
+  },
+  {
     "id": "4",
     "key": "TwistedFate",
     "name": "Twisted Fate",
