@@ -476,43 +476,82 @@
     ]
   },
   {
-    "id": "122",
-    "key": "Darius",
-    "name": "Darius",
-    "origin": ["Imperial"],
-    "class": ["Knight"],
-    "cost": 1,
-    "ability": {
-      "name": "Decimate",
-      "description": "Darius swings his axe, damaging nearby enemies and healing himself based off his missing health.",
-      "type": "Active",
-      "manaCost": 100,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage", "value": "150 / 225 / 300" },
-        { "type": "Heal", "value": "100 / 150 / 200" },
-        { "type": "Delay", "value": "1.5" }
+      "id": "122",
+      "key": "Darius",
+      "name": "Darius",
+      "origin": ["Imperial"],
+      "class": ["Knight"],
+      "cost": 1,
+      "ability": {
+          "name": "Decimate",
+          "description": "Darius swings his axe, damaging nearby enemies and healing himself based off his missing health.",
+          "type": "Active",
+          "manaCost": 100,
+          "manaStart": 0,
+          "stats": [
+              { "type": "Damage", "value": "150 / 225 / 300" },
+              { "type": "Heal", "value": "100 / 150 / 200" },
+              { "type": "Delay", "value": "1.5" }
+          ]
+      },
+      "stats": {
+          "offense": {
+              "damage": 50,
+              "attackSpeed": 0.5,
+              "dps": 25,
+              "range": 1
+          },
+          "defense": {
+              "health": 600,
+              "armor": 40,
+              "magicResist": 20
+          }
+      },
+      "items": [
+          "thornmail",
+          "warmogsarmor",
+          "dragonsclaw"
       ]
+  },
+  {
+    "id": "103",
+    "key": "Diana",
+    "name": "Diana",
+    "origin": ["Inferno"],
+    "class": ["Assasin"],
+    "cost": 2,
+    "ability": {
+        "name": "Flame Cascade",
+        "description": "Diana creates orbs that spin around her and explode upon contact with an enemy, dealing magic damage. Additionally, Diane gains a shield for 3 seconds",
+        "type": "Active",
+        "manaCost": 100,
+        "manaStart": 0,
+        "stats": [
+            { "type": "Damage", "value": "80 / 100 / 120" },
+            { "type": "Shield", "value": "150 / 250 / 350" },
+            { "type": "Number of Orbs", "value": "3 / 4 / 5" }
+        ]
     },
     "stats": {
-      "offense": {
-        "damage": 50,
-        "attackSpeed": 0.5,
-        "dps": 25,
-        "range": 1
-      },
-      "defense": {
-        "health": 600,
-        "armor": 40,
-        "magicResist": 20
-      }
+        "offense": {
+            "damage": 50,
+            "attackSpeed": 0.7,
+            "dps": 35,
+            "range": 1
+        },
+        "defense": {
+            "health": 550,
+            "armor": 20,
+            "magicResist": 20
+        }
     },
     "items": [
-      "thornmail",
-      "warmogsarmor",
-      "dragonsclaw"
+        "guardianangel",
+        "infinityedge",
+        "jeweledgaunlet"
     ]
   },
+  
   {
     "id": "119",
     "key": "Draven",
