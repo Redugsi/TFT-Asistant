@@ -1036,6 +1036,42 @@
     ]
   },
   {
+    "id": "107",
+    "key": "Jax",
+    "name": "Jax",
+    "origin": ["Light"],
+    "class": ["Berserker"],
+    "cost": 2,
+    "ability": {
+      "name": "Counter Strike",
+      "description": "Jax dodges all incoming attacks for 2 seconds, then strikes nearby enemies, stunning them for 1.5 seconds.",
+      "type": "Active",
+      "manaCost": 125,
+      "manaStart": 50,
+      "stats": [
+        { "type": "Damage", "value": "150 / 250 / 450" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 45,
+        "attackSpeed": 0.8,
+        "dps": 49,
+        "range": 1
+      },
+      "defense": {
+        "health": 650,
+        "armor": 30,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "iceborngaunlet",
+      "guinsoosrageblade",
+      "warmogsarmor"
+    ]
+  },
+  {
     "id": "145",
     "key": "Kaisa",
     "name": "Kai'Sa",
