@@ -1445,6 +1445,41 @@
     ]
   },
   {
+    "id": "110",
+    "key": "Leblanc",
+    "name": "Leblanc",
+    "class": ["Assassin", "Mage"],
+    "origin": ["Forest"]
+    "cost": 2,
+    "ability": {
+      "name": "Ethereal Chains",
+      "description": "Leblanc flings an illusory chain toward a random enemy, dealing damage and stunning them after 1.5 seconds.",
+      "type": "Active",
+      "manaCost": 80,
+      "manaStart": 50,
+      "stats": [
+        { "type": "Damage", "value": "200 / 450 / 800" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 55,
+        "attackSpeed": 0.7,
+        "dps": 25,
+        "range": 2
+      },
+      "defense": {
+        "health": 550,
+        "armor": 20,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "jeweledgaunlet",
+      "infinityedge",
+    ]
+  },
+  {
     "id": "89",
     "key": "Leona",
     "name": "Leona",
