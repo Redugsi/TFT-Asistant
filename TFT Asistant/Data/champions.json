@@ -2866,6 +2866,42 @@
     ]
   },
   {
+    "id": "132"
+    "key": "Thresh",
+    "name": "Thresh",
+    "origin": ["Ocean"],
+    "class": ["Warden"],
+    "cost": 2,
+    "ability": {
+      "name": "Deep Sea Lantern",
+      "description": "Thresh throws his lantern to the lowest-health ally, shielding them and nearby allies for 5 seconds.",
+      "type": "Active",
+      "manaCost": 150,
+      "manaStart": 50,
+      "stats": [
+        { "type": "Shield Amount", "value": "250 / 400 / 600" },
+        { "type": "Cast Time", "value": "0.25" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 55,
+        "attackSpeed": 0.55,
+        "dps": 35,
+        "range": 1
+      },
+      "defense": {
+        "health": 700,
+        "armor": 40,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "warmogsarmor",
+      "redemption"
+    ]
+  },
+  {
     "id": "18",
     "key": "Tristana",
     "name": "Tristana",
