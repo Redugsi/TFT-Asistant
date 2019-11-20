@@ -1669,6 +1669,43 @@
     ]
   },
   {
+    "id": "112",
+    "key": "Malzahar",
+    "name": "Malzahar",
+    "origin": ["Shadow"],
+    "class": ["Summoner"],
+    "cost": 2,
+    "ability": {
+      "name": "Shadow Swarm",
+      "description": "Malzahar creates a shadow portal, summoning Shadow Spawns. The Shadow Spawns hit for magic damage each attack. Shadow Spawn benefit from active Shadow trait bonuses.",
+      "type": "Active",
+      "manaCost": 125,
+      "manaStart": 75,
+      "stats": [
+        { "type": "Number of Spirits", "value": "2 / 3 / 4" },
+        { "type": "Spirit Damage", "value": "30 / 60 / 90" },
+        { "type": "Spirit Health", "value": "250" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 40,
+        "attackSpeed": 0.65,
+        "dps": 64,
+        "range": 1
+      },
+      "defense": {
+        "health": 550,
+        "armor": 20,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "spearofshojin",
+      "guinsoosregeblade"
+    ]
+  },
+  {
     "id": "21",
     "key": "MissFortune",
     "name": "Miss Fortune",
