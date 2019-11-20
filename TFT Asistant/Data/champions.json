@@ -2439,6 +2439,40 @@
     ]
   },
   {
+    "id": "124",
+    "key": "Singed",
+    "name": "Singed",
+    "origin": ["Poison"],
+    "class": ["Alchemist"],
+    "cost": 5,
+    "ability": {
+      "name": "Poison Trail",
+      "description": "Singed leaves a poison cloud behind him damaging enemies in the area over 4 seconds.",
+      "type": "Passive",
+      "manaCost": 75,
+      "manaStart": 0,
+      "stats": [
+        { "type": "Damage Multiplier", "value": "200 / 400 / 2000" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 0,
+        "attackSpeed": 0,
+        "dps": 30,
+        "range": 1
+      },
+      "defense": {
+        "health": 950,
+        "armor": 50,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "morellonomicon"
+    ]
+  },
+  {
     "id": "113",
     "key": "Sejuani",
     "name": "Sejuani",
