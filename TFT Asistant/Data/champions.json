@@ -1072,6 +1072,42 @@
     ]
   },
   {
+    "id": "108",
+    "key": "Janna",
+    "name": "Janna",
+    "origin": ["Cloud"],
+    "class": ["Mystic"],
+    "cost": 4,
+    "ability": {
+      "name": "Monsoon",
+      "description": "Janna channels winds which heal allies based on their maximum health and stun nearby enemies for 1 second.",
+      "type": "Active",
+      "manaCost": 125,
+      "manaStart": 50,
+      "stats": [
+        { "type": "Heal Amount", "value": "20% / 30% / 100%" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 45,
+        "attackSpeed": 0.7,
+        "dps": 49,
+        "range": 1
+      },
+      "defense": {
+        "health": 600,
+        "armor": 20,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "redemption",
+      "rabadonsdeathcap",
+      "guardianangel"
+    ]
+  },
+  {
     "id": "145",
     "key": "Kaisa",
     "name": "Kai'Sa",
