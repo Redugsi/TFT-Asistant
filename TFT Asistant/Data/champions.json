@@ -2289,6 +2289,42 @@
     ]
   },
   {
+    "id": "122",
+    "key": "Qiyana",
+    "name": "Qiyana",
+    "origin": ["Variable"],
+    "class": ["Assassin"],
+    "cost": 3,
+    "ability": {
+      "name": "Edge of Ixtal",
+      "description": "Qiyana dashes to the side of her target and throws a blast of wind through them, damaging and stunning enemies it passes through. Qiyana's element will change every match between Woodland, Inferno, Ocean, and Cloud.",
+      "type": "Active",
+      "manaCost": 125,
+      "manaStart": 50,
+      "stats": [
+        { "type": "Damage", "value": "300 / 500 / 700" },
+        { "type": "Stun Duration", "value": "3 / 4 / 5" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 65,
+        "attackSpeed": 0.7,
+        "dps": 36,
+        "range": 1
+      },
+      "defense": {
+        "health": 650,
+        "armor": 25,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "infinityedge",
+      "jeweledgaunlet"
+    ]
+  },
+  {
     "id": "421",
     "key": "RekSai",
     "name": "Rek'Sai",
