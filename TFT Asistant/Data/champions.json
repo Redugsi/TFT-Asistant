@@ -3302,6 +3302,44 @@
     ]
   },
   {
+    "id": "135",
+    "key": "Yorick",
+    "name": "Yorick",
+    "origin": ["Light"],
+    "class": ["Summoner"],
+    "cost": 4,
+    "ability": {
+      "name": "Shepherd of Souls",
+      "description": "Yorick blesses his allies with the lowest health, not including Light Walkers. When they die, they resurect as Light Walkers and benefits from the effects of the Light origin.",
+      "type": "Active",
+      "manaCost": 75,
+      "manaStart": 0,
+      "stats": [
+        { "type": "Number of Allies", "value": "2 / 3 / 12" },
+        { "type": "Light Walker Health", "value": "600 / 1000 / 1400" },
+        { "type": "Light Walker Damage", "value": "100 / 200 / 300" },
+        { "type": "Light Walker Armor", "value": "20" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 65,
+        "attackSpeed": 0.7,
+        "dps": 65,
+        "range": 1
+      },
+      "defense": {
+        "health": 800,
+        "armor": 35,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "warmogsarmor",
+      "redempton"
+    ]
+  },
+  {
     "id": "238",
     "key": "Zed",
     "name": "Zed",
