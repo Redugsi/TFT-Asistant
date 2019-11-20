@@ -2699,7 +2699,7 @@
       "manaCost": 60,
       "manaStart": 0,
       "stats": [
-        { "type": "Damage", "value": "150 / 300 / 450 },
+        { "type": "Damage", "value": "150 / 300 / 450 "},
         { "type": "Duration", "value": "3 / 5 / 7" }
       ]
     },
@@ -2720,6 +2720,41 @@
       "morellonomicon"
     ]
   },
+  {
+    "id": "129",
+    "key": "Syndra",
+    "name": "Syndra",
+    "origin": ["Ocean"],
+    "class": ["Mage"],
+    "cost": 2,
+    "ability": {
+      "name": "Hydro Sphere",
+      "description": "Syndra conjures a sphere of water near a random enemy which explodes dealing magic damage to all enemies hit.",
+      "type": "Active",
+      "manaCost": 80,
+      "manaStart": 0,
+      "stats": [
+        { "type": "Damage", "value": "175 / 350 / 600"}
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 40,
+        "attackSpeed": 0.7,
+        "dps": 33,
+        "range": 3
+      },
+      "defense": {
+        "health": 500,
+        "armor": 20,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "morellonomicon",
+      "jeweledgaunled"
+    ]
+  }
   {
     "id": "50",
     "key": "Swain",
