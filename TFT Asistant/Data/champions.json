@@ -2364,6 +2364,42 @@
     ]
   },
   {
+    "id": "123",
+    "key": "Renekton",
+    "name": "Renekton",
+    "origin": ["Desert"],
+    "class": ["Berserker"],
+    "cost": 1,
+    "ability": {
+      "name": "Cull the Meek",
+      "description": "Renekton swings his blade, dealing damage to nearby enemies and restoring health.",
+      "type": "Active",
+      "manaCost": 100,
+      "manaStart": 0,
+      "stats": [
+        { "type": "Damage", "value": "150 / 275 / 400" },
+        { "type": "Heal Amount", "value": "150 / 250 / 350" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 55,
+        "attackSpeed": 0.6,
+        "dps": 26,
+        "range": 1
+      },
+      "defense": {
+        "health": 600,
+        "armor": 35,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "warmogsarmor",
+      "redemption"
+    ]
+  },
+  {
     "id": "107",
     "key": "Rengar",
     "name": "Rengar",
