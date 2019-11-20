@@ -140,6 +140,45 @@
     ]
   },
   {
+      "id": "100",
+      "key": "Annie",
+      "name": "Annie",
+      "origin": ["Summoner"],
+      "class": ["Inferno"],
+      "cost": 4,
+      "ability": {
+          "name": "Tibbers!",
+          "description": "Annie summons Tibbers to fight alongside her dealing damage to enemies in the area.",
+          "type": "Active",
+          "manaCost": 75,
+          "manaStart": 5,
+          "stats": [
+              { "type": "Initial Damage", "value": "100 / 200 / 300" },
+              { "type": "Tibber's Damage", "value": "150 / 300 / 1000" },
+              { "type": "Tibber's Health", "value": "2200" },
+              { "type": "Tibber's Armor", "value": "40" }
+          ]
+      },
+      "stats": {
+          "offense": {
+              "damage": 41,
+              "attackSpeed": 0.7,
+              "dps": 31,
+              "range": 3
+          },
+          "defense": {
+              "health": 700,
+              "armor": 20,
+              "magicResist": 20
+          }
+      },
+      "items": [
+          "giantslayer",
+          "guinsoosrageblade",
+          "hextechgunblade"
+      ]
+  }
+  {
     "id": "22",
     "key": "Ashe",
     "name": "Ashe",
