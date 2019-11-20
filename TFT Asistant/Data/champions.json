@@ -177,7 +177,7 @@
           "guinsoosrageblade",
           "hextechgunblade"
       ]
-  }
+  },
   {
     "id": "22",
     "key": "Ashe",
@@ -250,6 +250,42 @@
       "rapidfirecannon",
       "rabadonsdeathcap",
       "morellonomicon"
+    ]
+  },
+  {
+    "id": "101",
+    "key": "Azir",
+    "name": "Azir",
+    "origin": ["Summoner"],
+    "class": ["Desert"],
+    "cost": 3,
+    "ability": {
+        "name": "Arise!",
+        "description": "Azir summons a Sand Soldier for 6 seconds. Sand Soldiers attack nearby enemies whenever Azir attacks, dealing magic damage in a line.",
+        "type": "Active",
+        "manaCost": 100,
+        "manaStart": 0,
+        "stats": [
+            { "type": "Damage", "value": "125 / 250 / 375" },
+        ]
+    },
+    "stats": {
+        "offense": {
+            "damage": 5,
+            "attackSpeed": 0.8,
+            "dps": 44,
+            "range": 3
+        },
+        "defense": {
+            "health": 600,
+            "armor": 20,
+            "magicResist": 20
+        }
+    },
+    "items": [
+        "giantslayer",
+        "guinsoosrageblade",
+        "hextechgunblade"
     ]
   },
   {
