@@ -2473,6 +2473,41 @@
     ]
   },
   {
+    "id": "125",
+    "key": "Sion",
+    "name": "Sion",
+    "origin": ["Shadow"],
+    "class": ["Berserker"],
+    "cost": 3,
+    "ability": {
+      "name": "Decimating Smash",
+      "description": "Sion smashes his axe into the ground after a short delay, dealing damage and knocking up enemies in the area.",
+      "type": "Active",
+      "manaCost": 75,
+      "manaStart": 0,
+      "stats": [
+        { "type": "Damage", "value": "200 / 400 / 800" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 25,
+        "attackSpeed": 0.65,
+        "dps": 30,
+        "range": 1
+      },
+      "defense": {
+        "health": 800,
+        "armor": 30,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "warmogsarmor",
+      "thornmail"
+    ]
+  },
+  {
     "id": "113",
     "key": "Sejuani",
     "name": "Sejuani",
