@@ -2508,6 +2508,41 @@
     ]
   },
   {
+    "id": "126",
+    "key": "Sivir",
+    "name": "Sivir",
+    "origin": ["Desert"],
+    "class": ["Blademaster"],
+    "cost": 3,
+    "ability": {
+      "name": "Ricochet",
+      "description": "For the next 5 seconds, Sivir's attacks will bounce up to 10 times to nearby enemies, dealing damage and applying on-hit effects.",
+      "type": "Active",
+      "manaCost": 65,
+      "manaStart": 0,
+      "stats": [
+        { "type": "Damage", "value": "100% / 125% / 150%" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 50,
+        "attackSpeed": 0.7,
+        "dps": 30,
+        "range": 1
+      },
+      "defense": {
+        "health": 600,
+        "armor": 25,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "giantslayer",
+      "redbuff"
+    ]
+  },
+  {
     "id": "113",
     "key": "Sejuani",
     "name": "Sejuani",
