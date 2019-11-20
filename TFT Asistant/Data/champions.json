@@ -1778,6 +1778,41 @@
     ]
   },
   {
+    "id": "114",
+    "key": "Maokai",
+    "name": "Maokai",
+    "origin": ["Forest"],
+    "class": ["Druid"],
+    "cost": 1,
+    "ability": {
+      "name": "Sap Magic",
+      "description": "After taking damage from a spell, Maokai's next attack will heal him.",
+      "type": "Active",
+      "manaCost": 100,
+      "manaStart": 0,
+      "stats": [
+        { "type": "Heal Amount", "value": "100 / 200 / 300" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 55,
+        "attackSpeed": 0.5,
+        "dps": 25,
+        "range": 1
+      },
+      "defense": {
+        "health": 650,
+        "armor": 35,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "warmogsarmor",
+      "redemption"
+    ]
+  },
+  {
     "id": "82",
     "key": "Mordekaiser",
     "name": "Mordekaiser",
