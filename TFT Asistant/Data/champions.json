@@ -1996,6 +1996,41 @@
     ]
   },
   {
+    "id": "118",
+    "key": "Neeko",
+    "name": "Neeko",
+    "origin": ["Forest"],
+    "class": ["Druid"],
+    "cost": 2,
+    "ability": {
+      "name": "Blooming Burst",
+      "description": "Neeko throws a seed at a random target, exploding three times with increasing radius, dealing damage to all enemies hit by each explosion.",
+      "type": "Active",
+      "manaCost": 80,
+      "manaStart": 0,
+      "stats": [
+        { "type": "Damage", "value": "100 / 200 / 350" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 45,
+        "attackSpeed": 0.7,
+        "dps": 33,
+        "range": 2
+      },
+      "defense": {
+        "health": 500,
+        "armor": 20,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "seraphsembrace",
+      "morellonomicon"
+    ]
+  },
+  {
     "id": "76",
     "key": "Nidalee",
     "name": "Nidalee",
