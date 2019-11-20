@@ -581,6 +581,356 @@
     ]
   },
   {
+    "id": "137",
+    "key": "Lux Cloud",
+    "name": "Lux Cloud",
+    "origin": ["Cloud"],
+    "class": ["Avatar"],
+    "cost": 7,
+    "ability": {
+      "name": "Final Spark",
+      "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
+      "type": "Active",
+      "manaCost": 85,
+      "manaStart": 0,
+      "stats": [
+        { "type": "Damage", "value": "500 / 800 / 9999" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 65,
+        "attackSpeed": 0.85,
+        "dps": 39,
+        "range": 4
+      },
+      "defense": {
+        "health": 850,
+        "armor": 25,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "rabadonsdeathcap",
+      "seraphsembrace"
+    ]
+  },
+  {
+    "id": "138",
+    "key": "Lux Crystal",
+    "name": "Lux Crystal",
+    "origin": ["Crystal"],
+    "class": ["Avatar"],
+    "cost": 7,
+    "ability": {
+      "name": "Final Spark",
+      "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
+      "type": "Active",
+      "manaCost": 85,
+      "manaStart": 0,
+      "stats": [
+        { "type": "Damage", "value": "500 / 800 / 9999" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 65,
+        "attackSpeed": 0.85,
+        "dps": 39,
+        "range": 4
+      },
+      "defense": {
+        "health": 850,
+        "armor": 25,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "rabadonsdeathcap",
+      "seraphsembrace"
+    ]
+  },
+  {
+    "id": "139",
+    "key": "Lux Electric",
+    "name": "Lux Electric",
+    "origin": ["Electric"],
+    "class": ["Avatar"],
+    "cost": 7,
+    "ability": {
+      "name": "Final Spark",
+      "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
+      "type": "Active",
+      "manaCost": 85,
+      "manaStart": 0,
+      "stats": [
+        { "type": "Damage", "value": "500 / 800 / 9999" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 65,
+        "attackSpeed": 0.85,
+        "dps": 39,
+        "range": 4
+      },
+      "defense": {
+        "health": 850,
+        "armor": 25,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "rabadonsdeathcap",
+      "seraphsembrace"
+    ]
+  },
+  {
+    "id": "140",
+    "key": "Lux Glacial",
+    "name": "Lux Glacial",
+    "origin": ["Glacial"],
+    "class": ["Avatar"],
+    "cost": 7,
+    "ability": {
+      "name": "Final Spark",
+      "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
+      "type": "Active",
+      "manaCost": 85,
+      "manaStart": 0,
+      "stats": [
+        { "type": "Damage", "value": "500 / 800 / 9999" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 65,
+        "attackSpeed": 0.85,
+        "dps": 39,
+        "range": 4
+      },
+      "defense": {
+        "health": 850,
+        "armor": 25,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "rabadonsdeathcap",
+      "seraphsembrace"
+    ]
+  },
+  {
+    "id": "141",
+    "key": "Lux Inferno",
+    "name": "Lux Inferno",
+    "origin": ["Inferno"],
+    "class": ["Avatar"],
+    "cost": 7,
+    "ability": {
+      "name": "Final Spark",
+      "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
+      "type": "Active",
+      "manaCost": 85,
+      "manaStart": 0,
+      "stats": [
+        { "type": "Damage", "value": "500 / 800 / 9999" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 65,
+        "attackSpeed": 0.85,
+        "dps": 39,
+        "range": 4
+      },
+      "defense": {
+        "health": 850,
+        "armor": 25,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "rabadonsdeathcap",
+      "seraphsembrace"
+    ]
+  },
+  {
+    "id": "142",
+    "key": "Lux Light",
+    "name": "Lux Light",
+    "origin": ["Light"],
+    "class": ["Avatar"],
+    "cost": 7,
+    "ability": {
+      "name": "Final Spark",
+      "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
+      "type": "Active",
+      "manaCost": 85,
+      "manaStart": 0,
+      "stats": [
+        { "type": "Damage", "value": "500 / 800 / 9999" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 65,
+        "attackSpeed": 0.85,
+        "dps": 39,
+        "range": 4
+      },
+      "defense": {
+        "health": 850,
+        "armor": 25,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "rabadonsdeathcap",
+      "seraphsembrace"
+    ]
+  },
+  {
+    "id": "143",
+    "key": "Lux Ocean",
+    "name": "Lux Ocean",
+    "origin": ["Ocean"],
+    "class": ["Avatar"],
+    "cost": 7,
+    "ability": {
+      "name": "Final Spark",
+      "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
+      "type": "Active",
+      "manaCost": 85,
+      "manaStart": 0,
+      "stats": [
+        { "type": "Damage", "value": "500 / 800 / 9999" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 65,
+        "attackSpeed": 0.85,
+        "dps": 39,
+        "range": 4
+      },
+      "defense": {
+        "health": 850,
+        "armor": 25,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "rabadonsdeathcap",
+      "seraphsembrace"
+    ]
+  },
+  {
+    "id": "144",
+    "key": "Lux Shadow",
+    "name": "Lux Shadow",
+    "origin": ["Shadow"],
+    "class": ["Avatar"],
+    "cost": 7,
+    "ability": {
+      "name": "Final Spark",
+      "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
+      "type": "Active",
+      "manaCost": 85,
+      "manaStart": 0,
+      "stats": [
+        { "type": "Damage", "value": "500 / 800 / 9999" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 65,
+        "attackSpeed": 0.85,
+        "dps": 39,
+        "range": 4
+      },
+      "defense": {
+        "health": 850,
+        "armor": 25,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "rabadonsdeathcap",
+      "seraphsembrace"
+    ]
+  },
+  {
+    "id": "145",
+    "key": "Lux Steel",
+    "name": "Lux Steel",
+    "origin": ["Steel"],
+    "class": ["Avatar"],
+    "cost": 7,
+    "ability": {
+      "name": "Final Spark",
+      "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
+      "type": "Active",
+      "manaCost": 85,
+      "manaStart": 0,
+      "stats": [
+        { "type": "Damage", "value": "500 / 800 / 9999" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 65,
+        "attackSpeed": 0.85,
+        "dps": 39,
+        "range": 4
+      },
+      "defense": {
+        "health": 850,
+        "armor": 25,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "rabadonsdeathcap",
+      "seraphsembrace"
+    ]
+  },
+  {
+    "id": "146",
+    "key": "Lux Forest",
+    "name": "Lux Forest",
+    "origin": ["Forest"],
+    "class": ["Avatar"],
+    "cost": 7,
+    "ability": {
+      "name": "Final Spark",
+      "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
+      "type": "Active",
+      "manaCost": 85,
+      "manaStart": 0,
+      "stats": [
+        { "type": "Damage", "value": "500 / 800 / 9999" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 65,
+        "attackSpeed": 0.85,
+        "dps": 39,
+        "range": 4
+      },
+      "defense": {
+        "health": 850,
+        "armor": 25,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "rabadonsdeathcap",
+      "seraphsembrace"
+    ]
+  },
+  {
     "id": "111",
     "key": "Malphite",
     "name": "Malphite",
