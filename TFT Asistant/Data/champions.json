@@ -893,7 +893,7 @@
     ]
   },
   {
-    "id": "104",
+    "id": "922",
     "key": "Graves",
     "name": "Graves",
     "origin": ["Pirate"],
@@ -924,6 +924,40 @@
       "redbuff",
       "warmogsarmor",
       "infinityedge"
+    ]
+  },
+  {
+    "id": "106",
+    "key": "Ivern",
+    "name": "Ivern",
+    "origin": ["Forest"],
+    "class": ["Druid"],
+    "cost": 1,
+    "ability": {
+      "name": "Triggerseed",
+      "description": "Ivern shields the ally with the lowest health for 5 seconds.",
+      "type": "Passive",
+      "manaCost": null,
+      "manaStart": null,
+      "stats": [{ "type": "Shield Amount", "value": "250 / 350 / 500" }]
+    },
+    "stats": {
+      "offense": {
+        "damage": 50,
+        "attackSpeed": 0.6,
+        "dps": 28,
+        "range": 1
+      },
+      "defense": {
+        "health": 600,
+        "armor": 25,
+        "magicResist": 20
+      }
+    },
+    "items": [
+      "redemption",
+      "warmogsarmor",
+      "guardianangel"
     ]
   },
   {
