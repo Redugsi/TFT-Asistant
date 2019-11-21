@@ -232,14 +232,14 @@
       "depth": 1,
       "stats": [
           {
-              "name": "critChance",
-              "title": "Crit Chance",
-              "amount": "+10%"
+            "name": "critChance",
+            "title": "Crit Chance",
+            "amount": "+20%"
           },
           {
-              "name": "dodge",
-              "title": "Dodge Chance",
-              "amount": "+10%"
+            "name": "dodge",
+            "title": "Dodge Chance",
+            "amount": "+20%"
           }
       ],
       "kind": "basic",
@@ -411,13 +411,13 @@
     "champs": ["Ashe", "Yasuo", "Zed"]
   },
   {
-      "key": "icebornegaunlet",
-      "name": "Iceborne Gauntlet",
+      "key": "iceborngauntlet",
+      "name": "Iceborn Gauntlet",
       "type": "Utility",
       "bonus": "When the wearer dodges, they create a zone of ice. Enemies inside the zone have their Attack Speed reduced by 35%.",
       "tier": 2,
       "depth": 2,
-      "buildsFrom": ["chainwest", "sparringgloves"],
+      "buildsFrom": ["chainvest", "sparringgloves"],
       "kind": "advanced",
       "champs": ["Ashe", "Yasuo", "Zed"]
   },
@@ -568,7 +568,7 @@
       "key": "repeatingcrossbow",
       "name": "Repeating Crossbow",
       "type": "Utility",
-      "bonus": "When the wearer dies, Repeating Crossbow is re-equipped to a new ally. Each time Repeating Crossbow is re-equipped, it grants additional +30% Attack Speed and +30% Critical Strike Chance for the remainder of combat. This effect can stack any number of times.",
+      "bonus": "it grants additional +30% Attack Speed and +30% Critical Strike Chance for the remainder of combat.",
       "tier": 4,
       "depth": 2,
       "buildsFrom": ["recurvebow", "sparringgloves"],
@@ -654,7 +654,7 @@
     "champs": ["Ashe", "Yasuo", "Zed"]
   },
   {
-      "key": "thiefsgloves",
+      "key": "thievesgloves",
       "name": "Thieves Gloves",
       "type": "Offensive",
       "bonus": "Extra 10% Crit chance and 10% Dodge chance. This item takes all three item slots. On round begin, copy two random items.",

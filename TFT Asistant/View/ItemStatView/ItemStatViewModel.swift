@@ -22,6 +22,8 @@ public enum ItemStatType{
     case magicResist(amount: String?)
     case health(amount: String?)
     case attackSpeed(amount: String?)
+    case critChance(amount: String?)
+    case dodge(amount: String?)
     
     init?(type: String?, amount: String?){
         switch type {
@@ -39,6 +41,10 @@ public enum ItemStatType{
             self = .health(amount: amount)
         case "attackSpeed":
             self = .attackSpeed(amount: amount)
+        case "critChance":
+            self = .critChance(amount: amount)
+        case "dodge":
+            self = .dodge(amount: amount)
         default:
             return nil
         }
@@ -60,6 +66,10 @@ public enum ItemStatType{
             return ItemStatViewModel(imageName: "icon_hp", amount: amount, colorName: "color_hp")
         case let .attackSpeed(amount: amount):
             return ItemStatViewModel(imageName: "icon_as", amount: amount, colorName: "color_as")
+        case let .critChance(amount: amount):
+            return ItemStatViewModel(imageName: "icon_cc", amount: amount, colorName: "color_cc")
+        case let .dodge(amount: amount):
+            return ItemStatViewModel(imageName: "icon_dodge", amount: amount, colorName: "color_dodge")
         }
     }
 }
