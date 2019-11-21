@@ -59,14 +59,14 @@
     "key": "recurvebow",
     "name": "Recurve Bow",
     "type": "Offensive",
-    "bonus": "+20% Attack Speed",
+    "bonus": "+15% Attack Speed",
     "tier": 1,
     "depth": 1,
     "stats": [
       {
         "name": "attackSpeed",
         "title": "Attack Speed",
-        "amount": "+20%"
+        "amount": "+15%"
       }
     ],
     "kind": "basic",
@@ -143,7 +143,7 @@
     "key": "negatroncloak",
     "name": "Negatron Cloak",
     "type": "Defensive",
-    "bonus": "+20 Magic Resist.",
+    "bonus": "+25 Magic Resist.",
     "tier": 1,
     "depth": 1,
     "stats": [
@@ -234,12 +234,12 @@
           {
             "name": "critChance",
             "title": "Crit Chance",
-            "amount": "+20%"
+            "amount": "+10%"
           },
           {
             "name": "dodge",
             "title": "Dodge Chance",
-            "amount": "+20%"
+            "amount": "+10%"
           }
       ],
       "kind": "basic",
