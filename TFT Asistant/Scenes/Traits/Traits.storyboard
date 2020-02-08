@@ -18,16 +18,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w6U-QR-GMc">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="798"/>
                                 <color key="backgroundColor" name="color_primary_second"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" name="color_primary_second"/>
                         <constraints>
-                            <constraint firstItem="wkg-IF-koj" firstAttribute="trailing" secondItem="w6U-QR-GMc" secondAttribute="trailing" id="8ko-lz-XXW"/>
-                            <constraint firstItem="w6U-QR-GMc" firstAttribute="top" secondItem="wkg-IF-koj" secondAttribute="top" id="Nr0-Up-Wr1"/>
-                            <constraint firstItem="wkg-IF-koj" firstAttribute="bottom" secondItem="w6U-QR-GMc" secondAttribute="bottom" id="OCO-5D-H9m"/>
-                            <constraint firstItem="w6U-QR-GMc" firstAttribute="leading" secondItem="wkg-IF-koj" secondAttribute="leading" id="Utk-K8-mY3"/>
+                            <constraint firstItem="w6U-QR-GMc" firstAttribute="bottom" secondItem="wkg-IF-koj" secondAttribute="bottom" id="HaP-VX-uJu"/>
+                            <constraint firstItem="w6U-QR-GMc" firstAttribute="trailing" secondItem="wkg-IF-koj" secondAttribute="trailing" id="Zda-rr-fbX"/>
+                            <constraint firstItem="w6U-QR-GMc" firstAttribute="top" secondItem="wkg-IF-koj" secondAttribute="top" constant="20" id="a6p-VS-gJh"/>
+                            <constraint firstItem="w6U-QR-GMc" firstAttribute="leading" secondItem="wkg-IF-koj" secondAttribute="leading" id="bDk-5n-QVg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wkg-IF-koj"/>
                     </view>

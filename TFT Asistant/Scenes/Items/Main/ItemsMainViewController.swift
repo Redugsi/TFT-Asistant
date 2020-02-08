@@ -37,7 +37,8 @@ class ItemsMainViewController: ButtonBarPagerTabStripViewController {
         
         super.viewDidLoad()
         self.view.backgroundColor = primaryColor
-        buttonBarView.frame = CGRect(x: 0, y: 4, width: buttonBarView.frame.width, height: buttonBarView.frame.height)
+
+        buttonBarView.frame = CGRect(x: 0, y: 14, width: buttonBarView.frame.width, height: buttonBarView.frame.height)
     }
     
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {

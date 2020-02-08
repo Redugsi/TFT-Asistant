@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Olq-1b-LCE">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Olq-1b-LCE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Hvd-7F-ib0" userLabel="BaseItemsCollectionView">
-                                <rect key="frame" x="207" y="59" width="0.0" height="0.0"/>
+                                <rect key="frame" x="207" y="64" width="0.0" height="0.0"/>
                                 <color key="backgroundColor" name="color_primary_second"/>
                                 <constraints>
                                     <constraint firstAttribute="height" id="TTx-FG-sFz"/>
@@ -42,7 +40,7 @@
                                 </cells>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4f-Ef-jFS" userLabel="InfoView">
-                                <rect key="frame" x="15" y="74" width="384" height="36"/>
+                                <rect key="frame" x="15" y="79" width="384" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Combined Items" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scx-4o-Z40">
                                         <rect key="frame" x="0.0" y="0.0" width="136" height="36"/>
@@ -69,14 +67,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxt-0o-OgG" userLabel="DividerView">
-                                <rect key="frame" x="0.0" y="118" width="414" height="2"/>
+                                <rect key="frame" x="0.0" y="123" width="414" height="2"/>
                                 <color key="backgroundColor" name="color_divider"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="He3-Si-cIG"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IjC-c2-dNg">
-                                <rect key="frame" x="15" y="135" width="384" height="727"/>
+                                <rect key="frame" x="15" y="140" width="384" height="722"/>
                                 <color key="backgroundColor" name="color_primary_second"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8qb-hg-mXu">
                                     <size key="itemSize" width="50" height="50"/>
@@ -110,7 +108,7 @@
                             <constraint firstItem="rtT-FA-M2n" firstAttribute="trailing" secondItem="IjC-c2-dNg" secondAttribute="trailing" constant="15" id="92y-AF-tk0"/>
                             <constraint firstItem="rtT-FA-M2n" firstAttribute="trailing" secondItem="Q4f-Ef-jFS" secondAttribute="trailing" constant="15" id="Bqu-8d-Juo"/>
                             <constraint firstItem="Hvd-7F-ib0" firstAttribute="centerX" secondItem="rtT-FA-M2n" secondAttribute="centerX" id="JV3-2l-p8p"/>
-                            <constraint firstItem="Hvd-7F-ib0" firstAttribute="top" secondItem="rtT-FA-M2n" secondAttribute="top" constant="15" id="MMR-ht-bYB"/>
+                            <constraint firstItem="Hvd-7F-ib0" firstAttribute="top" secondItem="rtT-FA-M2n" secondAttribute="top" constant="20" id="MMR-ht-bYB"/>
                             <constraint firstItem="Q4f-Ef-jFS" firstAttribute="top" secondItem="Hvd-7F-ib0" secondAttribute="bottom" constant="15" id="RB7-vw-3pw"/>
                             <constraint firstItem="dxt-0o-OgG" firstAttribute="top" secondItem="Q4f-Ef-jFS" secondAttribute="bottom" constant="8" id="Yt7-4e-SF8"/>
                             <constraint firstItem="rtT-FA-M2n" firstAttribute="trailing" secondItem="dxt-0o-OgG" secondAttribute="trailing" id="dI9-Rv-Bwa"/>

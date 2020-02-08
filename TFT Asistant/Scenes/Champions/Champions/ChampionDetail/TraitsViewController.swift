@@ -73,7 +73,7 @@ class TraitsViewController: UIViewController, TraitsDisplayLogic
     {
         super.viewDidLoad()
         self.setupTableView()
-        interactor?.getTraits(request: Traits.GetAllTraits.Request())
+        self.interactor?.getTraits(request: Traits.GetAllTraits.Request())
     }
     
     private func setupTableView(){
@@ -88,7 +88,11 @@ class TraitsViewController: UIViewController, TraitsDisplayLogic
     
     func displayTraits(viewModel: [Traits.TraitViewModel]) {
         self.traitsViewModels = viewModel
-        traitsTableView.reloadData()
+        DispatchQueue.main.async {
+            self.traitsTableView.reloadData()
+            print("ERDEM Reloaded")
+            NotificationCenter.default.post(name: .traitsLoaded, object: nil)
+        }
     }
 }
 
@@ -105,5 +109,9 @@ extension TraitsViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         return cell
-    }    
+    }
+}
+
+extension Notification.Name {
+    static let traitsLoaded = Notification.Name("traitsLoaded")
 }

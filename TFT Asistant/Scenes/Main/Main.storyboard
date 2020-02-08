@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4s5-d7-EDO">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -13,11 +13,11 @@
         <scene sceneID="P1d-so-waS">
             <objects>
                 <viewController id="dB8-zr-gFy" customClass="ChampionsMainViewController" customModule="TFT_Asistant" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="aCi-Mk-TYT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aCi-Mk-TYT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="7ch-ho-cAP"/>
+                        <viewLayoutGuide key="safeArea" id="kva-bZ-jnf"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Champions" image="icon_champion" id="INx-uI-6Gf"/>
                 </viewController>
@@ -29,13 +29,13 @@
         <scene sceneID="iTv-SL-nl9">
             <objects>
                 <viewController id="NwQ-FL-w4z" customClass="ItemsMainViewController" customModule="TFT_Asistant" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="e1p-dd-977">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e1p-dd-977">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="AJI-tm-Laa"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Items" image="icon_item" id="5AU-Ud-hLH"/>
+                    <tabBarItem key="tabBarItem" title="Items" image="icon_sword_26" id="5AU-Ud-hLH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cDP-cS-2wy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -69,7 +69,7 @@
     </scenes>
     <resources>
         <image name="icon_champion" width="26" height="26"/>
-        <image name="icon_item" width="24" height="24"/>
+        <image name="icon_sword_26" width="26" height="26"/>
         <namedColor name="color_pink">
             <color red="0.89803921568627454" green="0.57647058823529407" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

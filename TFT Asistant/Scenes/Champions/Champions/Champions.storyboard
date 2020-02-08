@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TcR-oZ-Mv7">
-                                <rect key="frame" x="15" y="59" width="384" height="788"/>
+                                <rect key="frame" x="15" y="64" width="384" height="783"/>
                                 <color key="backgroundColor" name="color_primary_second"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Stm-Se-ahk">
                                     <size key="itemSize" width="50" height="50"/>
@@ -33,7 +33,7 @@
                         <constraints>
                             <constraint firstItem="TcR-oZ-Mv7" firstAttribute="leading" secondItem="9h1-oW-PqF" secondAttribute="leading" constant="15" id="6Fx-bF-By2"/>
                             <constraint firstItem="9h1-oW-PqF" firstAttribute="trailing" secondItem="TcR-oZ-Mv7" secondAttribute="trailing" constant="15" id="HMC-SQ-UoY"/>
-                            <constraint firstItem="TcR-oZ-Mv7" firstAttribute="top" secondItem="9h1-oW-PqF" secondAttribute="top" constant="15" id="QwE-p3-uxd"/>
+                            <constraint firstItem="TcR-oZ-Mv7" firstAttribute="top" secondItem="9h1-oW-PqF" secondAttribute="top" constant="20" id="QwE-p3-uxd"/>
                             <constraint firstItem="9h1-oW-PqF" firstAttribute="bottom" secondItem="TcR-oZ-Mv7" secondAttribute="bottom" constant="15" id="ahM-F5-1eQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9h1-oW-PqF"/>
