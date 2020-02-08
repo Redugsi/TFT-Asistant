@@ -35,7 +35,7 @@ class ItemBuilderWorker
     
     func getCombinedItems(request: ItemBuilder.GetCombinedItems.Request) -> ItemBuilder.GetCombinedItems.Response{
         
-        var combinations = request.combinations
+        let combinations = request.combinations
         
         guard let combinedItems = itemsUseCase.getItems()?.filter({ $0.buildsFrom != nil }) else{
             return ItemBuilder.GetCombinedItems.Response(items: nil)

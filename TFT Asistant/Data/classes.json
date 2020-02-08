@@ -1,178 +1,201 @@
 [
-  {
-    "key": "assassin",
-    "name": "Assassin",
-    "description": "Assassins leap to the farthest enemy at the start of combat and deal additional Critical Strike Damage.",
-    "accentChampionImage": "https://cdn.blitz.gg/blitz/centered/Katarina_Splash_Centered_0.jpg",
-    "bonuses": [
-      {
-        "needed": 3,
-        "effect": "+75% Crit Damage & +5% Crit Chance"
-      },
-      {
-        "needed": 6,
-        "effect": "+150% Crit Damage & +20% Crit Chance"
-      },
-      {
-        "needed": 9,
-        "effect": "+225% Crit Damage & +30% Crit Chance"
-      }
-    ]
-  },
-  {
-    "key": "blademaster",
-    "name": "Blademaster",
-    "description": "Blademasters have a 35% chance to strike additional times each attack.",
-    "accentChampionImage": "https://cdn.blitz.gg/blitz/centered/Fiora_Splash_Centered_0.jpg",
-    "bonuses": [
-      {
-        "needed": 3,
-        "effect": "1 additional strike"
-      },
-      {
-        "needed": 6,
-        "effect": "2 additional strikes"
-      },
-      {
-        "needed": 9,
-        "effect": "4 additional strikes"
-      }
-    ]
-  },
-  {
-    "key": "brawler",
-    "name": "Brawler",
-    "description": "Brawlers receive bonus maximum health.",
-    "accentChampionImage": "https://cdn.blitz.gg/blitz/centered/Warwick_Splash_Centered_0.jpg",
-    "bonuses": [
-      {
-        "needed": 2,
-        "effect": "+250 Bonus health"
-      },
-      {
-        "needed": 4,
-        "effect": "+500 Bonus health"
-      },
-      {
-        "needed": 6,
-        "effect": "+900 Bonus health"
-      }
-    ]
-  },
-  {
-    "key": "elementalist",
-    "name": "Elementalist",
-    "description": "Elementalists gain double mana from attacks.",
-    "accentChampionImage": "https://cdn.blitz.gg/blitz/centered/Brand_Splash_Centered_0.jpg",
-    "bonuses": [
-      {
-        "needed": 3,
-        "effect": "At the start of combat, summon an Elemental. Elemental has 2200 health, 40 armor & 100 Attack Damage."
-      }
-    ]
-  },
-  {
-    "key": "guardian",
-    "name": "Guardian",
-    "description": null,
-    "accentChampionImage": "https://cdn.blitz.gg/blitz/centered/Braum_Splash_Centered_0.jpg",
-    "bonuses": [
-      {
-        "needed": 2,
-        "effect": "At the start of combat, all adjacent allies receive +40 armor. Stacks any number of times."
-      }
-    ]
-  },
-  {
-    "key": "gunslinger",
-    "name": "Gunslinger",
-    "description": "After attacking, Gunslingers have a 50% chance to fire additional attacks.",
-    "accentChampionImage": "https://cdn.blitz.gg/blitz/centered/MissFortune_Splash_Centered_0.jpg",
-    "bonuses": [
-      {
-        "needed": 2,
-        "effect": "Attack 1 additional random enemy."
-      },
-      {
-        "needed": 4,
-        "effect": "Attack 2 additional random enemies in range."
-      },
-      {
-        "needed": 6,
-        "effect": "Attack 4 additional random enemies in range."
-      }
-    ]
-  },
-  {
-    "key": "knight",
-    "name": "Knight",
-    "description": "Your team ignores damage from all sources.",
-    "accentChampionImage": "https://cdn.blitz.gg/blitz/centered/Kayle_Splash_Centered_0.jpg",
-    "bonuses": [
-      {
-        "needed": 2,
-        "effect": "15 damage"
-      },
-      {
-        "needed": 4,
-        "effect": "30 damage"
-      },
-      {
-        "needed": 6,
-        "effect": "60 damage"
-      }
-    ]
-  },
-  {
-    "key": "ranger",
-    "name": "Ranger",
-    "description": "Rangers have a chance to double their attack speed for the next 3s.",
-    "accentChampionImage": "https://cdn.blitz.gg/blitz/centered/Kindred_Splash_Centered_0.jpg",
-    "bonuses": [
-      {
-        "needed": 2,
-        "effect": "40% chance"
-      },
-      {
-        "needed": 4,
-        "effect": "70% chance"
-      }
-    ]
-  },
-  {
-    "key": "shapeshifter",
-    "name": "Shapeshifter",
-    "description": "Shapeshifters gain bonus maximum Health when they transform.",
-    "accentChampionImage": "https://cdn.blitz.gg/blitz/centered/Elise_Splash_Centered_0.jpg",
-    "bonuses": [
-      {
-        "needed": 3,
-        "effect": "+60% bonus max health"
-      },
-      {
-        "needed": 6,
-        "effect": "+100% bonus max health"
-      }
-    ]
-  },
-  {
-    "key": "sorcerer",
-    "name": "Sorcerer",
-    "description": "Sorcerers gain double mana from attacking and allies have increased spell damage.",
-    "accentChampionImage": "https://cdn.blitz.gg/blitz/centered/Karthus_Splash_Centered_0.jpg",
-    "bonuses": [
-      {
-        "needed": 3,
-        "effect": "+40% Ability Power"
-      },
-      {
-        "needed": 6,
-        "effect": "+120% Ability Power"
-      },
-      {
-        "needed": 9,
-        "effect": "+200% Ability Power"
-      }
-    ]
-  }
+    {
+        "key": "alchemist",
+        "name": "Alchemist",
+        "description": "",
+        "accentChampionImage": "https://cdn.blitz.gg/blitz/centered/Katarina_Splash_Centered_0.jpg",
+        "bonuses": [
+            {
+                "needed": 1,
+                "effect": "Innate: Alchemists ignore collision and never stop moving"
+            }
+        ]
+    },
+    {
+        "key": "assassin",
+        "name": "Assassin",
+        "description": "Innate: At the start of combat, Assassins leap to the farthest enemy. Assassins gain bonus Critical Strike Damage and Chance.",
+        "accentChampionImage": "https://cdn.blitz.gg/blitz/centered/Katarina_Splash_Centered_0.jpg",
+        "bonuses": [
+            {
+                "needed": 3,
+                "effect": "+70% Critical Strike Damage & +10% Critical Strike Chance"
+            },
+            {
+                "needed": 6,
+                "effect": "+210% Critical Strike Damage & +20% Critical Strike Chance"
+            }
+        ]
+    },
+    {
+        "key": "avatar",
+        "name": "Avatar",
+        "description": null,
+        "accentChampionImage": "https://cdn.blitz.gg/blitz/centered/Fiora_Splash_Centered_0.jpg",
+        "bonuses": [
+            {
+                "needed": 1,
+                "effect": "An Avatar's Origin Element is counted twice for Trait bonuses"
+            }
+        ]
+    },
+    {
+        "key": "berserker",
+        "name": "Berserker",
+        "description": "Innate: At the start of combat, Berserkers leap to the nearest enemy. Berserkers have a chance to hit all units in a cone in front of them with their attacks",
+        "accentChampionImage": "https://cdn.blitz.gg/blitz/centered/Fiora_Splash_Centered_0.jpg",
+        "bonuses": [
+            {
+                "needed": 3,
+                "effect": "45% Chance"
+            },
+            {
+                "needed": 6,
+                "effect": "100% Chance, all Berserkers +25 AD"
+            }
+        ]
+    },
+    {
+        "key": "blademaster",
+        "name": "Blademaster",
+        "description": "Blademaster Basic Attacks have a 35% chance to trigger additional attacks against their target. These additional attacks deal damage like Basic Attacks and trigger on-hit effects.",
+        "accentChampionImage": "https://cdn.blitz.gg/blitz/centered/Fiora_Splash_Centered_0.jpg",
+        "bonuses": [
+            {
+                "needed": 2,
+                "effect": "1 additional strike"
+            },
+            {
+                "needed": 4,
+                "effect": "2 additional strikes"
+            },
+            {
+                "needed": 6,
+                "effect": "3 additional strikes"
+            }
+        ]
+    },
+    {
+        "key": "druid",
+        "name": "Druid",
+        "description": null,
+        "accentChampionImage": "https://cdn.blitz.gg/blitz/centered/Warwick_Splash_Centered_0.jpg",
+        "bonuses": [
+            {
+                "needed": 2,
+                "effect": "Druids regenerate 45 health each second"
+            }
+        ]
+    },
+    {
+        "key": "mage",
+        "name": "Mage",
+        "description": "Mages have a chance on cast to instead Doublecast",
+        "accentChampionImage": "https://cdn.blitz.gg/blitz/centered/Brand_Splash_Centered_0.jpg",
+        "bonuses": [
+            {
+                "needed": 3,
+                "effect": "50% chance"
+            },
+            {
+                "needed": 6,
+                "effect": "100% chance & 20 AP to all Mages"
+            }
+        ]
+    },
+    {
+        "key": "mystic",
+        "name": "Mystic",
+        "description": "All allies gain increased Magic Resist",
+        "accentChampionImage": "https://cdn.blitz.gg/blitz/centered/Braum_Splash_Centered_0.jpg",
+        "bonuses": [
+            {
+                "needed": 2,
+                "effect": "40 Magic Resist"
+            },
+            {
+                "needed": 4,
+                "effect": "120 Magic Resist"
+            }
+        ]
+    },
+    {
+        "key": "predator",
+        "name": "Predator",
+        "description": null,
+        "accentChampionImage": "https://cdn.blitz.gg/blitz/centered/MissFortune_Splash_Centered_0.jpg",
+        "bonuses": [
+            {
+                "needed": 3,
+                "effect": "Predators instantly kill enemies they damage who are below 25% health"
+            }
+        ]
+    },
+    {
+        "key": "ranger",
+        "name": "Ranger",
+        "description": "Every 3 seconds, Rangers have a chance to double their Attack Speed for 3 seconds.",
+        "accentChampionImage": "https://cdn.blitz.gg/blitz/centered/Kayle_Splash_Centered_0.jpg",
+        "bonuses": [
+            {
+                "needed": 2,
+                "effect": "35% Chance to 2x Attack Speed"
+            },
+            {
+                "needed": 4,
+                "effect": "80% Chance to 2x Attack Speed"
+            },
+            {
+                "needed": 6,
+                "effect": "100% Chance to 2.5x Attack Speed"
+            }
+        ]
+    },
+    {
+        "key": "soulbound",
+        "name": "Soulbound",
+        "description": null,
+        "accentChampionImage": "https://cdn.blitz.gg/blitz/centered/Kindred_Splash_Centered_0.jpg",
+        "bonuses": [
+            {
+                "needed": 2,
+                "effect": "The first Soulbound unit to die in a round will instead enter the Spirit Realm, becoming untargetable and continuing to fight as long as another Soulbound unit is alive."
+            }
+        ]
+    },
+    {
+        "key": "summoner",
+        "name": "Summoner",
+        "description": "Summoned units have increased health and duration", "accentChampionImage":"https://cdn.blitz.gg/blitz/centered/Elise_Splash_Centered_0.jpg",
+        "bonuses": [
+            {
+                "needed": 3,
+                "effect": "30% increase"
+            },
+            {
+                "needed": 6,
+                "effect": "120% increase"
+            }
+        ]
+    },
+    {
+        "key": "warden",
+        "name": "Warden",
+        "description": "Wardens gain increased total Armor",
+        "accentChampionImage": "https://cdn.blitz.gg/blitz/centered/Karthus_Splash_Centered_0.jpg",
+        "bonuses": [
+            {
+                "needed": 2,
+                "effect": "+150% Armor"
+            },
+            {
+                "needed": 4,
+                "effect": "+300% Armor"
+            },
+            {
+                "needed": 6,
+                "effect": "+999% Armor"
+            }
+        ]
+    }
 ]

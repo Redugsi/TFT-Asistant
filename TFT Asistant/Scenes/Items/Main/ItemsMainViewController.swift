@@ -47,6 +47,6 @@ class ItemsMainViewController: ButtonBarPagerTabStripViewController {
 
         let combinationsViewController = UIStoryboard.init(name: "Combinations", bundle: nil).instantiateViewController(withIdentifier: "CombinationsViewController")
         
-        return [itemsBuilderViewController, baseItemsViewController, combinationsViewController]
+        return [itemsBuilderViewController, combinationsViewController, baseItemsViewController]
     }
 }

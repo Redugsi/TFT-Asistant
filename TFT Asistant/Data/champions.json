@@ -1,2146 +1,2514 @@
 [
-  {
-    "id": "266",
-    "key": "Aatrox",
-    "name": "Aatrox",
-    "origin": ["Light"],
-    "class": ["Blademaster"],
-    "cost": 3,
-    "ability": {
-      "name": "The Darkin Blade",
-      "description": "Aatrox cleaves the area in front of him, dealing damage to enemies inside it.",
-      "type": "Active",
-      "manaCost": 75,
-      "manaStart": 0,
-      "stats": [{ "type": "Damage", "value": "250 / 500 / 1000" }]
-    },
-    "stats": {
-      "offense": {
-        "damage": 65,
-        "attackSpeed": 0.65,
-        "dps": 42,
-        "range": 1
-      },
-      "defense": {
-        "health": 700,
-        "armor": 35,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "morellonomicon",
-      "rabadonsdeathcap",
-      "guardianangel"
-    ]
-  },
-  {
-      "id": "100",
-      "key": "Annie",
-      "name": "Annie",
-      "origin": ["Inferno"],
-      "class": ["Summoner"],
-      "cost": 4,
-      "ability": {
-          "name": "Tibbers!",
-          "description": "Annie summons Tibbers to fight alongside her dealing damage to enemies in the area.",
-          "type": "Active",
-          "manaCost": 75,
-          "manaStart": 5,
-          "stats": [
-              { "type": "Initial Damage", "value": "100 / 200 / 300" },
-              { "type": "Tibber's Damage", "value": "150 / 300 / 1000" },
-              { "type": "Tibber's Health", "value": "2200" },
-              { "type": "Tibber's Armor", "value": "40" }
-          ]
-      },
-      "stats": {
-          "offense": {
-              "damage": 41,
-              "attackSpeed": 0.7,
-              "dps": 31,
-              "range": 3
-          },
-          "defense": {
-              "health": 700,
-              "armor": 20,
-              "magicResist": 20
-          }
-      },
-      "items": [
-          "giantslayer",
-          "guinsoosrageblade",
-          "hextechgunblade"
-      ]
-  },
-  {
-    "id": "22",
-    "key": "Ashe",
-    "name": "Ashe",
-    "origin": ["Crystal"],
-    "class": ["Ranger"],
-    "cost": 4,
-    "ability": {
-      "name": "Ranger's Focus",
-      "description": "For 5 seconds, Ashe gains 50% Attack Speed, and her basic attacks fire a flurry of arrows dealing physical damage.",
-      "type": "Active",
-      "manaCost": 35,
-      "manaStart": 0,
-      "stats": [
-          { "type": "Attack Speed Bonus", "value": "50% / 75% / 250%" },
-          { "type": "Damage Per Arrow", "value": "25% / 30% / 35%" }
-        ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 60,
-        "attackSpeed": 0.8,
-        "dps": 42,
-        "range": 4
-      },
-      "defense": {
-        "health": 550,
-        "armor": 20,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "giantslayer",
-      "runaanshurricane",
-      "guinsoosrageblade"
-    ]
-  },
-  {
-    "id": "101",
-    "key": "Azir",
-    "name": "Azir",
-    "origin": ["Summoner"],
-    "class": ["Desert"],
-    "cost": 3,
-    "ability": {
-        "name": "Arise!",
-        "description": "Azir summons a Sand Soldier for 6 seconds. Sand Soldiers attack nearby enemies whenever Azir attacks, dealing magic damage in a line.",
-        "type": "Active",
-        "manaCost": 100,
-        "manaStart": 0,
-        "stats": [
-            { "type": "Damage", "value": "125 / 250 / 375" }
-        ]
-    },
-    "stats": {
-        "offense": {
-            "damage": 5,
-            "attackSpeed": 0.8,
-            "dps": 44,
-            "range": 3
+    {
+        "id": "266",
+        "key": "Aatrox",
+        "name": "Aatrox",
+        "origin": ["Light"],
+        "class": ["Blademaster"],
+        "cost": 3,
+        "ability": {
+            "name": "The Darkin Blade",
+            "description": "Aatrox cleaves the area in front of him, dealing damage to enemies inside it.",
+            "type": "Active",
+            "manaCost": 75,
+            "manaStart": 0,
+            "stats": [{ "type": "Damage", "value": "250 / 500 / 1000" }]
         },
-        "defense": {
-            "health": 600,
-            "armor": 20,
-            "magicResist": 20
-        }
-    },
-    "items": [
-        "giantslayer",
-        "guinsoosrageblade",
-        "hextechgunblade"
-    ]
-  },
-  {
-    "id": "63",
-    "key": "Brand",
-    "name": "Brand",
-    "origin": ["Inferno"],
-    "class": ["Mage"],
-    "cost": 4,
-    "ability": {
-      "name": "Pyroclasm",
-      "description": "Brand launches a bouncing fireball, damaging enemies hit.",
-      "type": "Active",
-      "manaCost": 85,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage", "value": "300 / 450 / 600" },
-        { "type": "Bounces", "value": "5 / 6 / 20"}
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 55,
-        "attackSpeed": 0.7,
-        "dps": 36,
-        "range": 3
-      },
-      "defense": {
-        "health": 700,
-        "armor": 25,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "guinsoosrageblade",
-      "morellonomicon",
-      "hextechgunblade"
-    ]
-  },
-  {
-    "id": "201",
-    "key": "Braum",
-    "name": "Braum",
-    "origin": ["Glacial"],
-    "class": ["Warden"],
-    "cost": 2,
-    "ability": {
-      "name": "Unbreakable",
-      "description": "Braum creates a barrier that blocks all incoming damage.",
-      "type": "Active",
-      "manaCost": 75,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage Reduction", "value": "70% / 80% / 90%" },
-        { "type": "Duration", "value": "4s" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 40,
-        "attackSpeed": 0.6,
-        "dps": 24,
-        "range": 1
-      },
-      "defense": {
-        "health": 650,
-        "armor": 75,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "thornmail",
-      "warmogsarmor",
-      "dragonsclaw"
-    ]
-  },
-  {
-    "id": "103",
-    "key": "Diana",
-    "name": "Diana",
-    "origin": ["Inferno"],
-    "class": ["Assasin"],
-    "cost": 1,
-    "ability": {
-        "name": "Flame Cascade",
-        "description": "Diana creates orbs that spin around her and explode upon contact with an enemy, dealing magic damage. Additionally, Diane gains a shield for 3 seconds",
-        "type": "Active",
-        "manaCost": 100,
-        "manaStart": 0,
-        "stats": [
-            { "type": "Damage", "value": "80 / 100 / 120" },
-            { "type": "Shield", "value": "150 / 250 / 350" },
-            { "type": "Number of Orbs", "value": "3 / 4 / 5" }
+        "stats": {
+            "offense": {
+                "damage": 65,
+                "attackSpeed": 0.65,
+                "dps": 42,
+                "range": 1
+            },
+            "defense": {
+                "health": 700,
+                "armor": 35,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "morellonomicon",
+            "rabadonsdeathcap",
+            "dragonsclaw"
         ]
     },
-    "stats": {
-        "offense": {
-            "damage": 50,
-            "attackSpeed": 0.7,
-            "dps": 35,
-            "range": 1
+    {
+        "id": "1001",
+        "key": "Amumu",
+        "name": "Amumu",
+        "origin": ["Inferno"],
+        "class": ["Warden"],
+        "cost": 5,
+        "ability": {
+            "name": "Curse of the Sad Mummy",
+            "description": "Amumu’s rage explodes, dealing magic damage to enemies within some Hexes, and stunning them.",
+            "type": "Active",
+            "manaCost": 75,
+            "manaStart": 5,
+            "stats": [
+                { "type": "Damage", "value": "100 / 200 / 1337" },
+                { "type": "Hexes", "value": "3 / 3 / 3" },
+                { "type": "Stun Duration ", "value": "1.5 / 2 / 5" }
+            ]
         },
-        "defense": {
-            "health": 550,
-            "armor": 20,
-            "magicResist": 20
-        }
-    },
-    "items": [
-        "guardianangel",
-        "infinityedge",
-        "jeweledgaunlet"
-    ]
-  },
-  {
-      "id": "104",
-      "key": "DrMundo",
-      "name": "DrMundo",
-      "origin": ["Poison"],
-      "class": ["Berserker"],
-      "cost": 3,
-      "ability": {
-          "name": "Adrenaline Rush",
-          "description": "Dr Mundo creates a toxic cloud around him that deals damage to nearby enemies and heals for a portion of the damage every second for 8 seconds.",
-          "type": "Passive",
-          "manaCost": 125,
-          "manaStart": 5,
-          "stats": [
-              { "type": "Damage", "value": "50 / 100 / 150" },
-              { "type": "Health Amount", "value": "100% / 125% / 150%" }
-          ]
-      },
-      "stats": {
-          "offense": {
-              "damage": 60,
-              "attackSpeed": 0.6,
-              "dps": 36,
-              "range": 3
-          },
-          "defense": {
-              "health": 750,
-              "armor": 35,
-              "magicResist": 20
-          }
-      },
-      "items": [
-          "dragonsclaw",
-          "guardianangel",
-          "warmogsarmor"
-      ]
-  },
-  {
-    "id": "105",
-    "key": "Ezreal",
-    "name": "Ezreal",
-    "origin": ["Glacial"],
-    "class": ["Ranger"],
-    "cost": 3,
-    "ability": {
-      "name": "Ice Shot",
-      "description": "Ezreal fires a shard of ice at the lowest HP unit, dealing magic damage and applying on-hit effects.",
-      "type": "Active",
-      "manaCost": 30,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage", "value": "200 / 400 / 800" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 65,
-        "attackSpeed": 0.7,
-        "dps": 50,
-        "range": 3
-      },
-      "defense": {
-        "health": 600,
-        "armor": 20,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "seraphsembrace",
-      "morellonomicon",
-      "ludensecho"
-    ]
-  },
-  {
-    "id": "106",
-    "key": "Ivern",
-    "name": "Ivern",
-    "origin": ["Forest"],
-    "class": ["Druid"],
-    "cost": 1,
-    "ability": {
-      "name": "Triggerseed",
-      "description": "Ivern shields the ally with the lowest health for 5 seconds.",
-      "type": "Passive",
-      "manaCost": null,
-      "manaStart": null,
-      "stats": [{ "type": "Shield Amount", "value": "250 / 350 / 500" }]
-    },
-    "stats": {
-      "offense": {
-        "damage": 50,
-        "attackSpeed": 0.6,
-        "dps": 28,
-        "range": 1
-      },
-      "defense": {
-        "health": 600,
-        "armor": 25,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "redemption",
-      "warmogsarmor",
-      "guardianangel"
-    ]
-  },
-  {
-    "id": "107",
-    "key": "Jax",
-    "name": "Jax",
-    "origin": ["Light"],
-    "class": ["Berserker"],
-    "cost": 2,
-    "ability": {
-      "name": "Counter Strike",
-      "description": "Jax dodges all incoming attacks for 2 seconds, then strikes nearby enemies, stunning them for 1.5 seconds.",
-      "type": "Active",
-      "manaCost": 125,
-      "manaStart": 50,
-      "stats": [
-        { "type": "Damage", "value": "150 / 250 / 450" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 45,
-        "attackSpeed": 0.8,
-        "dps": 49,
-        "range": 1
-      },
-      "defense": {
-        "health": 650,
-        "armor": 30,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "iceborngaunlet",
-      "guinsoosrageblade",
-      "warmogsarmor"
-    ]
-  },
-  {
-    "id": "108",
-    "key": "Janna",
-    "name": "Janna",
-    "origin": ["Cloud"],
-    "class": ["Mystic"],
-    "cost": 4,
-    "ability": {
-      "name": "Monsoon",
-      "description": "Janna channels winds which heal allies based on their maximum health and stun nearby enemies for 1 second.",
-      "type": "Active",
-      "manaCost": 125,
-      "manaStart": 50,
-      "stats": [
-        { "type": "Heal Amount", "value": "20% / 30% / 100%" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 45,
-        "attackSpeed": 0.7,
-        "dps": 49,
-        "range": 1
-      },
-      "defense": {
-        "health": 600,
-        "armor": 20,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "redemption",
-      "rabadonsdeathcap",
-      "guardianangel"
-    ]
-  },
-  {
-    "id": "121",
-    "key": "Khazix",
-    "name": "Kha'Zix",
-    "origin": ["Desert"],
-    "class": ["Assassin"],
-    "cost": 4,
-    "ability": {
-      "name": "Void Assault",
-      "description": "Kha'Zix goes stealth and attacks the enemy with the lowest health after a short delay. This attack is a critical hit and restores mana.",
-      "type": "Active",
-      "manaCost": 40,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Bonus Damage", "value": "100 / 200 / 500" },
-        { "type": "Mana Refund:", "value": "5 / 10 / 15" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 75,
-        "attackSpeed": 0.8,
-        "dps": 30,
-        "range": 1
-      },
-      "defense": {
-        "health": 750,
-        "armor": 25,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "rapidfirecannon",
-      "infinityedge",
-      "guardianangel"
-    ]
-  },
-  {
-    "id": "203",
-    "key": "Kindred",
-    "name": "Kindred",
-    "origin": ["Shadow","Inferno"],
-    "class": ["Ranger"],
-    "cost": 3,
-    "ability": {
-      "name": "Lamb's Respite",
-      "description": "Kindred creates a zone around herself that prevents allies from dying.",
-      "type": "Active",
-      "manaCost": 150,
-      "manaStart": 50,
-      "stats": [
-        { "type": "Duration", "value": "3s / 4s / 5s" },
-        { "type": "Minimum HP", "value": "300 / 600 / 900" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 60,
-        "attackSpeed": 0.7,
-        "dps": 36,
-        "range": 3
-      },
-      "defense": {
-        "health": 600,
-        "armor": 20,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "spearofshojin",
-      "dragonsclaw",
-      "guardianangel"
-    ]
-  },
-  {
-    "id": "109",
-    "key": "KogMaw",
-    "name": "KogMaw",
-    "origin": ["Poison"],
-    "class": ["Predator"],
-    "cost": 1,
-    "ability": {
-      "name": "Living Artillery",
-      "description": "Kog'Maw fires a living artillery shell at a random enemy, dealing damage.",
-      "type": "Active",
-      "manaCost": 150,
-      "manaStart": 50,
-      "stats": [
-        { "type": "Damage", "value": "125 / 275 / 425" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 25,
-        "attackSpeed": 0.65,
-        "dps": 36,
-        "range": 3
-      },
-      "defense": {
-        "health": 500,
-        "armor": 20,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "ludensecho",
-      "guinsoosrageblade"
-    ]
-  },
-  {
-    "id": "110",
-    "key": "Leblanc",
-    "name": "Leblanc",
-    "class": ["Assassin", "Mage"],
-    "origin": ["Forest"],
-    "cost": 2,
-    "ability": {
-      "name": "Ethereal Chains",
-      "description": "Leblanc flings an illusory chain toward a random enemy, dealing damage and stunning them after 1.5 seconds.",
-      "type": "Active",
-      "manaCost": 80,
-      "manaStart": 50,
-      "stats": [
-        { "type": "Damage", "value": "200 / 450 / 800" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 55,
-        "attackSpeed": 0.7,
-        "dps": 25,
-        "range": 2
-      },
-      "defense": {
-        "health": 550,
-        "armor": 20,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "jeweledgaunlet",
-      "infinityedge"
-    ]
-  },
-  {
-    "id": "137",
-    "key": "Lux Cloud",
-    "name": "Lux Cloud",
-    "origin": ["Cloud"],
-    "class": ["Avatar"],
-    "cost": 7,
-    "ability": {
-      "name": "Final Spark",
-      "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
-      "type": "Active",
-      "manaCost": 85,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage", "value": "500 / 800 / 9999" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 65,
-        "attackSpeed": 0.85,
-        "dps": 39,
-        "range": 4
-      },
-      "defense": {
-        "health": 850,
-        "armor": 25,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "rabadonsdeathcap",
-      "seraphsembrace"
-    ]
-  },
-  {
-    "id": "138",
-    "key": "Lux Crystal",
-    "name": "Lux Crystal",
-    "origin": ["Crystal"],
-    "class": ["Avatar"],
-    "cost": 7,
-    "ability": {
-      "name": "Final Spark",
-      "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
-      "type": "Active",
-      "manaCost": 85,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage", "value": "500 / 800 / 9999" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 65,
-        "attackSpeed": 0.85,
-        "dps": 39,
-        "range": 4
-      },
-      "defense": {
-        "health": 850,
-        "armor": 25,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "rabadonsdeathcap",
-      "seraphsembrace"
-    ]
-  },
-  {
-    "id": "139",
-    "key": "Lux Electric",
-    "name": "Lux Electric",
-    "origin": ["Electric"],
-    "class": ["Avatar"],
-    "cost": 7,
-    "ability": {
-      "name": "Final Spark",
-      "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
-      "type": "Active",
-      "manaCost": 85,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage", "value": "500 / 800 / 9999" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 65,
-        "attackSpeed": 0.85,
-        "dps": 39,
-        "range": 4
-      },
-      "defense": {
-        "health": 850,
-        "armor": 25,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "rabadonsdeathcap",
-      "seraphsembrace"
-    ]
-  },
-  {
-    "id": "140",
-    "key": "Lux Glacial",
-    "name": "Lux Glacial",
-    "origin": ["Glacial"],
-    "class": ["Avatar"],
-    "cost": 7,
-    "ability": {
-      "name": "Final Spark",
-      "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
-      "type": "Active",
-      "manaCost": 85,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage", "value": "500 / 800 / 9999" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 65,
-        "attackSpeed": 0.85,
-        "dps": 39,
-        "range": 4
-      },
-      "defense": {
-        "health": 850,
-        "armor": 25,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "rabadonsdeathcap",
-      "seraphsembrace"
-    ]
-  },
-  {
-    "id": "141",
-    "key": "Lux Inferno",
-    "name": "Lux Inferno",
-    "origin": ["Inferno"],
-    "class": ["Avatar"],
-    "cost": 7,
-    "ability": {
-      "name": "Final Spark",
-      "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
-      "type": "Active",
-      "manaCost": 85,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage", "value": "500 / 800 / 9999" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 65,
-        "attackSpeed": 0.85,
-        "dps": 39,
-        "range": 4
-      },
-      "defense": {
-        "health": 850,
-        "armor": 25,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "rabadonsdeathcap",
-      "seraphsembrace"
-    ]
-  },
-  {
-    "id": "142",
-    "key": "Lux Light",
-    "name": "Lux Light",
-    "origin": ["Light"],
-    "class": ["Avatar"],
-    "cost": 7,
-    "ability": {
-      "name": "Final Spark",
-      "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
-      "type": "Active",
-      "manaCost": 85,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage", "value": "500 / 800 / 9999" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 65,
-        "attackSpeed": 0.85,
-        "dps": 39,
-        "range": 4
-      },
-      "defense": {
-        "health": 850,
-        "armor": 25,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "rabadonsdeathcap",
-      "seraphsembrace"
-    ]
-  },
-  {
-    "id": "143",
-    "key": "Lux Ocean",
-    "name": "Lux Ocean",
-    "origin": ["Ocean"],
-    "class": ["Avatar"],
-    "cost": 7,
-    "ability": {
-      "name": "Final Spark",
-      "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
-      "type": "Active",
-      "manaCost": 85,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage", "value": "500 / 800 / 9999" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 65,
-        "attackSpeed": 0.85,
-        "dps": 39,
-        "range": 4
-      },
-      "defense": {
-        "health": 850,
-        "armor": 25,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "rabadonsdeathcap",
-      "seraphsembrace"
-    ]
-  },
-  {
-    "id": "144",
-    "key": "Lux Shadow",
-    "name": "Lux Shadow",
-    "origin": ["Shadow"],
-    "class": ["Avatar"],
-    "cost": 7,
-    "ability": {
-      "name": "Final Spark",
-      "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
-      "type": "Active",
-      "manaCost": 85,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage", "value": "500 / 800 / 9999" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 65,
-        "attackSpeed": 0.85,
-        "dps": 39,
-        "range": 4
-      },
-      "defense": {
-        "health": 850,
-        "armor": 25,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "rabadonsdeathcap",
-      "seraphsembrace"
-    ]
-  },
-  {
-    "id": "145",
-    "key": "Lux Steel",
-    "name": "Lux Steel",
-    "origin": ["Steel"],
-    "class": ["Avatar"],
-    "cost": 7,
-    "ability": {
-      "name": "Final Spark",
-      "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
-      "type": "Active",
-      "manaCost": 85,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage", "value": "500 / 800 / 9999" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 65,
-        "attackSpeed": 0.85,
-        "dps": 39,
-        "range": 4
-      },
-      "defense": {
-        "health": 850,
-        "armor": 25,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "rabadonsdeathcap",
-      "seraphsembrace"
-    ]
-  },
-  {
-    "id": "146",
-    "key": "Lux Forest",
-    "name": "Lux Forest",
-    "origin": ["Forest"],
-    "class": ["Avatar"],
-    "cost": 7,
-    "ability": {
-      "name": "Final Spark",
-      "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
-      "type": "Active",
-      "manaCost": 85,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage", "value": "500 / 800 / 9999" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 65,
-        "attackSpeed": 0.85,
-        "dps": 39,
-        "range": 4
-      },
-      "defense": {
-        "health": 850,
-        "armor": 25,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "rabadonsdeathcap",
-      "seraphsembrace"
-    ]
-  },
-  {
-    "id": "111",
-    "key": "Malphite",
-    "name": "Malphite",
-    "origin": ["Mountain"],
-    "class": ["Warden"],
-    "cost": 4,
-    "ability": {
-      "name": "Unstoppable Force",
-      "description": "Malphite charges toward a random enemy, dealing damage and knocking all nearby enemies into the air and stunning them.",
-      "type": "Active",
-      "manaCost": 150,
-      "manaStart": 50,
-      "stats": [
-        { "type": "Damage", "value": "125 / 200 / 275" },
-        { "type": "Stun Duration", "value": "2 / 2.5 / 5" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 60,
-        "attackSpeed": 0.55,
-        "dps": 64,
-        "range": 1
-      },
-      "defense": {
-        "health": 850,
-        "armor": 50,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "warmogsarmor",
-      "magescap"
-    ]
-  },
-  {
-    "id": "112",
-    "key": "Malzahar",
-    "name": "Malzahar",
-    "origin": ["Shadow"],
-    "class": ["Summoner"],
-    "cost": 2,
-    "ability": {
-      "name": "Shadow Swarm",
-      "description": "Malzahar creates a shadow portal, summoning Shadow Spawns. The Shadow Spawns hit for magic damage each attack. Shadow Spawn benefit from active Shadow trait bonuses.",
-      "type": "Active",
-      "manaCost": 125,
-      "manaStart": 75,
-      "stats": [
-        { "type": "Number of Spirits", "value": "2 / 3 / 4" },
-        { "type": "Spirit Damage", "value": "30 / 60 / 90" },
-        { "type": "Spirit Health", "value": "250" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 40,
-        "attackSpeed": 0.65,
-        "dps": 64,
-        "range": 1
-      },
-      "defense": {
-        "health": 550,
-        "armor": 20,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "spearofshojin",
-      "guinsoosregeblade"
-    ]
-  },
-  {
-    "id": "113",
-    "key": "MasterYi",
-    "name": "MasterYi",
-    "origin": ["Shadow"],
-    "class": ["Blademaster", "Mystic"],
-    "cost": 5,
-    "ability": {
-      "name": "Meditate",
-      "description": "Master Yi meditates, becoming untargetable for 1 second and healing over the duration. After Master Yi finishes meditating, he gains 100% Attack Speed and deal bonus magic damage on hit for 6 seconds.",
-      "type": "Active",
-      "manaCost": 150,
-      "manaStart": 100,
-      "stats": [
-        { "type": "Bonus Damage", "value": "50 / 75 / 500" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 0,
-        "attackSpeed": 0,
-        "dps": 64,
-        "range": 1
-      },
-      "defense": {
-        "health": 850,
-        "armor": 30,
-        "magicResist": 0
-      }
-    },
-    "items": [
-      "warmogsarmor",
-      "guardianangel"
-    ]
-  },
-  {
-    "id": "114",
-    "key": "Maokai",
-    "name": "Maokai",
-    "origin": ["Forest"],
-    "class": ["Druid"],
-    "cost": 1,
-    "ability": {
-      "name": "Sap Magic",
-      "description": "After taking damage from a spell, Maokai's next attack will heal him.",
-      "type": "Active",
-      "manaCost": 100,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Heal Amount", "value": "100 / 200 / 300" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 55,
-        "attackSpeed": 0.5,
-        "dps": 25,
-        "range": 1
-      },
-      "defense": {
-        "health": 650,
-        "armor": 35,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "warmogsarmor",
-      "redemption"
-    ]
-  },
-  {
-    "id": "115",
-    "key": "Nami",
-    "name": "Nami",
-    "origin": ["Ocean"],
-    "class": ["Mystic"],
-    "cost": 5,
-    "ability": {
-      "name": "Tidal Wave",
-      "description": "Nami sends a massive wave toward a random enemy, damaging and knocking up enemies it passes through and granting allies it passes through bonus magic damage on hit.",
-      "type": "Active",
-      "manaCost": 125,
-      "manaStart": 50,
-      "stats": [
-        { "type": "Damage", "value": "150 / 250 / 350" },
-        { "type": "Stun Duration", "value": "1.5 / 2 / 2.5" },
-        { "type": "Bonus Damage", "value": "25 / 50 / 300" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 0,
-        "attackSpeed": 0,
-        "dps": 33,
-        "range": 1
-      },
-      "defense": {
-        "health": 750,
-        "armor": 0,
-        "magicResist": 0
-      }
-    },
-    "items": [
-      "spearofshojin",
-      "morellonomicon"
-    ]
-  },
-  {
-    "id": "116",
-    "key": "Nasus",
-    "name": "Nasus",
-    "origin": ["Light"],
-    "class": ["Warden"],
-    "cost": 1,
-    "ability": {
-      "name": "Fury of the Dawn",
-      "description": "Nasus surrounds himself with light for 7 seconds, gaining bonus health and damaging adjacent enemies each second.",
-      "type": "Active",
-      "manaCost": 100,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage", "value": "50 / 70 / 90" },
-        { "type": "Bonus Health", "value": "250 / 400 / 500" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 50,
-        "attackSpeed": 0.55,
-        "dps": 33,
-        "range": 3
-      },
-      "defense": {
-        "health": 650,
-        "armor": 40,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "warmogsarmor",
-      "guardianangel"
-    ]
-  },
-  {
-    "id": "117",
-    "key": "Nautilus",
-    "name": "Nautilus",
-    "origin": ["Ocean"],
-    "class": ["Warden"],
-    "cost": 3,
-    "ability": {
-      "name": "Depth Charge",
-      "description": "Nautilus sends out a depth charge that seeks out the furthest enemy champion, knocking them up and stunning them. It also deals damage to all enemies it passes.",
-      "type": "Active",
-      "manaCost": 125,
-      "manaStart": 50,
-      "stats": [
-        { "type": "Damage", "value": "100 / 200 / 400" },
-        { "type": "Stun Duration", "value": "3 / 4 / 6" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 55,
-        "attackSpeed": 0.6,
-        "dps": 33,
-        "range": 1
-      },
-      "defense": {
-        "health": 850,
-        "armor": 40,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "warmogsarmor",
-      "thornmail"
-    ]
-  },
-  {
-    "id": "118",
-    "key": "Neeko",
-    "name": "Neeko",
-    "origin": ["Forest"],
-    "class": ["Druid"],
-    "cost": 2,
-    "ability": {
-      "name": "Blooming Burst",
-      "description": "Neeko throws a seed at a random target, exploding three times with increasing radius, dealing damage to all enemies hit by each explosion.",
-      "type": "Active",
-      "manaCost": 80,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage", "value": "100 / 200 / 350" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 45,
-        "attackSpeed": 0.7,
-        "dps": 33,
-        "range": 2
-      },
-      "defense": {
-        "health": 500,
-        "armor": 20,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "seraphsembrace",
-      "morellonomicon"
-    ]
-  },
-  {
-    "id": "119",
-    "key": "Nocturne",
-    "name": "Nocturne",
-    "origin": ["Steel"],
-    "class": ["Assassin"],
-    "cost": 3,
-    "ability": {
-      "name": "Steel Blades",
-      "description": "Every third attack, Nocturne deals additional damage to enemies around him and heals for a portion of the damage.",
-      "type": "Passive",
-      "manaCost": 0,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Heal Amount", "value": "40% / 60% / 80%" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 60,
-        "attackSpeed": 0.75,
-        "dps": 33,
-        "range": 1
-      },
-      "defense": {
-        "health": 650,
-        "armor": 25,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "bladeoftheruinedking",
-      "swordbreaker"
-    ]
-  },
-  {
-    "id": "120",
-    "key": "Olaf",
-    "name": "Olaf",
-    "origin": ["Glacial"],
-    "class": ["Berserker"],
-    "cost": 4,
-    "ability": {
-      "name": "Ragnarok",
-      "description": "Olaf gains attack speed, lifesteal based on missing health, and immunity to crowd control for the rest of combat.",
-      "type": "Passive",
-      "manaCost": 90,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Attack Speed Bonus", "value": "100% / 150% / 300%" },
-        { "type": "Lifesteal", "value": "50%" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 25,
-        "attackSpeed": 0.8,
-        "dps": 33,
-        "range": 1
-      },
-      "defense": {
-        "health": 750,
-        "armor": 30,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "bloodthirster",
-      "guinsoosrageblade"
-    ]
-  },
-  {
-    "id": "121",
-    "key": "Ornn",
-    "name": "Ornn",
-    "origin": ["Electric"],
-    "class": ["Warden"],
-    "cost": 1,
-    "ability": {
-      "name": "Lightning Breath",
-      "description": "Ornn unleashes lightning bolts in a cone in front of him, dealing damage and increasing their chance to be critical struck by 20% for 4 seconds.",
-      "type": "Active",
-      "manaCost": 75,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage", "value": "100 / 200 / 300" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 50,
-        "attackSpeed": 0.55,
-        "dps": 33,
-        "range": 1
-      },
-      "defense": {
-        "health": 650,
-        "armor": 40,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "warmogsarmor",
-      "iceborngaunlet"
-    ]
-  },
-  {
-    "id": "122",
-    "key": "Qiyana",
-    "name": "Qiyana",
-    "origin": ["Variable"],
-    "class": ["Assassin"],
-    "cost": 3,
-    "ability": {
-      "name": "Edge of Ixtal",
-      "description": "Qiyana dashes to the side of her target and throws a blast of wind through them, damaging and stunning enemies it passes through. Qiyana's element will change every match between Woodland, Inferno, Ocean, and Cloud.",
-      "type": "Active",
-      "manaCost": 125,
-      "manaStart": 50,
-      "stats": [
-        { "type": "Damage", "value": "300 / 500 / 700" },
-        { "type": "Stun Duration", "value": "3 / 4 / 5" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 65,
-        "attackSpeed": 0.7,
-        "dps": 36,
-        "range": 1
-      },
-      "defense": {
-        "health": 650,
-        "armor": 25,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "infinityedge",
-      "jeweledgaunlet"
-    ]
-  },
-  {
-    "id": "421",
-    "key": "RekSai",
-    "name": "Rek'Sai",
-    "origin": ["Steel"],
-    "class": ["Predator"],
-    "cost": 2,
-    "ability": {
-      "name": "Furious Bite",
-      "description": "Rek'Sai bites an enemy dealing true damage.",
-      "type": "Active",
-      "manaCost": 75,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage", "value": "250 / 550 / 850" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 65,
-        "attackSpeed": 0.7,
-        "dps": 26,
-        "range": 1
-      },
-      "defense": {
-        "health": 650,
-        "armor": 20,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "warmogsarmor",
-      "thornmail",
-      "dragonsclaw"
-    ]
-  },
-  {
-    "id": "123",
-    "key": "Renekton",
-    "name": "Renekton",
-    "origin": ["Desert"],
-    "class": ["Berserker"],
-    "cost": 1,
-    "ability": {
-      "name": "Cull the Meek",
-      "description": "Renekton swings his blade, dealing damage to nearby enemies and restoring health.",
-      "type": "Active",
-      "manaCost": 100,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage", "value": "150 / 275 / 400" },
-        { "type": "Heal Amount", "value": "150 / 250 / 350" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 55,
-        "attackSpeed": 0.6,
-        "dps": 26,
-        "range": 1
-      },
-      "defense": {
-        "health": 600,
-        "armor": 35,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "warmogsarmor",
-      "redemption"
-    ]
-  },
-  {
-    "id": "124",
-    "key": "Singed",
-    "name": "Singed",
-    "origin": ["Poison"],
-    "class": ["Alchemist"],
-    "cost": 5,
-    "ability": {
-      "name": "Poison Trail",
-      "description": "Singed leaves a poison cloud behind him damaging enemies in the area over 4 seconds.",
-      "type": "Passive",
-      "manaCost": 75,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage Multiplier", "value": "200 / 400 / 2000" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 0,
-        "attackSpeed": 0,
-        "dps": 30,
-        "range": 1
-      },
-      "defense": {
-        "health": 950,
-        "armor": 50,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "morellonomicon"
-    ]
-  },
-  {
-    "id": "125",
-    "key": "Sion",
-    "name": "Sion",
-    "origin": ["Shadow"],
-    "class": ["Berserker"],
-    "cost": 3,
-    "ability": {
-      "name": "Decimating Smash",
-      "description": "Sion smashes his axe into the ground after a short delay, dealing damage and knocking up enemies in the area.",
-      "type": "Active",
-      "manaCost": 75,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage", "value": "200 / 400 / 800" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 25,
-        "attackSpeed": 0.65,
-        "dps": 30,
-        "range": 1
-      },
-      "defense": {
-        "health": 800,
-        "armor": 30,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "warmogsarmor",
-      "thornmail"
-    ]
-  },
-  {
-    "id": "126",
-    "key": "Sivir",
-    "name": "Sivir",
-    "origin": ["Desert"],
-    "class": ["Blademaster"],
-    "cost": 3,
-    "ability": {
-      "name": "Ricochet",
-      "description": "For the next 5 seconds, Sivir's attacks will bounce up to 10 times to nearby enemies, dealing damage and applying on-hit effects.",
-      "type": "Active",
-      "manaCost": 65,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage", "value": "100% / 125% / 150%" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 50,
-        "attackSpeed": 0.7,
-        "dps": 30,
-        "range": 1
-      },
-      "defense": {
-        "health": 600,
-        "armor": 25,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "giantslayer",
-      "redbuff"
-    ]
-  },
-  {
-    "id": "127",
-    "key": "Skarner",
-    "name": "Skarner",
-    "origin": ["Crystal"],
-    "class": ["Predator"],
-    "cost": 2,
-    "ability": {
-      "name": "Crystalline Exoskeleton",
-      "description": "Skarner is shielded for 8 seconds. While the shield persists, Skarner gains attack speed.",
-      "type": "Active",
-      "manaCost": 65,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Shield Amount", "value": "150 / 450 / 750" },
-        { "type": "Attack Speed Bonus", "value": "30% / 65% / 100%" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 60,
-        "attackSpeed": 0.65,
-        "dps": 33,
-        "range": 1
-      },
-      "defense": {
-        "health": 650,
-        "armor": 35,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "thornmail"
-    ]
-  },
-  {
-    "id": "128",
-    "key": "Soraka",
-    "name": "Soraka",
-    "origin": ["Light"],
-    "class": ["Mystic"],
-    "cost": 3,
-    "ability": {
-      "name": "Equinox",
-      "description": "Soraka creates a zone at a random enemy's location, dealing magic damage and preventing mana from being restored to enemies inside.",
-      "type": "Active",
-      "manaCost": 60,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage", "value": "150 / 300 / 450 "},
-        { "type": "Duration", "value": "3 / 5 / 7" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 40,
-        "attackSpeed": 0.65,
-        "dps": 33,
-        "range": 2
-      },
-      "defense": {
-        "health": 600,
-        "armor": 20,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "morellonomicon"
-    ]
-  },
-  {
-    "id": "129",
-    "key": "Syndra",
-    "name": "Syndra",
-    "origin": ["Ocean"],
-    "class": ["Mage"],
-    "cost": 2,
-    "ability": {
-      "name": "Hydro Sphere",
-      "description": "Syndra conjures a sphere of water near a random enemy which explodes dealing magic damage to all enemies hit.",
-      "type": "Active",
-      "manaCost": 80,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage", "value": "175 / 350 / 600"}
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 40,
-        "attackSpeed": 0.7,
-        "dps": 33,
-        "range": 3
-      },
-      "defense": {
-        "health": 500,
-        "armor": 20,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "morellonomicon",
-      "jeweledgaunled"
-    ]
-  },
-  {
-    "id": "130",
-    "key": "Taliyah",
-    "name": "Taliyah",
-    "origin": ["Mountain"],
-    "class": ["Mage"],
-    "cost": 1,
-    "ability": {
-      "name": "Seismic Shove",
-      "description": "Taliyah causes the ground to rise under the enemy with the most Mana, dealing damage and either pushing or pulling them toward her.",
-      "type": "Active",
-      "manaCost": 80,
-      "manaStart": 50,
-      "stats": [
-        { "type": "Damage", "value": "150 / 350 / 550" },
-        { "type": "Stun Duration", "value": "2s" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 40,
-        "attackSpeed": 0.65,
-        "dps": 35,
-        "range": 1
-      },
-      "defense": {
-        "health": 500,
-        "armor": 20,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "seraphsembrace",
-      "rabadonsdeathcap"
-    ]
-  },
-  {
-    "id": "131",
-    "key": "Taric",
-    "name": "Taric",
-    "origin": ["Crystal"],
-    "class": ["Warden"],
-    "cost": 5,
-    "ability": {
-      "name": "Cosmic Radiance",
-      "description": "After a delay, Taric and all nearby allies become invulnerable.",
-      "type": "Active",
-      "manaCost": 150,
-      "manaStart": 50,
-      "stats": [
-        { "type": "Duration", "value": "3 / 3 / 5" },
-        { "type": "Range", "value": "2 / 3 / 4" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 60,
-        "attackSpeed": 0.65,
-        "dps": 35,
-        "range": 1
-      },
-      "defense": {
-        "health": 900,
-        "armor": 60,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "warmogsarmor",
-      "iceborngaunlet"
-    ]
-  },
-  {
-    "id": "132",
-    "key": "Thresh",
-    "name": "Thresh",
-    "origin": ["Ocean"],
-    "class": ["Warden"],
-    "cost": 2,
-    "ability": {
-      "name": "Deep Sea Lantern",
-      "description": "Thresh throws his lantern to the lowest-health ally, shielding them and nearby allies for 5 seconds.",
-      "type": "Active",
-      "manaCost": 150,
-      "manaStart": 50,
-      "stats": [
-        { "type": "Shield Amount", "value": "250 / 400 / 600" },
-        { "type": "Cast Time", "value": "0.25" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 55,
-        "attackSpeed": 0.55,
-        "dps": 35,
-        "range": 1
-      },
-      "defense": {
-        "health": 700,
-        "armor": 40,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "warmogsarmor",
-      "redemption"
-    ]
-  },
-  {
-    "id": "133",
-    "key": "Twitch",
-    "name": "Twitch",
-    "origin": ["Poison"],
-    "class": ["Ranger"],
-    "cost": 4,
-    "ability": {
-      "name": "Spray and Pray",
-      "description": "Twitch gains increased damage and unlimited range for 8 seconds.",
-      "type": "Active",
-      "manaCost": 90,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Bonus Damage", "value": "125% / 150% / 200%" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 60,
-        "attackSpeed": 0.75,
-        "dps": 35,
-        "range": 4
-      },
-      "defense": {
-        "health": 650,
-        "armor": 20,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "redbuff",
-      "swordbreaker"
-    ]
-  },
-  {
-    "id": "110",
-    "key": "Varus",
-    "name": "Varus",
-    "origin": ["Inferno"],
-    "class": ["Ranger"],
-    "cost": 2,
-    "ability": {
-      "name": "Piercing Arrow",
-      "description": "Varus charges and fires an arrow, dealing damage to all enemies in a line.",
-      "type": "Active",
-      "manaCost": 75,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage", "value": "225 / 450 / 675" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 60,
-        "attackSpeed": 0.7,
-        "dps": 35,
-        "range": 4
-      },
-      "defense": {
-        "health": 500,
-        "armor": 25,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "spearofshojin",
-      "guinsoosrageblade",
-      "statikkshiv"
-    ]
-  },
-  {
-    "id": "67",
-    "key": "Vayne",
-    "name": "Vayne",
-    "origin": ["Light"],
-    "class": ["Ranger"],
-    "cost": 1,
-    "ability": {
-      "name": "Silver Bolts",
-      "description": "Vayne deals bonus true damage every third attack based on the enemy's maximum health.",
-      "type": "Passive",
-      "manaCost": null,
-      "manaStart": null,
-      "stats": [{ "type": "Max Health Damage", "value": "9% / 12% / 15%" }]
-    },
-    "stats": {
-      "offense": {
-        "damage": 40,
-        "attackSpeed": 0.7,
-        "dps": 27,
-        "range": 3
-      },
-      "defense": {
-        "health": 550,
-        "armor": 25,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "runaanshurricane",
-      "guinsoosrageblade",
-      "giantslayer"
-    ]
-  },
-  {
-    "id": "45",
-    "key": "Veigar",
-    "name": "Veigar",
-    "origin": ["Shadow"],
-    "class": ["Mage"],
-    "cost": 3,
-    "ability": {
-      "name": "Primordial Burst",
-      "description": "Veigar blasts an enemy with magical energy. This spell instantly kills if the enemy is a lower star level than Veigar.",
-      "type": "Active",
-      "manaCost": 75,
-      "manaStart": 0,
-      "stats": [{ "type": "Damage", "value": "300 / 600 / 900" }]
-    },
-    "stats": {
-      "offense": {
-        "damage": 50,
-        "attackSpeed": 0.6,
-        "dps": 25,
-        "range": 3
-      },
-      "defense": {
-        "health": 600,
-        "armor": 20,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "seraphsembrace",
-      "ludensecho",
-      "dragonsclaw"
-    ]
-  },
-  {
-    "id": "134",
-    "key": "Vladimir",
-    "name": "Vladimir",
-    "origin": ["Ocean"],
-    "class": ["Mage"],
-    "cost": 1,
-    "ability": {
-      "name": "Drain",
-      "description": "Vladimir damages a target enemy, healing himself for the damage dealt.",
-      "type": "Active",
-      "manaCost": 75,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage", "value": "200 / 325 / 450" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 40,
-        "attackSpeed": 0.65,
-        "dps": 36,
-        "range": 2
-      },
-      "defense": {
-        "health": 550,
-        "armor": 30,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "spearofshojin",
-      "rabadonsdeathcap"
-    ]
-  },
-  {
-    "id": "106",
-    "key": "Volibear",
-    "name": "Volibear",
-    "origin": ["Glacial", "Electric"],
-    "class": ["Berserker"],
-    "cost": 2,
-    "ability": {
-      "name": "Thunder Claws",
-      "description": "Volibear's attacks bounce between enemies.",
-      "type": "Passive",
-      "manaCost": 75,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Chain Damage Multiplier", "value": "80% / 90% / 100%" },
-        { "type": "Bounces", "value": "3 / 4 / 5" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 70,
-        "attackSpeed": 0.65,
-        "dps": 38,
-        "range": 1
-      },
-      "defense": {
-        "health": 750,
-        "armor": 30,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "rapidfirecannon",
-      "redbuff",
-      "hush"
-    ]
-  },
-  {
-    "id": "19",
-    "key": "Warwick",
-    "name": "Warwick",
-    "origin": ["Glacial"],
-    "class": ["Predator"],
-    "cost": 1,
-    "ability": {
-      "name": "Infinite Duress",
-      "description": "Warwick pounces onto the lowest health enemy, stunning and damaging them.",
-      "type": "Active",
-      "manaCost": 150,
-      "manaStart": 50,
-      "stats": [
-        { "type": "Damage", "value": "150 / 225 / 300" },
-        { "type": "Hits", "value": "3" },
-        { "type": "Duration", "value": "1.5s" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 50,
-        "attackSpeed": 0.6,
-        "dps": 30,
-        "range": 1
-      },
-      "defense": {
-        "health": 650,
-        "armor": 30,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "frozenheart",
-      "cursedblade",
-      "warmogsarmor"
-    ]
-  },
-  {
-    "id": "157",
-    "key": "Yasuo",
-    "name": "Yasuo",
-    "origin": ["Cloud"],
-    "class": ["Blademaster"],
-    "cost": 2,
-    "ability": {
-      "name": "Last Breath",
-      "description": "Yasuo blinks to the enemy with the most items and knocks them up, holding them airborn for 1 second and hitting them, dealing basic attack damage and applying on-hit effects.",
-      "type": "Active",
-      "manaCost": 25,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Hits", "value": "4" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 55,
-        "attackSpeed": 0.7,
-        "dps": 65,
-        "range": 1
-      },
-      "defense": {
-        "health": 600,
-        "armor": 30,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "redbuff",
-      "jeweledgauntlet",
-      "guardianangel"
-    ]
-  },
-  {
-    "id": "135",
-    "key": "Yorick",
-    "name": "Yorick",
-    "origin": ["Light"],
-    "class": ["Summoner"],
-    "cost": 4,
-    "ability": {
-      "name": "Shepherd of Souls",
-      "description": "Yorick blesses his allies with the lowest health, not including Light Walkers. When they die, they resurect as Light Walkers and benefits from the effects of the Light origin.",
-      "type": "Active",
-      "manaCost": 75,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Number of Allies", "value": "2 / 3 / 12" },
-        { "type": "Light Walker Health", "value": "600 / 1000 / 1400" },
-        { "type": "Light Walker Damage", "value": "100 / 200 / 300" },
-        { "type": "Light Walker Armor", "value": "20" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 65,
-        "attackSpeed": 0.7,
-        "dps": 65,
-        "range": 1
-      },
-      "defense": {
-        "health": 800,
-        "armor": 35,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "warmogsarmor",
-      "redempton"
-    ]
-  },
-  {
-    "id": "238",
-    "key": "Zed",
-    "name": "Zed",
-    "origin": ["Electric"],
-    "class": ["Assassin", "Summoner"],
-    "cost": 5,
-    "ability": {
-      "name": "Living Shadow",
-      "description": "Zed creates a clone of himself behind his current target. This clone inherits its creator's items, stats, and current health, and can cast Living Shadow. Its mana cost is 50 higher.",
-      "type": "Active",
-      "manaCost": 150,
-      "manaStart": 50,
-      "stats": [
-        { "type": "Mana Cost Increase", "value": "50 / 25 / 0" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 80,
-        "attackSpeed": 1,
-        "dps": 39,
-        "range": 1
-      },
-      "defense": {
-        "health": 850,
-        "armor": 30,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "bloodthirster",
-      "rapidfirecannon",
-      "guardianangel"
-    ]
-  },
-  {
-    "id": "136",
-    "key": "Zyra",
-    "name": "Zyra",
-    "origin": ["Inferno"],
-    "class": ["Summoner"],
-    "cost": 1,
-    "ability": {
-      "name": "Rampant Growth",
-      "description": "Zyra summons two Flame Spitters at a random location at the edge of the arena. The Flame Spitters attack the nearest enemy for 3 seconds, dealing damage per attack a total of 4 times.",
-      "type": "Active",
-      "manaCost": 75,
-      "manaStart": 0,
-      "stats": [
-        { "type": "Damage", "value": "70 / 80 / 90" },
-        { "type": "Number of Plants", "value": "2 / 3 / 4" }
-      ]
-    },
-    "stats": {
-      "offense": {
-        "damage": 40,
-        "attackSpeed": 0.65,
-        "dps": 39,
-        "range": 3
-      },
-      "defense": {
-        "health": 500,
-        "armor": 20,
-        "magicResist": 20
-      }
-    },
-    "items": [
-      "spearofshojin",
-      "seraphsembrace"
-    ]
-  }
+        "stats": {
+            "offense": {
+                "damage": 55,
+                "attackSpeed": 0.75,
+                "dps": 41,
+                "range": 3
+            },
+            "defense": {
+                "health": 900,
+                "armor": 60,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "guardianangel",
+            "morellonomicon"
+        ]
+    },
+    {
+        "id": "100",
+        "key": "Annie",
+        "name": "Annie",
+        "origin": ["Inferno"],
+        "class": ["Summoner"],
+        "cost": 4,
+        "ability": {
+            "name": "Tibbers!",
+            "description": "Annie summons Tibbers near her target, dealing magic damage to all adjacent enemies. Tibbers fights for the rest of combat, dealing magic damage with each attack.",
+            "type": "Active",
+            "manaCost": 75,
+            "manaStart": 5,
+            "stats": [
+                { "type": "Initial Damage", "value": "100 / 200 / 300" },
+                { "type": "Tibber's Damage", "value": "125 / 350 / 1500" },
+                { "type": "Tibber's Health", "value": "1600 / 2200 / 3000" },
+                { "type": "Tibbers Attack Speed", "value": " 0.65" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 41,
+                "attackSpeed": 0.7,
+                "dps": 31,
+                "range": 3
+            },
+            "defense": {
+                "health": 700,
+                "armor": 20,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "dragonsclaw",
+            "guardianangel",
+            "redemption"
+        ]
+    },
+    {
+        "id": "22",
+        "key": "Ashe",
+        "name": "Ashe",
+        "origin": ["Crystal"],
+        "class": ["Ranger"],
+        "cost": 4,
+        "ability": {
+            "name": "Ranger's Focus",
+            "description": "For 5 seconds, Ashe gains 50% Attack Speed, and her basic attacks fire a flurry of arrows dealing physical damage.",
+            "type": "Active",
+            "manaCost": 35,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Attack Speed Bonus", "value": "50% / 75% / 100%" },
+                { "type": "Damage Per Arrow", "value": "30% / 35% / 75%" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 60,
+                "attackSpeed": 0.8,
+                "dps": 42,
+                "range": 4
+            },
+            "defense": {
+                "health": 550,
+                "armor": 20,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "giantslayer",
+            "runaanshurricane",
+            "guinsoosrageblade"
+        ]
+    },
+    {
+        "id": "101",
+        "key": "Azir",
+        "name": "Azir",
+        "origin": ["Desert"],
+        "class": ["Summoner"],
+        "cost": 3,
+        "ability": {
+            "name": "Arise!",
+            "description": "Azir summons a Sand Soldier for 6 seconds. Sand Soldiers attack nearby enemies whenever Azir attacks, dealing magic damage in a line.",
+            "type": "Active",
+            "manaCost": 100,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage", "value": "125 / 250 / 375" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 5,
+                "attackSpeed": 0.8,
+                "dps": 44,
+                "range": 3
+            },
+            "defense": {
+                "health": 600,
+                "armor": 20,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "giantslayer",
+            "guinsoosrageblade",
+            "hextechgunblade"
+        ]
+    },
+    {
+        "id": "63",
+        "key": "Brand",
+        "name": "Brand",
+        "origin": ["Inferno"],
+        "class": ["Mage"],
+        "cost": 4,
+        "ability": {
+            "name": "Pyroclasm",
+            "description": "Brand launches a bouncing fireball, damaging enemies hit.",
+            "type": "Active",
+            "manaCost": 85,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage", "value": "225 / 300 / 600" },
+                { "type": "Bounces", "value": "5 / 7 / 20"}
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 55,
+                "attackSpeed": 0.7,
+                "dps": 36,
+                "range": 3
+            },
+            "defense": {
+                "health": 700,
+                "armor": 25,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "rabadonsdeathcap",
+            "seraphsembrace",
+            "seraphsembrace"
+        ]
+    },
+    {
+        "id": "201",
+        "key": "Braum",
+        "name": "Braum",
+        "origin": ["Glacial"],
+        "class": ["Warden"],
+        "cost": 2,
+        "ability": {
+            "name": "Unbreakable",
+            "description": "Braum creates a barrier that blocks all incoming damage.",
+            "type": "Active",
+            "manaCost": 65,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage Reduction", "value": "80% / 85% / 90%" },
+                { "type": "Duration", "value": "4s" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 40,
+                "attackSpeed": 0.6,
+                "dps": 24,
+                "range": 1
+            },
+            "defense": {
+                "health": 750,
+                "armor": 60,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "bramblevest",
+            "warmogsarmor",
+            "dragonsclaw"
+        ]
+    },
+    {
+        "id": "103",
+        "key": "Diana",
+        "name": "Diana",
+        "origin": ["Inferno"],
+        "class": ["Assassin"],
+        "cost": 1,
+        "ability": {
+            "name": "Flame Cascade",
+            "description": "Diana creates orbs that spin around her and explode upon contact with an enemy, dealing magic damage. Additionally, Diane gains a shield for 3 seconds",
+            "type": "Active",
+            "manaCost": 100,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage", "value": "80 / 100 / 120" },
+                { "type": "Shield", "value": "150 / 250 / 350" },
+                { "type": "Number of Orbs", "value": "3 / 4 / 5" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 50,
+                "attackSpeed": 0.7,
+                "dps": 35,
+                "range": 1
+            },
+            "defense": {
+                "health": 550,
+                "armor": 20,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "infinityedge",
+            "infinityedge",
+            "jeweledgauntlet"
+        ]
+    },
+    {
+        "id": "104",
+        "key": "DrMundo",
+        "name": "DrMundo",
+        "origin": ["Poison"],
+        "class": ["Berserker"],
+        "cost": 3,
+        "ability": {
+            "name": "Adrenaline Rush",
+            "description": "Dr Mundo creates a toxic cloud around him that deals damage to nearby enemies and heals for a portion of the damage every second for 8 seconds.",
+            "type": "Passive",
+            "manaCost": 125,
+            "manaStart": 5,
+            "stats": [
+                { "type": "Damage", "value": "45 / 100 / 150" },
+                { "type": "Health Amount", "value": "100% / 150% / 150%" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 60,
+                "attackSpeed": 0.6,
+                "dps": 36,
+                "range": 3
+            },
+            "defense": {
+                "health": 800,
+                "armor": 35,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "morellonomicon",
+            "warmogsarmor",
+            "warmogsarmor"
+        ]
+    },
+    {
+        "id": "105",
+        "key": "Ezreal",
+        "name": "Ezreal",
+        "origin": ["Glacial"],
+        "class": ["Ranger"],
+        "cost": 3,
+        "ability": {
+            "name": "Ice Shot",
+            "description": "Ezreal fires a shard of ice at the lowest HP unit, dealing magic damage and applying on-hit effects.",
+            "type": "Active",
+            "manaCost": 30,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage", "value": "225 / 450 / 900" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 65,
+                "attackSpeed": 0.7,
+                "dps": 50,
+                "range": 3
+            },
+            "defense": {
+                "health": 650,
+                "armor": 20,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "iceborngaunlet",
+            "rabadonsdeathcap",
+            "seraphsembrace"
+        ]
+    },
+    {
+        "id": "106",
+        "key": "Ivern",
+        "name": "Ivern",
+        "origin": ["Forest"],
+        "class": ["Druid"],
+        "cost": 1,
+        "ability": {
+            "name": "Triggerseed",
+            "description": "Ivern shields the ally with the lowest health for 5 seconds.",
+            "type": "Passive",
+            "manaCost": 50,
+            "manaStart": null,
+            "stats": [{ "type": "Shield Amount", "value": "200 / 300 / 400" }]
+        },
+        "stats": {
+            "offense": {
+                "damage": 50,
+                "attackSpeed": 0.6,
+                "dps": 28,
+                "range": 1
+            },
+            "defense": {
+                "health": 600,
+                "armor": 25,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "guinsoosrageblade",
+            "spearofshojin",
+            "spearofshojin"
+        ]
+    },
+    {
+        "id": "107",
+        "key": "Jax",
+        "name": "Jax",
+        "origin": ["Light"],
+        "class": ["Berserker"],
+        "cost": 2,
+        "ability": {
+            "name": "Counter Strike",
+            "description": "Jax dodges all incoming attacks for 2 seconds, then strikes nearby enemies, stunning them for 1.5 seconds.",
+            "type": "Active",
+            "manaCost": 125,
+            "manaStart": 50,
+            "stats": [
+                { "type": "Damage", "value": "150 / 300 / 550" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 45,
+                "attackSpeed": 0.8,
+                "dps": 49,
+                "range": 1
+            },
+            "defense": {
+                "health": 700,
+                "armor": 30,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "redbuff",
+            "guinsoosrageblade",
+            "spearofshojin"
+        ]
+    },
+    {
+        "id": "108",
+        "key": "Janna",
+        "name": "Janna",
+        "origin": ["Cloud"],
+        "class": ["Mystic"],
+        "cost": 4,
+        "ability": {
+            "name": "Monsoon",
+            "description": "Janna summons a Monsoon, healing all allies in the area for % of their max health over 3 seconds. Nearby enemies are knocked back and stunned for 1.5 second.",
+            "type": "Active",
+            "manaCost": 125,
+            "manaStart": 50,
+            "stats": [
+                { "type": "Heal Amount", "value": "20% / 30% / 100%" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 45,
+                "attackSpeed": 0.7,
+                "dps": 49,
+                "range": 1
+            },
+            "defense": {
+                "health": 600,
+                "armor": 20,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "locketoftheironsolari",
+            "locketoftheironsolari",
+            "zephyr"
+        ]
+    },
+    {
+        "id": "1081",
+        "key": "Karma",
+        "name": "Karma",
+        "origin": ["Lunar"],
+        "class": ["Mystic"],
+        "cost": 3,
+        "ability": {
+            "name": "Dawnbringer",
+            "description": "At the start of combat, Karma tethers to her closest ally. Karma shields the tethered ally (or a random one if the tether is dead) for 5 seconds, absorbing the next damage. While the shield holds, the ally receives bonus Attack Speed.",
+            "type": "Active",
+            "manaCost": 100,
+            "manaStart": 75,
+            "stats": [
+                { "type": "Shield Amount", "value": "250 / 400 / 800" },
+                { "type": "Attack Speed", "value": "40% / 60% / 80%" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 50,
+                "attackSpeed": 0.7,
+                "dps": 50,
+                "range": 1
+            },
+            "defense": {
+                "health": 600,
+                "armor": 20,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "dragonsclaw",
+            "guardianangel",
+            "spearofshojin"
+        ]
+    },
+    {
+        "id": "121",
+        "key": "Khazix",
+        "name": "Kha'Zix",
+        "origin": ["Desert"],
+        "class": ["Assassin"],
+        "cost": 4,
+        "ability": {
+            "name": "Void Assault",
+            "description": "Kha’zix stealths and attacks the lowest health enemy, critically striking damage and gaining 5 mana.",
+            "type": "Active",
+            "manaCost": 40,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Bonus Damage", "value": "100 / 200 / 500" },
+                { "type": "Mana Refund:", "value": "5 / 10 / 15" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 75,
+                "attackSpeed": 0.8,
+                "dps": 30,
+                "range": 1
+            },
+            "defense": {
+                "health": 750,
+                "armor": 25,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "iceborngaunlet",
+            "infinityedge",
+            "seraphsembrace"
+        ]
+    },
+    {
+        "id": "203",
+        "key": "Kindred",
+        "name": "Kindred",
+        "origin": ["Shadow","Inferno"],
+        "class": ["Ranger"],
+        "cost": 3,
+        "ability": {
+            "name": "Lamb's Respite",
+            "description": "Wolf mauls Kindred's target, dealing magic damage and reducing healing by 80% to her target for 5 seconds., while Lamb leaps away from Kindred's target.",
+            "type": "Active",
+            "manaCost": 35,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage", "value": "150 / 325 / 650" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 55,
+                "attackSpeed": 0.75,
+                "dps": 41,
+                "range": 3
+            },
+            "defense": {
+                "health": 650,
+                "armor": 20,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "rapidfirecannon",
+            "rabadonsdeathcap",
+            "seraphsembrace"
+        ]
+    },
+    {
+        "id": "109",
+        "key": "KogMaw",
+        "name": "KogMaw",
+        "origin": ["Poison"],
+        "class": ["Predator"],
+        "cost": 1,
+        "ability": {
+            "name": "Living Artillery",
+            "description": "Kog'Maw fires a living artillery shell at a random enemy, dealing damage.",
+            "type": "Active",
+            "manaCost": 150,
+            "manaStart": 50,
+            "stats": [
+                { "type": "Damage", "value": "150 / 300 / 500" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 45,
+                "attackSpeed": 0.7,
+                "dps": 32,
+                "range": 3
+            },
+            "defense": {
+                "health": 500,
+                "armor": 20,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "ludensecho",
+            "runaanshurricane",
+            "statikkshiv"
+        ]
+    },
+    {
+        "id": "110",
+        "key": "Leblanc",
+        "name": "Leblanc",
+        "class": ["Assassin", "Mage"],
+        "origin": ["Forest"],
+        "cost": 2,
+        "ability": {
+            "name": "Ethereal Chains",
+            "description": "Leblanc flings an illusory chain toward a random enemy, dealing damage and stunning them after 1.5 seconds.",
+            "type": "Active",
+            "manaCost": 80,
+            "manaStart": 50,
+            "stats": [
+                { "type": "Damage", "value": "225 / 475 / 800" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 55,
+                "attackSpeed": 0.7,
+                "dps": 25,
+                "range": 2
+            },
+            "defense": {
+                "health": 550,
+                "armor": 20,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "jeweledgaunlet",
+            "infinityedge",
+            "seraphsembrace"
+        ]
+    },
+    {
+        "id": "1101",
+        "key": "Leona",
+        "name": "Leona",
+        "class": ["Warden"],
+        "origin": ["Lunar"],
+        "cost": 1,
+        "ability": {
+            "name": "Lunar Eclipse",
+            "description": "Leona reduces all damage done to her for 5 seconds.",
+            "type": "Active",
+            "manaCost": 50,
+            "manaStart": 50,
+            "stats": [
+                { "type": "Damage Reduce", "value": " 40 / 80 / 120" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 50,
+                "attackSpeed": 0.55,
+                "dps": 28,
+                "range": 2
+            },
+            "defense": {
+                "health": 650,
+                "armor": 40,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "warmogsarmor",
+            "dragonsclaw"
+        ]
+    },
+    {
+        "id": "1102",
+        "key": "Lucian",
+        "name": "Lucian",
+        "class": ["Soulbound"],
+        "origin": ["Light"],
+        "cost": 4,
+        "ability": {
+            "name": "The Culling",
+            "description": "Lucian fires 12 + (4X his attacks per second) bullets in a direction over 4 seconds, each dealing % of his Attack Damage, applying on-hits, and dealing additional magic damage.",
+            "type": "Active",
+            "manaCost": 50,
+            "manaStart": 50,
+            "stats": [
+                { "type": "Damage", "value": "30% / 40% / 50%" },
+                { "type": "On-hits damage", "value": "40 / 50 / 100" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 65,
+                "attackSpeed": 8,
+                "dps": 28,
+                "range": 2
+            },
+            "defense": {
+                "health": 550,
+                "armor": 25,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "giantslayer",
+            "giantslayer",
+            "giantslayer"
+        ]
+    },
+    {
+        "id": "137",
+        "key": "Lux Cloud",
+        "name": "Lux Cloud",
+        "origin": ["Cloud"],
+        "class": ["Avatar"],
+        "cost": 7,
+        "ability": {
+            "name": "Final Spark",
+            "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
+            "type": "Active",
+            "manaCost": 85,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage", "value": "500 / 800 / 9999" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 65,
+                "attackSpeed": 0.85,
+                "dps": 39,
+                "range": 4
+            },
+            "defense": {
+                "health": 850,
+                "armor": 25,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "rabadonsdeathcap",
+            "seraphsembrace",
+            "seraphsembrace"
+        ]
+    },
+    {
+        "id": "138",
+        "key": "Lux Crystal",
+        "name": "Lux Crystal",
+        "origin": ["Crystal"],
+        "class": ["Avatar"],
+        "cost": 7,
+        "ability": {
+            "name": "Final Spark",
+            "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
+            "type": "Active",
+            "manaCost": 85,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage", "value": "500 / 800 / 9999" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 65,
+                "attackSpeed": 0.85,
+                "dps": 39,
+                "range": 4
+            },
+            "defense": {
+                "health": 850,
+                "armor": 25,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "rabadonsdeathcap",
+            "seraphsembrace",
+            "seraphsembrace"
+        ]
+    },
+    {
+        "id": "139",
+        "key": "Lux Electric",
+        "name": "Lux Electric",
+        "origin": ["Electric"],
+        "class": ["Avatar"],
+        "cost": 7,
+        "ability": {
+            "name": "Final Spark",
+            "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
+            "type": "Active",
+            "manaCost": 85,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage", "value": "500 / 800 / 9999" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 65,
+                "attackSpeed": 0.85,
+                "dps": 39,
+                "range": 4
+            },
+            "defense": {
+                "health": 850,
+                "armor": 25,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "rabadonsdeathcap",
+            "seraphsembrace",
+            "seraphsembrace"
+        ]
+    },
+    {
+        "id": "140",
+        "key": "Lux Glacial",
+        "name": "Lux Glacial",
+        "origin": ["Glacial"],
+        "class": ["Avatar"],
+        "cost": 7,
+        "ability": {
+            "name": "Final Spark",
+            "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
+            "type": "Active",
+            "manaCost": 85,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage", "value": "500 / 800 / 9999" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 65,
+                "attackSpeed": 0.85,
+                "dps": 39,
+                "range": 4
+            },
+            "defense": {
+                "health": 850,
+                "armor": 25,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "rabadonsdeathcap",
+            "seraphsembrace",
+            "seraphsembrace"
+        ]
+    },
+    {
+        "id": "141",
+        "key": "Lux Inferno",
+        "name": "Lux Inferno",
+        "origin": ["Inferno"],
+        "class": ["Avatar"],
+        "cost": 7,
+        "ability": {
+            "name": "Final Spark",
+            "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
+            "type": "Active",
+            "manaCost": 85,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage", "value": "500 / 800 / 9999" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 65,
+                "attackSpeed": 0.85,
+                "dps": 39,
+                "range": 4
+            },
+            "defense": {
+                "health": 850,
+                "armor": 25,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "rabadonsdeathcap",
+            "seraphsembrace",
+            "seraphsembrace"
+        ]
+    },
+    {
+        "id": "142",
+        "key": "Lux Light",
+        "name": "Lux Light",
+        "origin": ["Light"],
+        "class": ["Avatar"],
+        "cost": 7,
+        "ability": {
+            "name": "Final Spark",
+            "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
+            "type": "Active",
+            "manaCost": 85,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage", "value": "500 / 800 / 9999" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 65,
+                "attackSpeed": 0.85,
+                "dps": 39,
+                "range": 4
+            },
+            "defense": {
+                "health": 850,
+                "armor": 25,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "rabadonsdeathcap",
+            "seraphsembrace",
+            "seraphsembrace"
+        ]
+    },
+    {
+        "id": "143",
+        "key": "Lux Ocean",
+        "name": "Lux Ocean",
+        "origin": ["Ocean"],
+        "class": ["Avatar"],
+        "cost": 7,
+        "ability": {
+            "name": "Final Spark",
+            "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
+            "type": "Active",
+            "manaCost": 85,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage", "value": "500 / 800 / 9999" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 65,
+                "attackSpeed": 0.85,
+                "dps": 39,
+                "range": 4
+            },
+            "defense": {
+                "health": 850,
+                "armor": 25,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "rabadonsdeathcap",
+            "seraphsembrace",
+            "seraphsembrace"
+        ]
+    },
+    {
+        "id": "144",
+        "key": "Lux Shadow",
+        "name": "Lux Shadow",
+        "origin": ["Shadow"],
+        "class": ["Avatar"],
+        "cost": 7,
+        "ability": {
+            "name": "Final Spark",
+            "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
+            "type": "Active",
+            "manaCost": 85,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage", "value": "500 / 800 / 9999" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 65,
+                "attackSpeed": 0.85,
+                "dps": 39,
+                "range": 4
+            },
+            "defense": {
+                "health": 850,
+                "armor": 25,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "rabadonsdeathcap",
+            "seraphsembrace",
+            "seraphsembrace"
+        ]
+    },
+    {
+        "id": "145",
+        "key": "Lux Steel",
+        "name": "Lux Steel",
+        "origin": ["Steel"],
+        "class": ["Avatar"],
+        "cost": 7,
+        "ability": {
+            "name": "Final Spark",
+            "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
+            "type": "Active",
+            "manaCost": 85,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage", "value": "500 / 800 / 9999" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 65,
+                "attackSpeed": 0.85,
+                "dps": 39,
+                "range": 4
+            },
+            "defense": {
+                "health": 850,
+                "armor": 25,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "rabadonsdeathcap",
+            "seraphsembrace",
+            "seraphsembrace"
+        ]
+    },
+    {
+        "id": "146",
+        "key": "Lux Forest",
+        "name": "Lux Forest",
+        "origin": ["Forest"],
+        "class": ["Avatar"],
+        "cost": 7,
+        "ability": {
+            "name": "Final Spark",
+            "description": "Lux fires a straight beam of light at enemies. If at least one enemy is killed, she restores 50 mana.",
+            "type": "Active",
+            "manaCost": 85,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage", "value": "500 / 800 / 9999" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 65,
+                "attackSpeed": 0.85,
+                "dps": 39,
+                "range": 4
+            },
+            "defense": {
+                "health": 850,
+                "armor": 25,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "rabadonsdeathcap",
+            "seraphsembrace",
+            "seraphsembrace"
+        ]
+    },
+    {
+        "id": "111",
+        "key": "Malphite",
+        "name": "Malphite",
+        "origin": ["Mountain"],
+        "class": ["Warden"],
+        "cost": 4,
+        "ability": {
+            "name": "Unstoppable Force",
+            "description": "Malphite charges toward a random enemy, dealing damage and knocking all nearby enemies into the air and stunning them.",
+            "type": "Active",
+            "manaCost": 150,
+            "manaStart": 50,
+            "stats": [
+                { "type": "Damage", "value": "150 / 300 / 1000" },
+                { "type": "Stun Duration", "value": "2 / 2.5 / 5" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 60,
+                "attackSpeed": 0.55,
+                "dps": 64,
+                "range": 1
+            },
+            "defense": {
+                "health": 850,
+                "armor": 50,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "bramblevest",
+            "guardianangel",
+            "morellonomicon"
+        ]
+    },
+    {
+        "id": "112",
+        "key": "Malzahar",
+        "name": "Malzahar",
+        "origin": ["Shadow"],
+        "class": ["Summoner"],
+        "cost": 2,
+        "ability": {
+            "name": "Shadow Swarm",
+            "description": "Malzahar creates a shadow portal, summoning Shadow Spawns. The Shadow Spawns hit for magic damage each attack. Shadow Spawn benefit from active Shadow trait bonuses.",
+            "type": "Active",
+            "manaCost": 125,
+            "manaStart": 75,
+            "stats": [
+                { "type": "Number of Spirits", "value": "2 / 3 / 4" },
+                { "type": "Spirit Damage", "value": "40 / 70 / 100" },
+                { "type": "Spirit Health", "value": "250 / 300 / 400" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 40,
+                "attackSpeed": 0.65,
+                "dps": 64,
+                "range": 1
+            },
+            "defense": {
+                "health": 550,
+                "armor": 20,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "morellonomicon",
+            "spearofshojin",
+            "spearofshojin"
+        ]
+    },
+    {
+        "id": "113",
+        "key": "MasterYi",
+        "name": "MasterYi",
+        "origin": ["Shadow"],
+        "class": ["Blademaster", "Mystic"],
+        "cost": 5,
+        "ability": {
+            "name": "Meditate",
+            "description": "Master Yi meditates, becoming untargetable for 1 second, healing 30% of his max health over the duration. For 6 seconds after he finishes meditating, Master Yi gains 100% attack speed and deals bonus magic damage on hit.",
+            "type": "Active",
+            "manaCost": 150,
+            "manaStart": 100,
+            "stats": [
+                { "type": "Bonus Damage", "value": "75 / 100 / 500" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 0,
+                "attackSpeed": 0,
+                "dps": 64,
+                "range": 1
+            },
+            "defense": {
+                "health": 850,
+                "armor": 30,
+                "magicResist": 0
+            }
+        },
+        "items": [
+            "guinsoosrageblade",
+            "handofjustice",
+            "rapidfirecannon"
+        ]
+    },
+    {
+        "id": "114",
+        "key": "Maokai",
+        "name": "Maokai",
+        "origin": ["Forest"],
+        "class": ["Druid"],
+        "cost": 1,
+        "ability": {
+            "name": "Sap Magic",
+            "description": "After taking damage from a spell, Maokai's next attack will heal him.",
+            "type": "Active",
+            "manaCost": 100,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Heal Amount", "value": "100 / 150 / 200" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 55,
+                "attackSpeed": 0.5,
+                "dps": 25,
+                "range": 1
+            },
+            "defense": {
+                "health": 650,
+                "armor": 35,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "dragonsclaw",
+            "redbuff",
+            "hextechgunblade"
+        ]
+    },
+    {
+        "id": "115",
+        "key": "Nami",
+        "name": "Nami",
+        "origin": ["Ocean"],
+        "class": ["Mystic"],
+        "cost": 5,
+        "ability": {
+            "name": "Tidal Wave",
+            "description": "Nami sends a massive wave toward a random enemy, damaging and knocking up enemies it passes through and granting allies it passes through bonus magic damage on hit.",
+            "type": "Active",
+            "manaCost": 125,
+            "manaStart": 50,
+            "stats": [
+                { "type": "Damage", "value": "100 / 200 / 300" },
+                { "type": "Stun Duration", "value": "1.5 / 2 / 2.5" },
+                { "type": "Bonus Damage", "value": "25 / 50 / 300" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 50,
+                "attackSpeed": 0.75,
+                "dps": 33,
+                "range": 1
+            },
+            "defense": {
+                "health": 750,
+                "armor": 25,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "morellonomicon",
+            "spearofshojin",
+            "spearofshojin"
+        ]
+    },
+    {
+        "id": "116",
+        "key": "Nasus",
+        "name": "Nasus",
+        "origin": ["Light"],
+        "class": ["Warden"],
+        "cost": 1,
+        "ability": {
+            "name": "Fury of the Dawn",
+            "description": "Nasus surrounds himself with light for 7 seconds, gaining bonus health and damaging adjacent enemies each second.",
+            "type": "Active",
+            "manaCost": 100,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage", "value": "50 / 70 / 90" },
+                { "type": "Bonus Health", "value": "250 / 400 / 550" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 50,
+                "attackSpeed": 0.55,
+                "dps": 33,
+                "range": 3
+            },
+            "defense": {
+                "health": 650,
+                "armor": 40,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "warmogsarmor",
+            "morellonomicon",
+            "redemption"
+        ]
+    },
+    {
+        "id": "117",
+        "key": "Nautilus",
+        "name": "Nautilus",
+        "origin": ["Ocean"],
+        "class": ["Warden"],
+        "cost": 3,
+        "ability": {
+            "name": "Depth Charge",
+            "description": "Nautilus sends out a depth charge that seeks out the furthest enemy champion, knocking them up and stunning them. It also deals damage to all enemies it passes.",
+            "type": "Active",
+            "manaCost": 125,
+            "manaStart": 50,
+            "stats": [
+                { "type": "Damage", "value": "100 / 200 / 400" },
+                { "type": "Stun Duration", "value": "3 / 4 / 6" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 55,
+                "attackSpeed": 0.6,
+                "dps": 33,
+                "range": 1
+            },
+            "defense": {
+                "health": 850,
+                "armor": 40,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "warmogsarmor",
+            "bramblevest",
+            "dragonsclaw"
+        ]
+    },
+    {
+        "id": "118",
+        "key": "Neeko",
+        "name": "Neeko",
+        "origin": ["Forest"],
+        "class": ["Druid"],
+        "cost": 2,
+        "ability": {
+            "name": "Blooming Burst",
+            "description": "Neeko throws a seed at a random target, exploding three times with increasing radius, dealing damage to all enemies hit by each explosion.",
+            "type": "Active",
+            "manaCost": 60,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage", "value": "100 / 200 / 350" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 45,
+                "attackSpeed": 0.7,
+                "dps": 33,
+                "range": 2
+            },
+            "defense": {
+                "health": 500,
+                "armor": 20,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "seraphsembrace",
+            "morellonomicon",
+            "rabadonsdeathcap"
+        ]
+    },
+    {
+        "id": "119",
+        "key": "Nocturne",
+        "name": "Nocturne",
+        "origin": ["Steel"],
+        "class": ["Assassin"],
+        "cost": 3,
+        "ability": {
+            "name": "Steel Blades",
+            "description": "Every third attack, Nocturne deals additional damage to enemies around him and heals for a portion of the damage.",
+            "type": "Passive",
+            "manaCost": 0,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Heal Amount", "value": "40% / 45% / 50%" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 60,
+                "attackSpeed": 0.7,
+                "dps": 33,
+                "range": 1
+            },
+            "defense": {
+                "health": 650,
+                "armor": 25,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "guinsoosrageblade",
+            "infinityedge",
+            "infinityedge"
+        ]
+    },
+    {
+        "id": "120",
+        "key": "Olaf",
+        "name": "Olaf",
+        "origin": ["Glacial"],
+        "class": ["Berserker"],
+        "cost": 4,
+        "ability": {
+            "name": "Ragnarok",
+            "description": "Olaf gains % Attack Speed, up to 50% Lifesteal based on missing health, and immunity to Crowd Control for the rest of the combat.",
+            "type": "Passive",
+            "manaCost": 90,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Attack Speed Bonus", "value": "100% / 150% / 300%" },
+                { "type": "Lifesteal", "value": "50%" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 25,
+                "attackSpeed": 0.8,
+                "dps": 33,
+                "range": 1
+            },
+            "defense": {
+                "health": 750,
+                "armor": 30,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "guinsoosrageblade",
+            "hush",
+            "rapidfirecannon"
+        ]
+    },
+    {
+        "id": "121",
+        "key": "Ornn",
+        "name": "Ornn",
+        "origin": ["Electric"],
+        "class": ["Warden"],
+        "cost": 1,
+        "ability": {
+            "name": "Lightning Breath",
+            "description": "Ornn unleashes lightning bolts in a cone in front of him, dealing damage and increasing their chance to be critical struck by 20% for 4 seconds.",
+            "type": "Active",
+            "manaCost": 75,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage", "value": "100 / 200 / 300" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 50,
+                "attackSpeed": 0.55,
+                "dps": 33,
+                "range": 1
+            },
+            "defense": {
+                "health": 650,
+                "armor": 40,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "warmogsarmor",
+            "dragonsclaw"
+        ]
+    },
+    {
+        "id": "122",
+        "key": "Qiyana",
+        "name": "Qiyana",
+        "origin": ["Ocean"],
+        "class": ["Assassin"],
+        "cost": 3,
+        "ability": {
+            "name": "Edge of Ixtal",
+            "description": "Qiyana dashes to the side of her target and throws a blast of wind through them, damaging and stunning enemies it passes through. Qiyana's element will change every match between Woodland, Inferno, Ocean, and Cloud.",
+            "type": "Active",
+            "manaCost": 100,
+            "manaStart": 50,
+            "stats": [
+                { "type": "Damage", "value": "300 / 500 / 900" },
+                { "type": "Stun Duration", "value": "2.5 / 3.5 / 4.5" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 65,
+                "attackSpeed": 0.7,
+                "dps": 36,
+                "range": 1
+            },
+            "defense": {
+                "health": 650,
+                "armor": 25,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "infinityedge",
+            "jeweledgaunlet",
+            "spearofshojin"
+        ]
+    },
+    {
+        "id": "124",
+        "key": "Qiyana Cloud",
+        "name": "Qiyana Cloud",
+        "origin": ["Cloud"],
+        "class": ["Assassin"],
+        "cost": 3,
+        "ability": {
+            "name": "Edge of Ixtal",
+            "description": "Qiyana dashes to the side of her target and throws a blast of wind through them, damaging and stunning enemies it passes through. Qiyana's element will change every match between Woodland, Inferno, Ocean, and Cloud.",
+            "type": "Active",
+            "manaCost": 100,
+            "manaStart": 50,
+            "stats": [
+                { "type": "Damage", "value": "300 / 500 / 900" },
+                { "type": "Stun Duration", "value": "2.5 / 3.5 / 4.5" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 65,
+                "attackSpeed": 0.7,
+                "dps": 36,
+                "range": 1
+            },
+            "defense": {
+                "health": 650,
+                "armor": 25,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "infinityedge",
+            "jeweledgaunlet",
+            "spearofshojin"
+        ]
+    },
+    {
+        "id": "124",
+        "key": "Qiyana Inferno",
+        "name": "Qiyana Inferno",
+        "origin": ["Inferno"],
+        "class": ["Assassin"],
+        "cost": 3,
+        "ability": {
+            "name": "Edge of Ixtal",
+            "description": "Qiyana dashes to the side of her target and throws a blast of wind through them, damaging and stunning enemies it passes through. Qiyana's element will change every match between Woodland, Inferno, Ocean, and Cloud.",
+            "type": "Active",
+            "manaCost": 100,
+            "manaStart": 50,
+            "stats": [
+                { "type": "Damage", "value": "300 / 500 / 900" },
+                { "type": "Stun Duration", "value": "2.5 / 3.5 / 4.5" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 65,
+                "attackSpeed": 0.7,
+                "dps": 36,
+                "range": 1
+            },
+            "defense": {
+                "health": 650,
+                "armor": 25,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "infinityedge",
+            "jeweledgaunlet",
+            "spearofshojin"
+        ]
+    },
+    {
+        "id": "124",
+        "key": "Qiyana Mountain",
+        "name": "Qiyana Mountain",
+        "origin": ["Mountain"],
+        "class": ["Assassin"],
+        "cost": 3,
+        "ability": {
+            "name": "Edge of Ixtal",
+            "description": "Qiyana dashes to the side of her target and throws a blast of wind through them, damaging and stunning enemies it passes through. Qiyana's element will change every match between Woodland, Inferno, Ocean, and Cloud.",
+            "type": "Active",
+            "manaCost": 100,
+            "manaStart": 50,
+            "stats": [
+                { "type": "Damage", "value": "300 / 500 / 900" },
+                { "type": "Stun Duration", "value": "2.5 / 3.5 / 4.5" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 65,
+                "attackSpeed": 0.7,
+                "dps": 36,
+                "range": 1
+            },
+            "defense": {
+                "health": 650,
+                "armor": 25,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "infinityedge",
+            "jeweledgaunlet",
+            "spearofshojin"
+        ]
+    },
+    {
+        "id": "124",
+        "key": "Qiyana Ocean",
+        "name": "Qiyana Ocean",
+        "origin": ["Ocean"],
+        "class": ["Assassin"],
+        "cost": 3,
+        "ability": {
+            "name": "Edge of Ixtal",
+            "description": "Qiyana dashes to the side of her target and throws a blast of wind through them, damaging and stunning enemies it passes through. Qiyana's element will change every match between Woodland, Inferno, Ocean, and Cloud.",
+            "type": "Active",
+            "manaCost": 100,
+            "manaStart": 50,
+            "stats": [
+                { "type": "Damage", "value": "300 / 500 / 900" },
+                { "type": "Stun Duration", "value": "2.5 / 3.5 / 4.5" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 65,
+                "attackSpeed": 0.7,
+                "dps": 36,
+                "range": 1
+            },
+            "defense": {
+                "health": 650,
+                "armor": 25,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "infinityedge",
+            "jeweledgaunlet",
+            "spearofshojin"
+        ]
+    },
+    
+    {
+        "id": "421",
+        "key": "RekSai",
+        "name": "Rek'Sai",
+        "origin": ["Steel"],
+        "class": ["Predator"],
+        "cost": 2,
+        "ability": {
+            "name": "Furious Bite",
+            "description": "Rek'Sai bites an enemy dealing true damage.",
+            "type": "Active",
+            "manaCost": 75,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage", "value": "250 / 550 / 850" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 60,
+                "attackSpeed": 0.7,
+                "dps": 26,
+                "range": 1
+            },
+            "defense": {
+                "health": 650,
+                "armor": 35,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "dragonsclaw",
+            "redemption"
+        ]
+    },
+    {
+        "id": "123",
+        "key": "Renekton",
+        "name": "Renekton",
+        "origin": ["Desert"],
+        "class": ["Berserker"],
+        "cost": 1,
+        "ability": {
+            "name": "Cull the Meek",
+            "description": "Renekton swings his blade, dealing damage to nearby enemies and restoring health.",
+            "type": "Active",
+            "manaCost": 100,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage", "value": "150 / 275 / 475" },
+                { "type": "Heal Amount", "value": "150 / 225 / 300" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 55,
+                "attackSpeed": 0.6,
+                "dps": 26,
+                "range": 1
+            },
+            "defense": {
+                "health": 600,
+                "armor": 35,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "dragonsclaw",
+            "redemption",
+            "guardianangel"
+        ]
+    },
+    {
+        "id": "1231",
+        "key": "Senna",
+        "name": "Senna",
+        "origin": ["Shadow"],
+        "class": ["Soulbound"],
+        "cost": 2,
+        "ability": {
+            "name": "Piercing Darkness",
+            "description": "Senna fires a beam through her furthest ally, dealing magic damage to enemies, and buffing allies' on-hits for 5 seconds to deal magic damage from Senna.",
+            "type": "Active",
+            "manaCost": 75,
+            "manaStart": 50,
+            "stats": [
+                { "type": "Damage", "value": "50 / 100 / 150" },
+                { "type": "On-hits damage", "value": "15 / 40 / 65" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 45,
+                "attackSpeed": 0.7,
+                "dps": 32,
+                "range": 1
+            },
+            "defense": {
+                "health": 450,
+                "armor": 25,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "guardianangel",
+            "morellonomicon",
+            "seraphsembrace"
+        ]
+    },
+    {
+        "id": "124",
+        "key": "Singed",
+        "name": "Singed",
+        "origin": ["Poison"],
+        "class": ["Alchemist"],
+        "cost": 5,
+        "ability": {
+            "name": "Poison Trail",
+            "description": "Singed leaves a poison cloud behind him damaging enemies in the area over 4 seconds.",
+            "type": "Passive",
+            "manaCost": 0,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage Multiplier", "value": "150 / 300 / 2000" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 0,
+                "attackSpeed": 0,
+                "dps": 30,
+                "range": 1
+            },
+            "defense": {
+                "health": 950,
+                "armor": 50,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "ionicspark",
+            "ionicspark",
+            "morellonomicon"
+        ]
+    },
+    {
+        "id": "125",
+        "key": "Sion",
+        "name": "Sion",
+        "origin": ["Shadow"],
+        "class": ["Berserker"],
+        "cost": 3,
+        "ability": {
+            "name": "Decimating Smash",
+            "description": "Sion winds up for a moment, then smashes his axe down in a direction, dealing damage to and knocking up all enemies hit.",
+            "type": "Active",
+            "manaCost": 125,
+            "manaStart": 75,
+            "stats": [
+                { "type": "Damage", "value": "200 / 400 / 800" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 25,
+                "attackSpeed": 0.65,
+                "dps": 30,
+                "range": 1
+            },
+            "defense": {
+                "health": 800,
+                "armor": 30,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "warmogsarmor",
+            "redbuff",
+            "dragonsclaw"
+        ]
+    },
+    {
+        "id": "126",
+        "key": "Sivir",
+        "name": "Sivir",
+        "origin": ["Desert"],
+        "class": ["Blademaster"],
+        "cost": 3,
+        "ability": {
+            "name": "Ricochet",
+            "description": "For the next 5 seconds, Sivir's attacks will bounce up to 10 times to nearby enemies, dealing damage and applying on-hit effects.",
+            "type": "Active",
+            "manaCost": 65,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage", "value": "100% / 125% / 150%" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 50,
+                "attackSpeed": 0.7,
+                "dps": 30,
+                "range": 1
+            },
+            "defense": {
+                "health": 600,
+                "armor": 25,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "giantslayer",
+            "redbuff"
+        ]
+    },
+    {
+        "id": "127",
+        "key": "Skarner",
+        "name": "Skarner",
+        "origin": ["Crystal"],
+        "class": ["Predator"],
+        "cost": 2,
+        "ability": {
+            "name": "Crystalline Exoskeleton",
+            "description": "Skarner is shielded for 8 seconds. While the shield persists, Skarner gains attack speed.",
+            "type": "Active",
+            "manaCost": 65,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Shield Amount", "value": "150 / 450 / 750" },
+                { "type": "Attack Speed Bonus", "value": "50% / 75% / 100%" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 60,
+                "attackSpeed": 0.65,
+                "dps": 33,
+                "range": 1
+            },
+            "defense": {
+                "health": 650,
+                "armor": 35,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "bramblevest",
+            "warmogsarmor",
+            "ionicspark"
+        ]
+    },
+    {
+        "id": "128",
+        "key": "Soraka",
+        "name": "Soraka",
+        "origin": ["Light"],
+        "class": ["Mystic"],
+        "cost": 3,
+        "ability": {
+            "name": "Equinox",
+            "description": "Soraka calms the area around a random enemy, dealing to all enemies standing in the area and preventing them from gaining mana. After a while the area dissipates.",
+            "type": "Active",
+            "manaCost": 60,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage", "value": "150 / 300 / 450 "},
+                { "type": "Duration", "value": "3 / 5 / 7" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 40,
+                "attackSpeed": 0.65,
+                "dps": 33,
+                "range": 2
+            },
+            "defense": {
+                "health": 600,
+                "armor": 20,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "morellonomicon",
+            "seraphsembrace",
+            "zephyr"
+        ]
+    },
+    {
+        "id": "129",
+        "key": "Syndra",
+        "name": "Syndra",
+        "origin": ["Ocean"],
+        "class": ["Mage"],
+        "cost": 2,
+        "ability": {
+            "name": "Hydro Sphere",
+            "description": "Syndra conjures a sphere of water near a random enemy which explodes dealing magic damage to all enemies hit.",
+            "type": "Active",
+            "manaCost": 80,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage", "value": "175 / 350 / 600"}
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 40,
+                "attackSpeed": 0.7,
+                "dps": 28,
+                "range": 3
+            },
+            "defense": {
+                "health": 500,
+                "armor": 20,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "morellonomicon",
+            "rabadonsdeathcap",
+            "seraphsembrace"
+        ]
+    },
+    {
+        "id": "130",
+        "key": "Taliyah",
+        "name": "Taliyah",
+        "origin": ["Mountain"],
+        "class": ["Mage"],
+        "cost": 1,
+        "ability": {
+            "name": "Seismic Shove",
+            "description": "Taliyah causes the ground to rise under the enemy with the most Mana, dealing damage and either pushing or pulling them toward her.",
+            "type": "Active",
+            "manaCost": 80,
+            "manaStart": 50,
+            "stats": [
+                { "type": "Damage", "value": "150 / 350 / 550" },
+                { "type": "Stun Duration", "value": "2s" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 40,
+                "attackSpeed": 0.65,
+                "dps": 35,
+                "range": 1
+            },
+            "defense": {
+                "health": 500,
+                "armor": 20,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "rabadonsdeathcap",
+            "rabadonsdeathcap",
+            "spearofshojin"
+        ]
+    },
+    {
+        "id": "131",
+        "key": "Taric",
+        "name": "Taric",
+        "origin": ["Crystal"],
+        "class": ["Warden"],
+        "cost": 5,
+        "ability": {
+            "name": "Cosmic Radiance",
+            "description": "After a delay, Taric and all nearby allies become invulnerable.",
+            "type": "Active",
+            "manaCost": 125,
+            "manaStart": 50,
+            "stats": [
+                { "type": "Duration", "value": "3 / 3 / 5" },
+                { "type": "Range", "value": "2 / 3 / 4" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 60,
+                "attackSpeed": 0.65,
+                "dps": 35,
+                "range": 1
+            },
+            "defense": {
+                "health": 900,
+                "armor": 60,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "warmogsarmor",
+            "dragonsclaw",
+            "redemption"
+        ]
+    },
+    {
+        "id": "132",
+        "key": "Thresh",
+        "name": "Thresh",
+        "origin": ["Ocean"],
+        "class": ["Warden"],
+        "cost": 2,
+        "ability": {
+            "name": "Deep Sea Lantern",
+            "description": "Thresh throws his lantern to the lowest-health ally, shielding them and nearby allies for 5 seconds.",
+            "type": "Active",
+            "manaCost": 150,
+            "manaStart": 50,
+            "stats": [
+                { "type": "Shield Amount", "value": "250 / 400 / 600" },
+                { "type": "Cast Time", "value": "0.25" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 55,
+                "attackSpeed": 0.55,
+                "dps": 35,
+                "range": 1
+            },
+            "defense": {
+                "health": 700,
+                "armor": 40,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "bramblevest",
+            "dragonsclaw",
+            "warmogsarmor"
+        ]
+    },
+    {
+        "id": "133",
+        "key": "Twitch",
+        "name": "Twitch",
+        "origin": ["Poison"],
+        "class": ["Ranger"],
+        "cost": 4,
+        "ability": {
+            "name": "Spray and Pray",
+            "description": "Twitch gains increased damage and unlimited range for 8 seconds.",
+            "type": "Active",
+            "manaCost": 70,
+            "manaStart": 0,
+            "stats": [
+                { "type": "AD Bonus Percentage", "value": "130% / 160% / 300%" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 65,
+                "attackSpeed": 0.75,
+                "dps": 35,
+                "range": 4
+            },
+            "defense": {
+                "health": 650,
+                "armor": 20,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "infinityedge",
+            "infinityedge",
+            "ionicspark"
+        ]
+    },
+    {
+        "id": "110",
+        "key": "Varus",
+        "name": "Varus",
+        "origin": ["Inferno"],
+        "class": ["Ranger"],
+        "cost": 2,
+        "ability": {
+            "name": "Piercing Arrow",
+            "description": "Varus charges and fires an arrow, dealing damage to all enemies in a line.",
+            "type": "Active",
+            "manaCost": 100,
+            "manaStart": 50,
+            "stats": [
+                { "type": "Damage", "value": "225 / 450 / 800" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 60,
+                "attackSpeed": 0.75,
+                "dps": 45,
+                "range": 4
+            },
+            "defense": {
+                "health": 550,
+                "armor": 25,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "rabadonsdeathcap",
+            "rabadonsdeathcap",
+            "spearofshojin"
+        ]
+    },
+    {
+        "id": "67",
+        "key": "Vayne",
+        "name": "Vayne",
+        "origin": ["Light"],
+        "class": ["Ranger"],
+        "cost": 1,
+        "ability": {
+            "name": "Silver Bolts",
+            "description": "Vayne deals bonus true damage every third attack based on the enemy's maximum health.",
+            "type": "Passive",
+            "manaCost": null,
+            "manaStart": null,
+            "stats": [{ "type": "Percentage Damage", "value": "10% / 13% / 16%" }]
+        },
+        "stats": {
+            "offense": {
+                "damage": 40,
+                "attackSpeed": 0.7,
+                "dps": 27,
+                "range": 3
+            },
+            "defense": {
+                "health": 550,
+                "armor": 25,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "runaanshurricane",
+            "guinsoosrageblade",
+            "giantslayer"
+        ]
+    },
+    {
+        "id": "45",
+        "key": "Veigar",
+        "name": "Veigar",
+        "origin": ["Shadow"],
+        "class": ["Mage"],
+        "cost": 3,
+        "ability": {
+            "name": "Primordial Burst",
+            "description": "Veigar blasts an enemy with magical energy, dealing magic damage. If Veigar is a higher star level than his target, this damage is incresed to 19999.",
+            "type": "Active",
+            "manaCost": 60,
+            "manaStart": 0,
+            "stats": [{ "type": "Damage", "value": "325 / 650 / 975" }]
+        },
+        "stats": {
+            "offense": {
+                "damage": 50,
+                "attackSpeed": 0.6,
+                "dps": 25,
+                "range": 3
+            },
+            "defense": {
+                "health": 600,
+                "armor": 20,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "guardianangel",
+            "hextechgunblade",
+            "seraphsembrace"
+        ]
+    },
+    {
+        "id": "134",
+        "key": "Vladimir",
+        "name": "Vladimir",
+        "origin": ["Ocean"],
+        "class": ["Mage"],
+        "cost": 1,
+        "ability": {
+            "name": "Drain",
+            "description": "Vladimir damages a target enemy, healing himself for the damage dealt.",
+            "type": "Active",
+            "manaCost": 75,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage", "value": "200 / 325 / 500" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 40,
+                "attackSpeed": 0.65,
+                "dps": 36,
+                "range": 2
+            },
+            "defense": {
+                "health": 550,
+                "armor": 30,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "guardianangel",
+            "rabadonsdeathcap",
+            "redbuff"
+        ]
+    },
+    {
+        "id": "106",
+        "key": "Volibear",
+        "name": "Volibear",
+        "origin": ["Glacial", "Electric"],
+        "class": ["Berserker"],
+        "cost": 2,
+        "ability": {
+            "name": "Thunder Claws",
+            "description": "Volibear's attacks bounce between enemies.",
+            "type": "Passive",
+            "manaCost": 75,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage", "value": " 200 / 450 / 850" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 60,
+                "attackSpeed": 0.7,
+                "dps": 42,
+                "range": 1
+            },
+            "defense": {
+                "health": 650,
+                "armor": 35,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "dragonsclaw",
+            "hextechgunblade",
+            "redbuff"
+        ]
+    },
+    {
+        "id": "19",
+        "key": "Warwick",
+        "name": "Warwick",
+        "origin": ["Glacial"],
+        "class": ["Predator"],
+        "cost": 1,
+        "ability": {
+            "name": "Infinite Duress",
+            "description": "Warwick pounces onto the lowest health enemy, stunning and damaging them.",
+            "type": "Active",
+            "manaCost": 125,
+            "manaStart": 50,
+            "stats": [
+                { "type": "Damage", "value": "200 / 500 / 800" },
+                { "type": "Hits", "value": "3" },
+                { "type": "Duration", "value": "1.5s" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 50,
+                "attackSpeed": 0.6,
+                "dps": 30,
+                "range": 1
+            },
+            "defense": {
+                "health": 650,
+                "armor": 30,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "frozenheart",
+            "cursedblade",
+            "warmogsarmor"
+        ]
+    },
+    {
+        "id": "157",
+        "key": "Yasuo",
+        "name": "Yasuo",
+        "origin": ["Cloud"],
+        "class": ["Blademaster"],
+        "cost": 2,
+        "ability": {
+            "name": "Last Breath",
+            "description": "Yasuo blinks to the enemy with the most items and knocks them up, holding them airborn for 1 second and hitting them, dealing basic attack damage and applying on-hit effects.",
+            "type": "Active",
+            "manaCost": 85,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Hits", "value": "4 / 5 / 6" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 60,
+                "attackSpeed": 0.7,
+                "dps": 65,
+                "range": 1
+            },
+            "defense": {
+                "health": 600,
+                "armor": 30,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "dragonsclaw",
+            "infinityedge",
+            "redbuff"
+        ]
+    },
+    {
+        "id": "135",
+        "key": "Yorick",
+        "name": "Yorick",
+        "origin": ["Light"],
+        "class": ["Summoner"],
+        "cost": 4,
+        "ability": {
+            "name": "Shepherd of Souls",
+            "description": "Yorick blesses his allies with the lowest health, not including Light Walkers. When they die, they resurect as Light Walkers and benefits from the effects of the Light origin.",
+            "type": "Active",
+            "manaCost": 75,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Number of Allies", "value": "2 / 3 / 12" },
+                { "type": "Light Walker Health", "value": "400 / 700 / 2,000" },
+                { "type": "Light Walker Damage", "value": "100 / 200 / 300" },
+                { "type": "Number of Targets", "value": "2 / 3 / 12" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 65,
+                "attackSpeed": 0.7,
+                "dps": 65,
+                "range": 1
+            },
+            "defense": {
+                "health": 850,
+                "armor": 35,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "dragonsclaw",
+            "guardianangel",
+            "redemption"
+        ]
+    },
+    {
+        "id": "238",
+        "key": "Zed",
+        "name": "Zed",
+        "origin": ["Electric"],
+        "class": ["Assassin", "Summoner"],
+        "cost": 5,
+        "ability": {
+            "name": "Living Shadow",
+            "description": "Zed creates a clone of himself behind his current target. This clone inherits its creator's items, stats, and current health, and can cast Living Shadow. Its mana cost is 50 higher.",
+            "type": "Active",
+            "manaCost": 150,
+            "manaStart": 50,
+            "stats": [
+                { "type": "Mana Cost Increase", "value": "50 / 25 / 0" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 80,
+                "attackSpeed": 1,
+                "dps": 39,
+                "range": 1
+            },
+            "defense": {
+                "health": 850,
+                "armor": 30,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "ionicspark",
+            "redemption",
+            "guardianangel"
+        ]
+    },
+    {
+        "id": "136",
+        "key": "Zyra",
+        "name": "Zyra",
+        "origin": ["Inferno"],
+        "class": ["Summoner"],
+        "cost": 1,
+        "ability": {
+            "name": "Rampant Growth",
+            "description": "Zyra summons two Flame Spitters at a random location at the edge of the arena. The Flame Spitters attack the nearest enemy for 3 seconds, dealing damage per attack a total of 4 times.",
+            "type": "Active",
+            "manaCost": 75,
+            "manaStart": 0,
+            "stats": [
+                { "type": "Damage", "value": "55 / 65 / 75" },
+                { "type": "Number of Plants", "value": "2 / 3 / 4" }
+            ]
+        },
+        "stats": {
+            "offense": {
+                "damage": 40,
+                "attackSpeed": 0.65,
+                "dps": 39,
+                "range": 3
+            },
+            "defense": {
+                "health": 500,
+                "armor": 20,
+                "magicResist": 20
+            }
+        },
+        "items": [
+            "morellonomicon",
+            "spearofshojin",
+            "spearofshojin"
+        ]
+    }
 ]
