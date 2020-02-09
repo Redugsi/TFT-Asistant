@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Domain
 
 struct TraitsCellViewModel {
     var traitImageName: String?

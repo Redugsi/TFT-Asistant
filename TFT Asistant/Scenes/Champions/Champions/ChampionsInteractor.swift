@@ -11,7 +11,6 @@
 //
 
 import UIKit
-import LocalPlatform
 
 protocol ChampionsBusinessLogic
 {
@@ -29,7 +28,7 @@ class ChampionsInteractor: ChampionsBusinessLogic, ChampionsDataStore
     var championViewModel: Champions.ChampionViewModel?
     
     var presenter: ChampionsPresentationLogic?
-    var worker: ChampionsWorker = ChampionsWorker(useCase: LocalPlatform.UseCaseProvider().makeChampionsUseCase())
+    var worker: ChampionsWorker = ChampionsWorker(useCase: UseCaseProvider().makeChampionsUseCase() as! ChampionsUseCase)
   
     func getChampionsOrderedByTier(request: Champions.GetChampionsOrderedByTier.Request) {        
         let response = Champions.GetChampionsOrderedByTier.Response(champions: worker.getChampionsOrderedByTier())

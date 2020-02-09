@@ -11,7 +11,6 @@
 //
 
 import UIKit
-import Domain
 
 class ItemBuilderWorker
 {

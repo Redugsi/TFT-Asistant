@@ -11,8 +11,6 @@
 //
 
 import UIKit
-import LocalPlatform
-import Domain
 
 protocol BaseItemsBusinessLogic
 {
@@ -28,7 +26,7 @@ protocol BaseItemsDataStore
 class BaseItemsInteractor: BaseItemsBusinessLogic, BaseItemsDataStore
 {
     var presenter: BaseItemsPresentationLogic?
-    let worker: BaseItemsWorker = BaseItemsWorker(itemsUseCase: LocalPlatform.UseCaseProvider().makeItemsUseCase())
+    let worker: BaseItemsWorker = BaseItemsWorker(itemsUseCase: UseCaseProvider().makeItemsUseCase() as! ItemsUseCase)
     
     var baseItems: [Item]?
   

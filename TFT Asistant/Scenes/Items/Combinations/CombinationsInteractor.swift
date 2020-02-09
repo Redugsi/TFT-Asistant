@@ -11,8 +11,6 @@
 //
 
 import UIKit
-import LocalPlatform
-import Domain
 
 protocol CombinationsBusinessLogic
 {
@@ -28,7 +26,7 @@ protocol CombinationsDataStore
 class CombinationsInteractor: CombinationsBusinessLogic, CombinationsDataStore
 {
     var presenter: CombinationsPresentationLogic?
-    var worker: CombinationsWorker = CombinationsWorker(itemsUseCase: LocalPlatform.UseCaseProvider().makeItemsUseCase())
+    var worker: CombinationsWorker = CombinationsWorker(itemsUseCase: UseCaseProvider().makeItemsUseCase() as! ItemsUseCase)
     
     var items: [Item]?
     

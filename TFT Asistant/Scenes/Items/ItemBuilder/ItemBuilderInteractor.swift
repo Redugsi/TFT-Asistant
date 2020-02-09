@@ -11,8 +11,7 @@
 //
 
 import UIKit
-import LocalPlatform
-import Domain
+
 
 protocol ItemBuilderBusinessLogic
 {
@@ -33,7 +32,7 @@ class ItemBuilderInteractor: ItemBuilderBusinessLogic, ItemBuilderDataStore
 {
     
   var presenter: ItemBuilderPresentationLogic?
-  let worker: ItemBuilderWorker = ItemBuilderWorker(itemsUseCase: LocalPlatform.UseCaseProvider().makeItemsUseCase())
+    let worker: ItemBuilderWorker = ItemBuilderWorker(itemsUseCase: UseCaseProvider().makeItemsUseCase() as! ItemsUseCase)
 
     var baseItems: [Item]?
     var combinedItems: [Item]?

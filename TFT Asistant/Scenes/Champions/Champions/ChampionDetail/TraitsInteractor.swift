@@ -11,7 +11,6 @@
 //
 
 import UIKit
-import LocalPlatform
 
 protocol TraitsBusinessLogic
 {
@@ -26,9 +25,9 @@ protocol TraitsDataStore
 class TraitsInteractor: TraitsBusinessLogic, TraitsDataStore
 {
     var presenter: TraitsPresentationLogic?
-    var worker: TraitsWorker = TraitsWorker(championUseCase: LocalPlatform.UseCaseProvider().makeChampionsUseCase(),
-                                            originsUseCase: LocalPlatform.UseCaseProvider().makeOriginsUseCase(),
-                                            classesUseCase: LocalPlatform.UseCaseProvider().makeClassesUseCase())
+    var worker: TraitsWorker = TraitsWorker(championUseCase: UseCaseProvider().makeChampionsUseCase() as! ChampionsUseCase,
+                                            originsUseCase: UseCaseProvider().makeOriginsUseCase() as! OriginsUseCase,
+                                            classesUseCase: UseCaseProvider().makeClassesUseCase() as! ClassesUseCase)
     
     func getTraits(request: Traits.GetAllTraits.Request) {
         let response = worker.getAllTraits()
